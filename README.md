@@ -1,6 +1,6 @@
 # Memory Game — apprendre l'anglais en jouant
 
-Un jeu de memory dans **un seul fichier `index.html`** (HTML + CSS + JS, aucune dépendance).
+Un jeu de memory dans **un seul fichier `memory.html`** (HTML + CSS + JS, aucune dépendance).
 Chaque carte révélée prononce son mot anglais à voix haute (Web Speech API), pour
 enrichir le vocabulaire anglais d'enfants francophones.
 
@@ -11,8 +11,10 @@ enrichir le vocabulaire anglais d'enfants francophones.
 - **Niveaux** de difficulté 1/2/3, dérivés de la fréquence d'usage des mots
   (25 % les plus courants / 25 % suivants / 50 % restants).
 - Bouton **« Traduction FR »** : relit et affiche la traduction française de la dernière carte.
-- Mode **1 ou 2 joueurs** (tour par tour, scores, annonce du vainqueur).
+- Mode **1 à 4 joueurs** (tour par tour, scores, annonce du vainqueur).
 - Nombre de cartes (4 à 100), vitesse de la voix réglable, choix de la voix anglaise.
+- Disposition et taille des cartes calculées selon la fenêtre : grandes cartes sur un
+  grand écran, jouable aussi sur téléphone (recalculées à chaque nouvelle partie).
 - Confettis et son de victoire.
 - Les réglages sont **mémorisés** (localStorage).
 
@@ -27,17 +29,17 @@ enrichir le vocabulaire anglais d'enfants francophones.
 
 ## Utilisation
 
-Ouvrir `index.html` dans Firefox, ou depuis un terminal :
+Ouvrir `memory.html` dans Firefox, ou depuis un terminal :
 
 ```bash
-firefox index.html
+firefox memory.html
 ```
 
 Après une modification, recharger avec **Ctrl+Shift+R** pour contourner le cache.
 
 ## Personnalisation
 
-Tout se trouve dans le `<script>` de `index.html` :
+Tout se trouve dans le `<script>` de `memory.html` :
 
 - `THEMES` : mots de chaque thème, sous forme `{ name, emoji }`.
 - `TRANSLATIONS` : dictionnaire anglais → français (une entrée par mot).

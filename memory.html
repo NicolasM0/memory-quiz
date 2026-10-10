@@ -61,8 +61,9 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
-    width: min(94vw, 560px);
+    width: max-content;
     perspective: 1000px;
+    justify-content: center;
   }
   .card {
     aspect-ratio: 1;
@@ -83,7 +84,7 @@
     align-items: center;
     justify-content: center;
     gap: 4px;
-    border-radius: 12px;
+    border-radius: calc(var(--card, 80px) * 0.13);
     backface-visibility: hidden;
     font-weight: 600;
     overflow: hidden;
@@ -92,7 +93,7 @@
   .card .back {
     background: linear-gradient(145deg, var(--card-back-2), var(--card-back));
     box-shadow: inset 0 0 0 2px rgba(255,255,255,0.05);
-    font-size: 1.4rem;
+    font-size: calc(var(--card, 80px) * 0.42);
     color: #7d86b8;
   }
   .card .front {
@@ -100,8 +101,8 @@
     color: #1a1d2b;
     transform: rotateY(180deg);
   }
-  .card .emoji { font-size: 1.5rem; line-height: 1; }
-  .card .name { font-size: 0.62rem; padding: 0 3px; }
+  .card .emoji { font-size: calc(var(--card, 80px) * 0.44); line-height: 1; }
+  .card .name { font-size: clamp(0.5rem, calc(var(--card, 80px) * 0.15), 1.3rem); padding: 0 3px; }
   .card.matched .front { background: #d6ffe4; box-shadow: inset 0 0 0 2px var(--match); }
   .card.matched { pointer-events: none; }
   button.reset {
@@ -120,6 +121,7 @@
   button.reset.secondary { background: #1f9d6b; }
   button.reset.secondary:hover { filter: brightness(1.12); }
   .turn { min-height: 1.2em; font-size: 1rem; font-weight: 700; color: #ffd166; }
+  .turn:empty, .win:empty, .translation:empty { display: none; }
   input[type="range"] {
     width: 120px;
     accent-color: var(--accent);
@@ -141,6 +143,37 @@
   body.cursor-p2,
   body.cursor-p2 .card {
     cursor: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 24 24'><path d='M3 2 L3 19 L8 14.5 L11 21 L14 19.7 L11 13.3 L18 13.3 Z' fill='%23ff5a5f' stroke='white' stroke-width='1.2' stroke-linejoin='round'/></svg>") 3 2, pointer;
+  }
+  body.cursor-p3,
+  body.cursor-p3 .card {
+    cursor: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 24 24'><path d='M3 2 L3 19 L8 14.5 L11 21 L14 19.7 L11 13.3 L18 13.3 Z' fill='%232ecc71' stroke='white' stroke-width='1.2' stroke-linejoin='round'/></svg>") 3 2, pointer;
+  }
+  body.cursor-p4,
+  body.cursor-p4 .card {
+    cursor: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 24 24'><path d='M3 2 L3 19 L8 14.5 L11 21 L14 19.7 L11 13.3 L18 13.3 Z' fill='%23ff9f1c' stroke='white' stroke-width='1.2' stroke-linejoin='round'/></svg>") 3 2, pointer;
+  }
+  @media (max-width: 560px) {
+    body {
+      padding: 10px;
+      gap: 8px;
+      justify-content: flex-start;
+    }
+    h1 { font-size: 1.3rem; }
+    .controls {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px 10px;
+      width: 100%;
+      max-width: 440px;
+    }
+    label.field {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 2px;
+    }
+    label.field select { max-width: none; width: 100%; }
+    .hud { gap: 14px; font-size: 0.85rem; flex-wrap: wrap; justify-content: center; }
+    input[type="range"] { width: 100%; }
   }
 </style>
 </head>
@@ -165,6 +198,8 @@
       <select id="playersSelect">
         <option value="1">1 player</option>
         <option value="2">2 players</option>
+        <option value="3">3 players</option>
+        <option value="4">4 players</option>
       </select>
     </label>
   </div>
@@ -173,6 +208,8 @@
     <span>Pairs: <b id="pairs">0</b> / <b id="total">8</b></span>
     <span id="p1Hud" hidden>Player 1: <b id="p1">0</b></span>
     <span id="p2Hud" hidden>Player 2: <b id="p2">0</b></span>
+    <span id="p3Hud" hidden>Player 3: <b id="p3">0</b></span>
+    <span id="p4Hud" hidden>Player 4: <b id="p4">0</b></span>
   </div>
   <div class="turn" id="turn"></div>
   <div class="win" id="win"></div>
@@ -796,10 +833,6 @@
   };
 
   const CARD_COUNTS = [4, 6, 8, 12, 16, 20, 24, 30, 36, 42, 50, 60, 70, 80, 90, 100];
-  const COLUMNS = {
-    4: 2, 6: 3, 8: 4, 12: 4, 16: 4, 20: 5, 24: 6,
-    30: 6, 36: 6, 42: 7, 50: 8, 60: 10, 70: 10, 80: 10, 90: 10, 100: 10,
-  };
 
   const board = document.getElementById("board");
   const movesEl = document.getElementById("moves");
@@ -817,8 +850,12 @@
   const turnEl = document.getElementById("turn");
   const p1Hud = document.getElementById("p1Hud");
   const p2Hud = document.getElementById("p2Hud");
+  const p3Hud = document.getElementById("p3Hud");
+  const p4Hud = document.getElementById("p4Hud");
   const p1El = document.getElementById("p1");
   const p2El = document.getElementById("p2");
+  const p3El = document.getElementById("p3");
+  const p4El = document.getElementById("p4");
   const confettiCanvas = document.getElementById("confetti");
   const translateBtn = document.getElementById("translateBtn");
   const translationText = document.getElementById("translationText");
@@ -832,6 +869,8 @@
     rate: "memoryGameRate",
   };
 
+  const PLAYER_COLORS = { 1: "#4c8dff", 2: "#ff5a5f", 3: "#2ecc71", 4: "#ff9f1c" };
+
   let first = null;
   let lock = false;
   let moves = 0;
@@ -840,7 +879,7 @@
   let selectedLevel = 3;
   let players = 1;
   let currentPlayer = 1;
-  let scores = [0, 0];
+  let scores = [0, 0, 0, 0];
   let speechRate = 0.85;
   let lastFlippedName = null;
 
@@ -1057,7 +1096,8 @@
 
   if (playersSelect) {
     playersSelect.addEventListener("change", () => {
-      players = parseInt(playersSelect.value, 10) === 2 ? 2 : 1;
+      players = parseInt(playersSelect.value, 10);
+      if (!(players >= 1 && players <= 4)) players = 1;
       localStorage.setItem(STORAGE.players, String(players));
       reset();
     });
@@ -1179,6 +1219,71 @@
     return THEMES[currentThemeKey()].items.length;
   }
 
+  // Computed once per grid creation (NOT on window resize) so cards are as large
+  // as possible on big screens while still fitting a phone.
+  function computeBoardLayout(n) {
+    const vw = window.innerWidth || document.documentElement.clientWidth || 1024;
+    const vh = window.innerHeight || document.documentElement.clientHeight || 768;
+    const cs = getComputedStyle(document.body);
+    const padX = (parseFloat(cs.paddingLeft) || 0) + (parseFloat(cs.paddingRight) || 0);
+    const gap = vw < 560 ? 6 : 10;
+    const availW = Math.max(200, vw - padX);
+
+    let overhead = (parseFloat(cs.paddingTop) || 0) + (parseFloat(cs.paddingBottom) || 0);
+    const rowGap = parseFloat(cs.rowGap) || 0;
+    let flexItems = 0;
+    for (const el of document.body.children) {
+      const style = getComputedStyle(el);
+      if (el === board) { flexItems++; continue; }
+      if (el.tagName === "CANVAS" || el.tagName === "SCRIPT" || el.tagName === "STYLE" ||
+          style.position === "fixed" || style.display === "none") continue;
+      overhead += el.getBoundingClientRect().height;
+      flexItems++;
+    }
+    overhead += rowGap * Math.max(0, flexItems - 1);
+    let availH = vh - overhead;
+    if (!(availH > 120) || availH > vh) availH = Math.max(160, vh * 0.6);
+
+    const minCard = 40;
+    const maxCard = vw < 560 ? 110 : 150;
+
+    function scan(colSets) {
+      let best = null;
+      const wantWide = availW >= availH;
+      for (const cols of colSets) {
+        const rows = Math.ceil(n / cols);
+        const wFit = (availW - (cols - 1) * gap) / cols;
+        const hFit = (availH - (rows - 1) * gap) / rows;
+        const size = Math.max(minCard, Math.min(maxCard, Math.min(wFit, hFit)));
+        const width = cols * size + (cols - 1) * gap;
+        const height = rows * size + (rows - 1) * gap;
+        if (width > availW + 1 || height > availH + 1) continue;
+        const orientationOk = wantWide ? width >= height : width <= height;
+        const shape = Math.abs(Math.log(width / height)) + (orientationOk ? 0 : 0.3);
+        if (!best || size > best.size + 0.01 ||
+            (Math.abs(size - best.size) <= 0.01 && shape < best.shape)) {
+          best = { cols, size, width, shape };
+        }
+      }
+      return best;
+    }
+
+    // Prefer grids where every row and column is full (columns divide the total).
+    const divisors = [];
+    const allCols = [];
+    for (let c = 1; c <= n; c++) {
+      allCols.push(c);
+      if (n % c === 0) divisors.push(c);
+    }
+    let best = scan(divisors) || scan(allCols);
+    if (!best) {
+      const cols = Math.max(1, Math.ceil(Math.sqrt(n)));
+      const size = minCard;
+      best = { cols, size, width: cols * size + (cols - 1) * gap };
+    }
+    return { cols: best.cols, size: best.size, gap, width: best.width };
+  }
+
   function populateThemes() {
     const saved = localStorage.getItem(STORAGE.theme);
     themeSelect.innerHTML = Object.entries(THEMES)
@@ -1208,10 +1313,12 @@
     const deck = shuffle([...items, ...items]);
 
     const cards = pairs * 2;
-    const cols = COLUMNS[cards] || Math.ceil(Math.sqrt(cards));
+    const layout = computeBoardLayout(cards);
     board.innerHTML = "";
-    board.style.gridTemplateColumns = `repeat(${cols}, 1fr)`;
-    board.style.maxWidth = `${Math.max(480, cols * 66)}px`;
+    board.style.gap = layout.gap + "px";
+    board.style.gridTemplateColumns = `repeat(${layout.cols}, ${layout.size}px)`;
+    board.style.width = layout.width + "px";
+    board.style.setProperty("--card", layout.size + "px");
 
     deck.forEach((item) => {
       const card = document.createElement("button");
@@ -1229,28 +1336,43 @@
   }
 
   function renderScores() {
-    p1El.textContent = scores[0];
-    p2El.textContent = scores[1];
-    const two = players === 2;
-    p1Hud.hidden = !two;
-    p2Hud.hidden = !two;
+    const scoreEls = [p1El, p2El, p3El, p4El];
+    const hudEls = [p1Hud, p2Hud, p3Hud, p4Hud];
+    scoreEls.forEach((el, i) => {
+      el.textContent = scores[i];
+      el.style.color = PLAYER_COLORS[i + 1];
+    });
+    hudEls.forEach((el, i) => {
+      el.style.color = PLAYER_COLORS[i + 1];
+    });
+    p1Hud.hidden = players < 2;
+    p2Hud.hidden = players < 2;
+    p3Hud.hidden = players < 3;
+    p4Hud.hidden = players < 4;
   }
 
   function renderTurn() {
-    turnEl.textContent = players === 2 ? `Player ${currentPlayer}'s turn` : "";
-    document.body.classList.toggle("cursor-p1", players === 2 && currentPlayer === 1);
-    document.body.classList.toggle("cursor-p2", players === 2 && currentPlayer === 2);
+    const multi = players >= 2;
+    turnEl.textContent = multi ? `Player ${currentPlayer}'s turn` : "";
+    turnEl.style.color = multi ? PLAYER_COLORS[currentPlayer] : "";
+    document.body.classList.toggle("cursor-p1", multi && currentPlayer === 1);
+    document.body.classList.toggle("cursor-p2", multi && currentPlayer === 2);
+    document.body.classList.toggle("cursor-p3", multi && currentPlayer === 3);
+    document.body.classList.toggle("cursor-p4", multi && currentPlayer === 4);
   }
 
   function endGame() {
-    if (players === 2) {
-      if (scores[0] === scores[1]) {
-        winEl.textContent = `Tie! ${scores[0]} - ${scores[1]}`;
+    if (players >= 2) {
+      const active = scores.slice(0, players);
+      const max = Math.max(...active);
+      const winners = active.map((s, i) => (s === max ? i + 1 : 0)).filter((n) => n > 0);
+      const line = active.join(" - ");
+      if (winners.length > 1) {
+        winEl.textContent = `Tie! ${line}`;
         speak("It's a tie!");
       } else {
-        const w = scores[0] > scores[1] ? 1 : 2;
-        winEl.textContent = `Player ${w} wins! ${scores[0]} - ${scores[1]}`;
-        speak(`Player ${w} wins!`);
+        winEl.textContent = `Player ${winners[0]} wins! ${line}`;
+        speak(`Player ${winners[0]} wins!`);
       }
     } else {
       winEl.textContent = `You won in ${moves} moves!`;
@@ -1282,11 +1404,10 @@
       matched++;
       pairsEl.textContent = matched;
 
-      const name = card.dataset.name;
       first = null;
       lock = false;
 
-      if (players === 2) {
+      if (players >= 2) {
         scores[currentPlayer - 1]++;
         renderScores();
       }
@@ -1294,7 +1415,6 @@
       if (matched === pairCount) {
         endGame();
       } else {
-        setTimeout(() => speak(name), 300);
         renderTurn();
       }
     } else {
@@ -1304,11 +1424,11 @@
         a.classList.remove("flipped");
         card.classList.remove("flipped");
         lock = false;
-        if (players === 2) {
-          currentPlayer = currentPlayer === 1 ? 2 : 1;
+        if (players >= 2) {
+          currentPlayer = (currentPlayer % players) + 1;
           renderTurn();
         }
-      }, 800);
+      }, 2300);
     }
   }
 
@@ -1317,7 +1437,7 @@
     lock = false;
     moves = 0;
     matched = 0;
-    scores = [0, 0];
+    scores = [0, 0, 0, 0];
     currentPlayer = 1;
     movesEl.textContent = "0";
     winEl.textContent = "";
@@ -1363,7 +1483,8 @@
   if (!(selectedLevel >= 1 && selectedLevel <= 3)) selectedLevel = 3;
   levelSelect.value = String(selectedLevel);
 
-  players = localStorage.getItem(STORAGE.players) === "2" ? 2 : 1;
+  players = parseInt(localStorage.getItem(STORAGE.players), 10);
+  if (!(players >= 1 && players <= 4)) players = 1;
   playersSelect.value = String(players);
   speechRate = parseFloat(localStorage.getItem(STORAGE.rate)) || 0.85;
   rateInput.value = String(speechRate);

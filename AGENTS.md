@@ -1,15 +1,16 @@
 # AGENTS.md
 
 ## Project
-- Single self-contained `index.html` (inline HTML + CSS + JS): a memory card game that speaks each card's English word via the Web Speech API. Goal: build English vocabulary for French-speaking kids (FR translations + a "Traduction FR" button).
-- No build step, package manager, dependencies, tests, or CI. Not a git repo. Edit `index.html` directly and reload it in Firefox (Ctrl+Shift+R to bypass cache).
+- Single self-contained `memory.html` (inline HTML + CSS + JS): a memory card game that speaks each card's English word via the Web Speech API. Goal: build English vocabulary for French-speaking kids (FR translations + a "Traduction FR" button).
+- No build step, package manager, dependencies, tests, or CI. Edit `memory.html` directly and reload it in Firefox (Ctrl+Shift+R to bypass cache).
 - No Node/JS runtime here (`node`/`deno`/`bun` absent), so you cannot execute the JS. Validate edits with a `python3` regex script instead (see below).
 
 ## Data model (all inside the single `<script>`)
 - `THEMES` keys: `animals`, `food`, `actions`, `objects`. Each item is `{ name, emoji }`; each theme has a `label`.
 - `TRANSLATIONS`: EN→FR map covering every item name.
 - `LEVEL_ORDER`: per theme, item names ordered most→least common. Code derives difficulty levels 1/2/3 automatically as 25%/25%/50% of the list length.
-- Other constants: `CARD_COUNTS`, `COLUMNS`, `PREFERRED`, `MAX_VOICES` (=5), `STORAGE`.
+- Other constants: `CARD_COUNTS`, `PREFERRED`, `MAX_VOICES` (=5), `STORAGE`.
+- Card grid size/columns are computed once by `computeBoardLayout()` inside `buildDeck()` from the current viewport, then fixed. There is deliberately NO resize listener — do not add one; a new layout only happens when a new game is built.
 
 ## Invariants — keep true when editing
 - Every theme item `name` MUST have a `TRANSLATIONS` entry (currently 447/447).
@@ -27,7 +28,7 @@
 ```bash
 python3 - <<'PY'
 import re
-h=open('index.html').read(); s=re.search(r'<script>(.*)</script>',h,re.S).group(1)
+h=open('memory.html').read(); s=re.search(r'<script>(.*)</script>',h,re.S).group(1)
 for a,b in [('{','}'),('(',')'),('[',']')]: assert s.count(a)==s.count(b),(a,)
 themes={k:re.findall(r'\{ name: "([^"]+)", emoji: "[^"]+" \}',b)
         for k,b in re.findall(r'^    (\w+): \{\n      label: "[^"]*",\n      items: \[(.*?)\n      \],',h,re.S|re.M)}
