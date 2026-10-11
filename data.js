@@ -3769,21 +3769,6 @@ window.THEMES = {
         "level": 1
       },
       {
-        "name": "Pencil School",
-        "emoji": "✏️",
-        "level": 1
-      },
-      {
-        "name": "Pen School",
-        "emoji": "🖊️",
-        "level": 1
-      },
-      {
-        "name": "Notebook School",
-        "emoji": "📓",
-        "level": 1
-      },
-      {
         "name": "Book School",
         "emoji": "📖",
         "level": 1
@@ -3804,28 +3789,13 @@ window.THEMES = {
         "level": 1
       },
       {
-        "name": "Folder School",
-        "emoji": "📁",
-        "level": 1
-      },
-      {
         "name": "Binder",
         "emoji": "📁",
         "level": 1
       },
       {
-        "name": "Backpack School",
-        "emoji": "🎒",
-        "level": 1
-      },
-      {
         "name": "Pencil Case",
         "emoji": "🖍️",
-        "level": 1
-      },
-      {
-        "name": "Ruler School",
-        "emoji": "📏",
         "level": 1
       },
       {
@@ -3841,11 +3811,6 @@ window.THEMES = {
       {
         "name": "Calculator",
         "emoji": "🧮",
-        "level": 2
-      },
-      {
-        "name": "Scissors School",
-        "emoji": "✂️",
         "level": 2
       },
       {
@@ -4124,33 +4089,8 @@ window.THEMES = {
         "level": 3
       },
       {
-        "name": "Computer",
-        "emoji": "💻",
-        "level": 3
-      },
-      {
-        "name": "Keyboard School",
-        "emoji": "⌨️",
-        "level": 3
-      },
-      {
-        "name": "Mouse School",
-        "emoji": "🖱️",
-        "level": 3
-      },
-      {
-        "name": "Printer School",
-        "emoji": "🖨️",
-        "level": 3
-      },
-      {
         "name": "Globe",
         "emoji": "🌍",
-        "level": 3
-      },
-      {
-        "name": "Map School",
-        "emoji": "🗺️",
         "level": 3
       },
       {
@@ -5728,11 +5668,6 @@ window.THEMES = {
         "level": 1
       },
       {
-        "name": "Write",
-        "emoji": "✍️",
-        "level": 1
-      },
-      {
         "name": "Sing",
         "emoji": "🎤",
         "level": 1
@@ -5760,18 +5695,6 @@ window.THEMES = {
       {
         "name": "Draw",
         "emoji": "✏️",
-        "level": 1
-      },
-      {
-        "name": "Paint Verb",
-        "emoji": "🎨",
-        "label": "Paint",
-        "level": 1
-      },
-      {
-        "name": "Cook Verb",
-        "emoji": "🍳",
-        "label": "Cook",
         "level": 1
       },
       {
@@ -5807,12 +5730,6 @@ window.THEMES = {
       {
         "name": "Clean",
         "emoji": "🧹",
-        "level": 2
-      },
-      {
-        "name": "Brush Verb",
-        "emoji": "🪥",
-        "label": "Brush",
         "level": 2
       },
       {
@@ -5866,12 +5783,6 @@ window.THEMES = {
         "level": 2
       },
       {
-        "name": "Wave Verb",
-        "emoji": "👋",
-        "label": "Wave",
-        "level": 2
-      },
-      {
         "name": "Build",
         "emoji": "🏗️",
         "level": 3
@@ -5899,12 +5810,6 @@ window.THEMES = {
       {
         "name": "Close",
         "emoji": "📁",
-        "level": 3
-      },
-      {
-        "name": "Lock Verb",
-        "emoji": "🔒",
-        "label": "Lock",
         "level": 3
       },
       {
@@ -6803,22 +6708,15 @@ window.TRANSLATIONS = {
   "Chalk": "craie",
   "Marker": "marqueur",
   "Eraser": "gomme",
-  "Pencil School": "crayon",
-  "Pen School": "stylo",
-  "Notebook School": "cahier",
   "Book School": "livre",
   "Textbook": "manuel",
   "Page": "page",
   "Paper": "papier",
-  "Folder School": "dossier",
   "Binder": "classeur",
-  "Backpack School": "cartable",
   "Pencil Case": "trousse",
-  "Ruler School": "règle",
   "Compass School": "compas",
   "Protractor": "rapporteur",
   "Calculator": "calculatrice",
-  "Scissors School": "ciseaux",
   "Glue": "colle",
   "Tape": "ruban adhésif",
   "Sticky Note": "post-it",
@@ -6874,12 +6772,7 @@ window.TRANSLATIONS = {
   "Microphone School": "micro",
   "Projector": "projecteur",
   "Screen": "écran",
-  "Computer": "ordinateur",
-  "Keyboard School": "clavier",
-  "Mouse School": "souris",
-  "Printer School": "imprimante",
   "Globe": "globe",
-  "Map School": "carte",
   "Atlas": "atlas",
   "Dictionary": "dictionnaire",
   "Encyclopedia": "encyclopédie",
@@ -7176,15 +7069,12 @@ window.TRANSLATIONS = {
   "Drink": "boire",
   "Sleep": "dormir",
   "Read": "lire",
-  "Write": "écrire",
   "Sing": "chanter",
   "Dance": "danser",
   "Cry": "pleurer",
   "Laugh": "rire",
   "Smile": "sourire",
   "Draw": "dessiner",
-  "Paint Verb": "peindre",
-  "Cook Verb": "cuisiner",
   "Bake": "faire cuire",
   "Clap": "applaudir",
   "Listen": "écouter",
@@ -7192,7 +7082,6 @@ window.TRANSLATIONS = {
   "Look": "regarder",
   "Wash": "laver",
   "Clean": "nettoyer",
-  "Brush Verb": "brosser",
   "Buy": "acheter",
   "Climb": "grimper",
   "Play": "jouer",
@@ -7203,14 +7092,12 @@ window.TRANSLATIONS = {
   "Punch": "donner un coup",
   "Hug": "serrer dans ses bras",
   "Kiss": "embrasser",
-  "Wave Verb": "saluer",
   "Build": "construire",
   "Fix": "réparer",
   "Cut": "couper",
   "Travel": "voyager",
   "Open": "ouvrir",
   "Close": "fermer",
-  "Lock Verb": "verrouiller",
   "Hide": "cacher",
   "Find": "trouver",
   "Help": "aider",
