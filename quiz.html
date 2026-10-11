@@ -284,100 +284,26 @@
       qNum.textContent=currentIndex+1; qTotal.textContent=pool.length;
       qLeft.textContent=pool.length - (currentIndex+1);
       sOk.textContent=score.ok; sErr.textContent=score.err;
-      questionText.textContent = `Écoute : ${(correct.label||correct.name)}`;
-      choicesDiv.innerHTML='';
-      const distractors=[];
-      // collect from selected categories
-      const seen=new Set([correct.name]);
-      for(const k of selectedKeys){
-        const items=window.THEMES[k] && window.THEMES[k].items || [];
-        for(const it of items){
-          if(!seen.has(it.name)){
-            seen.add(it.name); distractors.push({...it});
-            if(distractors.length>=9) break;
-          }
-        }
-        if(distractors.length>=9) break;
-      }
-      // if not enough, try to fill from all themes? but spec says selected categories; keep as is
-      let choices=[correct, ...shuffle(distractors).slice(0,9)];
-      choices=shuffle(choices);
-      for(const c of choices){
-        const btn=document.createElement('button');
-        btn.className='choice';
-        btn.type='button';
-        btn.innerHTML=`<div class="emoji">${c.emoji}</div><div class="name">${c.label||c.name}</div>`;
-        btn.setAttribute('aria-label', `Choisir ${(c.label||c.name)}`);
-        btn.onclick=()=>answer(c, correct, btn);
-        choicesDiv.appendChild(btn);
-      }
-      locked=false; btnRepeat.disabled=false;
-      speak(correct.label||correct.name);
-    }
-    function answer(chosen, correct, btn){
-      if(locked) return; locked=true; btnRepeat.disabled=true;
-      const buttons=Array.from(choicesDiv.querySelectorAll('.choice'));
-      for(const b of buttons) b.classList.add('disabled');
-      if(chosen.name===correct.name){
-        btn.classList.add('correct'); score.ok++;
-        sOk.textContent=score.ok;
-        setTimeout(()=>{ currentIndex++; showQuestion(); }, 800);
-      }else{
-        btn.classList.add('wrong');
-        for(const b of buttons){
-          const name=b.querySelector('.name')?.textContent || '';
-          // find which original choice this is? easier: store data
-        }
-        // find correct button
-        for(const b of buttons){
-          // compare by emoji+text? simpler: reconstruct by index not easy; use data attribute
-        }
-        // better: attach data
-        for(let i=0;i<buttons.length;i++){
-          const b=buttons[i];
-          // we need to know name; store in closure? easier to re-query
-        }
-        // simpler approach: store names
-        setTimeout(()=>{ currentIndex++; showQuestion(); }, 1300);
-        score.err++; sErr.textContent=score.err;
-      }
-    }
-    // fix answer to find correct button properly
-    function answerFixed(chosen, correct){
-      if(locked) return; locked=true; btnRepeat.disabled=true;
-      const buttons=Array.from(choicesDiv.querySelectorAll('.choice'));
-      for(const b of buttons) b.classList.add('disabled');
-      let chosenBtn=null, correctBtn=null;
-      buttons.forEach(b=>{
-        const name=b.dataset.name; if(name===chosen.name) chosenBtn=b; if(name===correct.name) correctBtn=b;
-      });
-      if(chosen.name===correct.name){
-        if(chosenBtn) chosenBtn.classList.add('correct'); score.ok++; sOk.textContent=score.ok;
-        setTimeout(()=>{ currentIndex++; showQuestion(); }, 800);
-      }else{
-        if(chosenBtn) chosenBtn.classList.add('wrong');
-        if(correctBtn) correctBtn.classList.add('correct');
-        score.err++; sErr.textContent=score.err;
-        setTimeout(()=>{ currentIndex++; showQuestion(); }, 1400);
-      }
-    }
-    // patch showQuestion to add data-name
-    const _showQuestion=showQuestion;
-    showQuestion=function(){
-      if(currentIndex>=pool.length){ endQuiz(); return; }
-      const correct=pool[currentIndex];
-      qNum.textContent=currentIndex+1; qTotal.textContent=pool.length;
-      qLeft.textContent=pool.length - (currentIndex+1);
-      sOk.textContent=score.ok; sErr.textContent=score.err;
       questionText.textContent = '';
       choicesDiv.innerHTML='';
-      const distractors=[]; const seen=new Set([correct.name]);
+      const distractors=[]; const seen=new Set([correct.name]); const corrLv = (typeof correct.level==="number")?correct.level:3;
       for(const k of selectedKeys){
         const items=window.THEMES[k] && window.THEMES[k].items || [];
         for(const it of items){
+          const lv=(typeof it.level==="number")?it.level:3;
+          if(corrLv!==3 && lv!==corrLv) continue;
           if(!seen.has(it.name)){ seen.add(it.name); distractors.push({...it}); if(distractors.length>=9) break; }
         }
         if(distractors.length>=9) break;
+      }
+      if(distractors.length<9){
+        for(const k of selectedKeys){
+          const items=window.THEMES[k] && window.THEMES[k].items || [];
+          for(const it of items){
+            if(!seen.has(it.name)){ seen.add(it.name); distractors.push({...it}); if(distractors.length>=9) break; }
+          }
+          if(distractors.length>=9) break;
+        }
       }
       let choices=[correct, ...shuffle(distractors).slice(0,9)];
       choices=shuffle(choices);
