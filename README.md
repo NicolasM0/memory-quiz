@@ -1,4 +1,4 @@
-# Memory Game — apprendre l'anglais en jouant
+# Memory & Quiz — apprendre l'anglais en jouant
 
 Un jeu de memory dans **un seul fichier `memory.html`** (HTML + CSS + JS, aucune dépendance).
 Chaque carte révélée prononce son mot anglais à voix haute (Web Speech API), pour
