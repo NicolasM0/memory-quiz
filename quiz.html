@@ -117,17 +117,17 @@
         <div class="row" style="margin-top:12px; gap:12px;">
         <label>Niveau
           <select id="levelSelect" style="margin-left:8px; padding:6px 10px; border-radius:8px;">
-            <option value="1">1 (Facile)</option>
+            <option value="1" selected>1 (Facile)</option>
             <option value="2">2 (Moyen)</option>
-            <option value="3" selected>3 (Difficile/Tout)</option>
+            <option value="3">3 (Difficile/Tout)</option>
           </select>
         </label>
         <label>Nombre de questions
           <select id="qCount" style="margin-left:8px; padding:6px 10px; border-radius:8px;">
             <option value="5">5</option>
-            <option value="10">10</option>
+            <option value="10" selected>10</option>
             <option value="15">15</option>
-            <option value="20" selected>20</option>
+            <option value="20">20</option>
             <option value="30">30</option>
             <option value="40">40</option>
             <option value="50">50</option>
@@ -135,7 +135,7 @@
           </select>
         </label>
         <label style="display:flex;align-items:center;gap:8px;">
-          <input type="checkbox" id="showText" checked>
+          <input type="checkbox" id="showText">
           Afficher le texte des cartes
         </label>
       </div>
@@ -159,6 +159,7 @@
       <span id="questionText" style="font-size:clamp(1rem,3vw,1.6rem);">Écoute le mot…</span>
     </div>
     <div class="row">
+      <select id="voiceSelectQuiz" style="padding:6px 8px; border-radius:8px; max-width:150px;"></select>
       <button class="reset secondary" id="btnRepeat" aria-label="Répéter le mot anglais">🔊 Répéter</button>
       <button class="reset ghost" id="btnBackSelect">Retour au menu</button>
       <a class="reset ghost" href="index.html" style="text-decoration:none;">Accueil</a>
@@ -201,6 +202,7 @@
     const questionText = document.getElementById('questionText');
     const btnRepeat = document.getElementById('btnRepeat');
     const btnBackSelect = document.getElementById('btnBackSelect');
+    const voiceSelectQuiz = document.getElementById('voiceSelectQuiz');
     const levelSelect = document.getElementById('levelSelect');
     const showTextChk = document.getElementById('showText');
     const choicesDiv = document.getElementById('choices');
@@ -271,11 +273,33 @@
       const limit = val==='all' ? list.length : parseInt(val,10);
       pool = list.slice(0, Math.max(1, limit));
     }
+
+    let voices=[];
+    function loadVoicesQuiz(){
+      if(!('speechSynthesis' in window)) return;
+      voices = window.speechSynthesis.getVoices().filter(v=>v.lang&&v.lang.toLowerCase().startsWith('en'));
+      if(voices.length===0){
+        // retry once
+        setTimeout(loadVoicesQuiz, 250);
+        return;
+      }
+      if(!voiceSelectQuiz) return;
+      const prev = localStorage.getItem('memoryGameVoice')||'';
+      voiceSelectQuiz.innerHTML = voices.slice(0,5).map((v,i)=>{ const label=(v.name.replace('Microsoft','').replace('Google','')).replace(/\(.*?\)/g,'').trim() || v.name; return `<option value="${i}">${label}</option>`; }).join('');
+      const idx = voices.findIndex((v,i)=> i<5 && prev && (v.name===prev || i===parseInt(prev)));
+      if(idx>=0 && idx<5) voiceSelectQuiz.value=String(idx);
+    }
+    if('speechSynthesis' in window){
+      window.speechSynthesis.onvoiceschanged = loadVoicesQuiz;
+      loadVoicesQuiz();
+    }
     function speak(text){
       if(!('speechSynthesis' in window)) return;
       try{ window.speechSynthesis.cancel(); }catch(e){}
       const u=new SpeechSynthesisUtterance(text);
       u.lang='en-US'; u.rate=0.85; u.pitch=1.05; u.volume=1;
+      const idx=parseInt(voiceSelectQuiz && voiceSelectQuiz.value || '0',10);
+      if(voices[idx]){ u.voice=voices[idx]; try{ localStorage.setItem('memoryGameVoice', String(idx)); }catch(e){} }
       window.speechSynthesis.speak(u);
     }
     function showQuestion(){

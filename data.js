@@ -4892,11 +4892,6 @@ window.THEMES = {
         "level": 1
       },
       {
-        "name": "Raft",
-        "emoji": "🛶",
-        "level": 1
-      },
-      {
         "name": "Ferry",
         "emoji": "⛴️",
         "level": 1
@@ -7609,7 +7604,6 @@ window.TRANSLATIONS = {
   "Sailboat": "voilier",
   "Yacht": "yacht",
   "Canoe": "canoë",
-  "Raft": "radeau",
   "Ferry": "ferry",
   "Tugboat": "remorqueur",
   "Airplane": "avion",
