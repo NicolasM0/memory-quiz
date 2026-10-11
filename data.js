@@ -3112,16 +3112,6 @@ window.THEMES = {
         "name": "Coat",
         "emoji": "🧥",
         "level": 1
-      },
-      {
-        "name": "Sweater",
-        "emoji": "🧶",
-        "level": 1
-      },
-      {
-        "name": "Hoodie",
-        "emoji": "🧥",
-        "level": 1
       }
     ]
   },
@@ -6685,8 +6675,6 @@ window.TRANSLATIONS = {
   "Appendix": "appendice",
   "Diaphragm": "diaphragme",
   "Coat": "manteau",
-  "Sweater": "pull",
-  "Hoodie": "sweat à capuche",
   "Sun": "soleil",
   "Moon": "lune",
   "Star Nature": "étoile",
