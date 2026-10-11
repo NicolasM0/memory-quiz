@@ -3114,11 +3114,6 @@ window.THEMES = {
         "level": 1
       },
       {
-        "name": "Jacket",
-        "emoji": "🧥",
-        "level": 1
-      },
-      {
         "name": "Sweater",
         "emoji": "🧶",
         "level": 1
@@ -3127,11 +3122,6 @@ window.THEMES = {
         "name": "Hoodie",
         "emoji": "🧥",
         "level": 1
-      },
-      {
-        "name": "Cardigan",
-        "emoji": "🧶",
-        "level": 2
       }
     ]
   },
@@ -6695,10 +6685,8 @@ window.TRANSLATIONS = {
   "Appendix": "appendice",
   "Diaphragm": "diaphragme",
   "Coat": "manteau",
-  "Jacket": "veste",
   "Sweater": "pull",
   "Hoodie": "sweat à capuche",
-  "Cardigan": "gilet en laine",
   "Sun": "soleil",
   "Moon": "lune",
   "Star Nature": "étoile",
