@@ -714,11 +714,6 @@ window.THEMES = {
         "level": 2
       },
       {
-        "name": "Ramen",
-        "emoji": "🍲",
-        "level": 2
-      },
-      {
         "name": "Pancakes",
         "emoji": "🥞",
         "level": 2
@@ -1062,11 +1057,6 @@ window.THEMES = {
         "name": "Canned Food",
         "emoji": "🥫",
         "level": 3
-      },
-      {
-        "name": "Bento",
-        "emoji": "🍱",
-        "level": 3
       }
     ]
   },
@@ -1164,11 +1154,6 @@ window.THEMES = {
         "level": 1
       },
       {
-        "name": "Gardening",
-        "emoji": "🌱",
-        "level": 1
-      },
-      {
         "name": "Shouting",
         "emoji": "📣",
         "level": 1
@@ -1221,11 +1206,6 @@ window.THEMES = {
       {
         "name": "Traveling",
         "emoji": "🧳",
-        "level": 2
-      },
-      {
-        "name": "Studying",
-        "emoji": "📚",
         "level": 2
       },
       {
@@ -1589,11 +1569,6 @@ window.THEMES = {
         "level": 3
       },
       {
-        "name": "Facepalm",
-        "emoji": "🤦",
-        "level": 3
-      },
-      {
         "name": "Shrugging",
         "emoji": "🤷",
         "level": 3
@@ -1904,11 +1879,6 @@ window.THEMES = {
         "level": 2
       },
       {
-        "name": "Pot",
-        "emoji": "🍲",
-        "level": 2
-      },
-      {
         "name": "Plate",
         "emoji": "🍽️",
         "level": 2
@@ -2089,11 +2059,6 @@ window.THEMES = {
         "level": 3
       },
       {
-        "name": "Boat",
-        "emoji": "⛵",
-        "level": 3
-      },
-      {
         "name": "Sandal",
         "emoji": "👡",
         "level": 3
@@ -2101,16 +2066,6 @@ window.THEMES = {
       {
         "name": "High Heel",
         "emoji": "👠",
-        "level": 3
-      },
-      {
-        "name": "Boot",
-        "emoji": "🥾",
-        "level": 3
-      },
-      {
-        "name": "Car",
-        "emoji": "🚗",
         "level": 3
       },
       {
@@ -2216,11 +2171,6 @@ window.THEMES = {
       {
         "name": "Teddy Bear",
         "emoji": "🧸",
-        "level": 3
-      },
-      {
-        "name": "Rainbow",
-        "emoji": "🌈",
         "level": 3
       },
       {
@@ -2664,23 +2614,8 @@ window.THEMES = {
         "level": 1
       },
       {
-        "name": "Eyelash",
-        "emoji": "👁️",
-        "level": 1
-      },
-      {
-        "name": "Jaw",
-        "emoji": "😬",
-        "level": 1
-      },
-      {
         "name": "Neck",
         "emoji": "🧣",
-        "level": 1
-      },
-      {
-        "name": "Throat",
-        "emoji": "😷",
         "level": 1
       },
       {
@@ -2696,11 +2631,6 @@ window.THEMES = {
       {
         "name": "Elbow",
         "emoji": "🦾",
-        "level": 1
-      },
-      {
-        "name": "Wrist",
-        "emoji": "⌚",
         "level": 1
       },
       {
@@ -2774,11 +2704,6 @@ window.THEMES = {
         "level": 2
       },
       {
-        "name": "Ankle",
-        "emoji": "👟",
-        "level": 2
-      },
-      {
         "name": "Foot",
         "emoji": "🦶",
         "level": 2
@@ -2786,11 +2711,6 @@ window.THEMES = {
       {
         "name": "Toe",
         "emoji": "🦶",
-        "level": 2
-      },
-      {
-        "name": "Heel",
-        "emoji": "👠",
         "level": 2
       },
       {
@@ -2839,11 +2759,6 @@ window.THEMES = {
         "level": 2
       },
       {
-        "name": "Intestine",
-        "emoji": "🌀",
-        "level": 2
-      },
-      {
         "name": "Blood",
         "emoji": "🩸",
         "level": 2
@@ -2856,11 +2771,6 @@ window.THEMES = {
       {
         "name": "Artery",
         "emoji": "🫀",
-        "level": 3
-      },
-      {
-        "name": "Nerve",
-        "emoji": "⚡",
         "level": 3
       },
       {
@@ -2889,36 +2799,6 @@ window.THEMES = {
         "level": 3
       },
       {
-        "name": "Temple",
-        "emoji": "🤦",
-        "level": 3
-      },
-      {
-        "name": "Nostril",
-        "emoji": "👃",
-        "level": 3
-      },
-      {
-        "name": "Pupil",
-        "emoji": "👁️",
-        "level": 3
-      },
-      {
-        "name": "Retina",
-        "emoji": "👁️",
-        "level": 3
-      },
-      {
-        "name": "Cornea",
-        "emoji": "👁️",
-        "level": 3
-      },
-      {
-        "name": "Iris Eye",
-        "emoji": "👁️",
-        "level": 3
-      },
-      {
         "name": "Pancreas",
         "emoji": "🫀",
         "level": 3
@@ -2934,11 +2814,6 @@ window.THEMES = {
         "level": 3
       },
       {
-        "name": "Cell",
-        "emoji": "🔬",
-        "level": 3
-      },
-      {
         "name": "Tissue",
         "emoji": "🧫",
         "level": 3
@@ -2946,11 +2821,6 @@ window.THEMES = {
       {
         "name": "Organ",
         "emoji": "🫀",
-        "level": 3
-      },
-      {
-        "name": "Skeleton",
-        "emoji": "💀",
         "level": 3
       },
       {
@@ -2994,11 +2864,6 @@ window.THEMES = {
         "level": 3
       },
       {
-        "name": "Saliva",
-        "emoji": "💧",
-        "level": 3
-      },
-      {
         "name": "Molar",
         "emoji": "🦷",
         "level": 3
@@ -3014,18 +2879,8 @@ window.THEMES = {
         "level": 3
       },
       {
-        "name": "Palate",
-        "emoji": "👄",
-        "level": 3
-      },
-      {
         "name": "Belly Button",
         "emoji": "🫃",
-        "level": 3
-      },
-      {
-        "name": "Armpit",
-        "emoji": "✋",
         "level": 3
       },
       {
@@ -3059,11 +2914,6 @@ window.THEMES = {
         "level": 3
       },
       {
-        "name": "Eyelid",
-        "emoji": "👁️",
-        "level": 3
-      },
-      {
         "name": "Nape",
         "emoji": "🧑",
         "level": 3
@@ -3081,16 +2931,6 @@ window.THEMES = {
       {
         "name": "Bruise",
         "emoji": "🩹",
-        "level": 3
-      },
-      {
-        "name": "Freckle",
-        "emoji": "😊",
-        "level": 3
-      },
-      {
-        "name": "Dimple",
-        "emoji": "😊",
         "level": 3
       },
       {
@@ -3169,16 +3009,6 @@ window.THEMES = {
         "level": 1
       },
       {
-        "name": "Rainbow Nature",
-        "emoji": "🌈",
-        "level": 1
-      },
-      {
-        "name": "Sky",
-        "emoji": "🌌",
-        "level": 1
-      },
-      {
         "name": "Tree",
         "emoji": "🌳",
         "level": 1
@@ -3204,16 +3034,6 @@ window.THEMES = {
         "level": 1
       },
       {
-        "name": "Seed",
-        "emoji": "🌱",
-        "level": 1
-      },
-      {
-        "name": "Root",
-        "emoji": "🌱",
-        "level": 1
-      },
-      {
         "name": "Branch",
         "emoji": "🌿",
         "level": 1
@@ -3234,11 +3054,6 @@ window.THEMES = {
         "level": 1
       },
       {
-        "name": "Jungle",
-        "emoji": "🌴",
-        "level": 1
-      },
-      {
         "name": "Mountain",
         "emoji": "⛰️",
         "level": 1
@@ -3255,11 +3070,6 @@ window.THEMES = {
       },
       {
         "name": "River",
-        "emoji": "🏞️",
-        "level": 1
-      },
-      {
-        "name": "Lake",
         "emoji": "🏞️",
         "level": 1
       },
@@ -3289,18 +3099,8 @@ window.THEMES = {
         "level": 2
       },
       {
-        "name": "Cave",
-        "emoji": "🕳️",
-        "level": 2
-      },
-      {
         "name": "Volcano",
         "emoji": "🌋",
-        "level": 2
-      },
-      {
-        "name": "Waterfall",
-        "emoji": "🏞️",
         "level": 2
       },
       {
@@ -3319,11 +3119,6 @@ window.THEMES = {
         "level": 2
       },
       {
-        "name": "Soil",
-        "emoji": "🟫",
-        "level": 2
-      },
-      {
         "name": "Mud",
         "emoji": "🟤",
         "level": 2
@@ -3334,22 +3129,7 @@ window.THEMES = {
         "level": 2
       },
       {
-        "name": "Snowflake",
-        "emoji": "❄️",
-        "level": 2
-      },
-      {
-        "name": "Dew",
-        "emoji": "💧",
-        "level": 2
-      },
-      {
         "name": "Fog",
-        "emoji": "🌫️",
-        "level": 2
-      },
-      {
-        "name": "Mist",
         "emoji": "🌫️",
         "level": 2
       },
@@ -3364,43 +3144,13 @@ window.THEMES = {
         "level": 2
       },
       {
-        "name": "Puddle",
-        "emoji": "💧",
-        "level": 2
-      },
-      {
         "name": "Wave",
         "emoji": "🌊",
         "level": 2
       },
       {
-        "name": "Tide",
-        "emoji": "🌊",
-        "level": 2
-      },
-      {
-        "name": "Current",
-        "emoji": "🌀",
-        "level": 2
-      },
-      {
         "name": "Cliff",
         "emoji": "🏔️",
-        "level": 2
-      },
-      {
-        "name": "Coast",
-        "emoji": "🏖️",
-        "level": 2
-      },
-      {
-        "name": "Bay",
-        "emoji": "🏖️",
-        "level": 2
-      },
-      {
-        "name": "Peninsula",
-        "emoji": "🏝️",
         "level": 2
       },
       {
@@ -3411,41 +3161,6 @@ window.THEMES = {
       {
         "name": "Iceberg",
         "emoji": "🧊",
-        "level": 3
-      },
-      {
-        "name": "Swamp",
-        "emoji": "🐸",
-        "level": 3
-      },
-      {
-        "name": "Meadow",
-        "emoji": "🌼",
-        "level": 3
-      },
-      {
-        "name": "Field",
-        "emoji": "🌾",
-        "level": 3
-      },
-      {
-        "name": "Farm",
-        "emoji": "🚜",
-        "level": 3
-      },
-      {
-        "name": "Garden",
-        "emoji": "🌷",
-        "level": 3
-      },
-      {
-        "name": "Pond",
-        "emoji": "🦆",
-        "level": 3
-      },
-      {
-        "name": "Stream",
-        "emoji": "🏞️",
         "level": 3
       },
       {
@@ -3461,11 +3176,6 @@ window.THEMES = {
       {
         "name": "Tulip",
         "emoji": "🌷",
-        "level": 3
-      },
-      {
-        "name": "Daisy",
-        "emoji": "🌼",
         "level": 3
       },
       {
@@ -3499,41 +3209,6 @@ window.THEMES = {
         "level": 3
       },
       {
-        "name": "Fern",
-        "emoji": "🌿",
-        "level": 3
-      },
-      {
-        "name": "Moss",
-        "emoji": "🌿",
-        "level": 3
-      },
-      {
-        "name": "Ivy",
-        "emoji": "🌿",
-        "level": 3
-      },
-      {
-        "name": "Vine",
-        "emoji": "🌿",
-        "level": 3
-      },
-      {
-        "name": "Bush",
-        "emoji": "🌳",
-        "level": 3
-      },
-      {
-        "name": "Shrub",
-        "emoji": "🌳",
-        "level": 3
-      },
-      {
-        "name": "Oak",
-        "emoji": "🌳",
-        "level": 3
-      },
-      {
         "name": "Pine",
         "emoji": "🌲",
         "level": 3
@@ -3541,16 +3216,6 @@ window.THEMES = {
       {
         "name": "Maple",
         "emoji": "🍁",
-        "level": 3
-      },
-      {
-        "name": "Birch",
-        "emoji": "🌳",
-        "level": 3
-      },
-      {
-        "name": "Willow",
-        "emoji": "🌳",
         "level": 3
       },
       {
@@ -3574,43 +3239,8 @@ window.THEMES = {
         "level": 3
       },
       {
-        "name": "Acorn",
-        "emoji": "🌰",
-        "level": 3
-      },
-      {
-        "name": "Pinecone",
-        "emoji": "🌰",
-        "level": 3
-      },
-      {
         "name": "Twig",
         "emoji": "🪵",
-        "level": 3
-      },
-      {
-        "name": "Canyon",
-        "emoji": "🏞️",
-        "level": 3
-      },
-      {
-        "name": "Plateau",
-        "emoji": "🏔️",
-        "level": 3
-      },
-      {
-        "name": "Gorge",
-        "emoji": "🕳️",
-        "level": 3
-      },
-      {
-        "name": "Delta",
-        "emoji": "🏞️",
-        "level": 3
-      },
-      {
-        "name": "Lagoon",
-        "emoji": "🏝️",
         "level": 3
       },
       {
@@ -3624,22 +3254,7 @@ window.THEMES = {
         "level": 3
       },
       {
-        "name": "Aurora",
-        "emoji": "🌌",
-        "level": 3
-      },
-      {
-        "name": "Eclipse",
-        "emoji": "🌑",
-        "level": 3
-      },
-      {
         "name": "Meteor",
-        "emoji": "☄️",
-        "level": 3
-      },
-      {
-        "name": "Comet",
         "emoji": "☄️",
         "level": 3
       },
@@ -3669,11 +3284,6 @@ window.THEMES = {
         "level": 3
       },
       {
-        "name": "Shadow",
-        "emoji": "🌑",
-        "level": 3
-      },
-      {
         "name": "Breeze",
         "emoji": "🍃",
         "level": 3
@@ -3681,21 +3291,6 @@ window.THEMES = {
       {
         "name": "Tornado",
         "emoji": "🌪️",
-        "level": 3
-      },
-      {
-        "name": "Hurricane",
-        "emoji": "🌀",
-        "level": 3
-      },
-      {
-        "name": "Blizzard",
-        "emoji": "🌨️",
-        "level": 3
-      },
-      {
-        "name": "Flood",
-        "emoji": "🌊",
         "level": 3
       }
     ]
@@ -3719,16 +3314,6 @@ window.THEMES = {
         "level": 1
       },
       {
-        "name": "Class",
-        "emoji": "🏫",
-        "level": 1
-      },
-      {
-        "name": "Classroom",
-        "emoji": "🏫",
-        "level": 1
-      },
-      {
         "name": "Desk",
         "emoji": "🪑",
         "level": 1
@@ -3744,11 +3329,6 @@ window.THEMES = {
         "level": 1
       },
       {
-        "name": "Blackboard",
-        "emoji": "📋",
-        "level": 1
-      },
-      {
         "name": "Whiteboard",
         "emoji": "📋",
         "level": 1
@@ -3756,11 +3336,6 @@ window.THEMES = {
       {
         "name": "Chalk",
         "emoji": "🖍️",
-        "level": 1
-      },
-      {
-        "name": "Marker",
-        "emoji": "🖊️",
         "level": 1
       },
       {
@@ -3774,38 +3349,13 @@ window.THEMES = {
         "level": 1
       },
       {
-        "name": "Textbook",
-        "emoji": "📚",
-        "level": 1
-      },
-      {
-        "name": "Page",
-        "emoji": "📄",
-        "level": 1
-      },
-      {
         "name": "Paper",
         "emoji": "📄",
         "level": 1
       },
       {
-        "name": "Binder",
-        "emoji": "📁",
-        "level": 1
-      },
-      {
-        "name": "Pencil Case",
-        "emoji": "🖍️",
-        "level": 1
-      },
-      {
         "name": "Compass School",
         "emoji": "🧭",
-        "level": 2
-      },
-      {
-        "name": "Protractor",
-        "emoji": "📐",
         "level": 2
       },
       {
@@ -3829,16 +3379,6 @@ window.THEMES = {
         "level": 2
       },
       {
-        "name": "Highlighter",
-        "emoji": "🖍️",
-        "level": 2
-      },
-      {
-        "name": "Crayon School",
-        "emoji": "🖍️",
-        "level": 2
-      },
-      {
         "name": "Paint",
         "emoji": "🎨",
         "level": 2
@@ -3854,11 +3394,6 @@ window.THEMES = {
         "level": 2
       },
       {
-        "name": "Easel",
-        "emoji": "🖼️",
-        "level": 2
-      },
-      {
         "name": "Canvas",
         "emoji": "🖼️",
         "level": 2
@@ -3869,38 +3404,13 @@ window.THEMES = {
         "level": 2
       },
       {
-        "name": "Canteen",
-        "emoji": "🍽️",
-        "level": 2
-      },
-      {
         "name": "Homework",
         "emoji": "📝",
         "level": 2
       },
       {
-        "name": "Test",
-        "emoji": "📄",
-        "level": 2
-      },
-      {
-        "name": "Exam",
-        "emoji": "📝",
-        "level": 2
-      },
-      {
-        "name": "Quiz",
-        "emoji": "❓",
-        "level": 2
-      },
-      {
         "name": "Grade",
         "emoji": "💯",
-        "level": 2
-      },
-      {
-        "name": "Report Card",
-        "emoji": "📄",
         "level": 2
       },
       {
@@ -3912,16 +3422,6 @@ window.THEMES = {
         "name": "Certificate",
         "emoji": "📜",
         "level": 2
-      },
-      {
-        "name": "Lesson",
-        "emoji": "📖",
-        "level": 2
-      },
-      {
-        "name": "Subject",
-        "emoji": "📚",
-        "level": 3
       },
       {
         "name": "Math",
@@ -3954,27 +3454,12 @@ window.THEMES = {
         "level": 3
       },
       {
-        "name": "Art",
-        "emoji": "🎨",
-        "level": 3
-      },
-      {
         "name": "Music",
         "emoji": "🎵",
         "level": 3
       },
       {
-        "name": "Sport",
-        "emoji": "⚽",
-        "level": 3
-      },
-      {
         "name": "Library",
-        "emoji": "📚",
-        "level": 3
-      },
-      {
-        "name": "Librarian",
         "emoji": "📚",
         "level": 3
       },
@@ -3999,11 +3484,6 @@ window.THEMES = {
         "level": 3
       },
       {
-        "name": "Friend",
-        "emoji": "🤝",
-        "level": 3
-      },
-      {
         "name": "Bell",
         "emoji": "🔔",
         "level": 3
@@ -4015,11 +3495,6 @@ window.THEMES = {
       },
       {
         "name": "Playtime",
-        "emoji": "🛝",
-        "level": 3
-      },
-      {
-        "name": "Recess",
         "emoji": "🛝",
         "level": 3
       },
@@ -4044,11 +3519,6 @@ window.THEMES = {
         "level": 3
       },
       {
-        "name": "Gym",
-        "emoji": "🏋️",
-        "level": 3
-      },
-      {
         "name": "Playground",
         "emoji": "🛝",
         "level": 3
@@ -4056,26 +3526,6 @@ window.THEMES = {
       {
         "name": "Field School",
         "emoji": "🏟️",
-        "level": 3
-      },
-      {
-        "name": "Auditorium",
-        "emoji": "🎭",
-        "level": 3
-      },
-      {
-        "name": "Stage",
-        "emoji": "🎭",
-        "level": 3
-      },
-      {
-        "name": "Podium",
-        "emoji": "🎤",
-        "level": 3
-      },
-      {
-        "name": "Microphone School",
-        "emoji": "🎤",
         "level": 3
       },
       {
@@ -4094,21 +3544,6 @@ window.THEMES = {
         "level": 3
       },
       {
-        "name": "Atlas",
-        "emoji": "🗺️",
-        "level": 3
-      },
-      {
-        "name": "Dictionary",
-        "emoji": "📖",
-        "level": 3
-      },
-      {
-        "name": "Encyclopedia",
-        "emoji": "📚",
-        "level": 3
-      },
-      {
         "name": "Alphabet",
         "emoji": "🔤",
         "level": 3
@@ -4124,11 +3559,6 @@ window.THEMES = {
         "level": 3
       },
       {
-        "name": "Sentence",
-        "emoji": "📝",
-        "level": 3
-      },
-      {
         "name": "Question",
         "emoji": "❓",
         "level": 3
@@ -4136,11 +3566,6 @@ window.THEMES = {
       {
         "name": "Answer",
         "emoji": "✅",
-        "level": 3
-      },
-      {
-        "name": "Ruler Stick",
-        "emoji": "📏",
         "level": 3
       }
     ]
@@ -4232,11 +3657,6 @@ window.THEMES = {
         "level": 1
       },
       {
-        "name": "Sailboat",
-        "emoji": "⛵",
-        "level": 1
-      },
-      {
         "name": "Yacht",
         "emoji": "🛥️",
         "level": 1
@@ -4252,11 +3672,6 @@ window.THEMES = {
         "level": 1
       },
       {
-        "name": "Tugboat",
-        "emoji": "🚤",
-        "level": 1
-      },
-      {
         "name": "Airplane",
         "emoji": "✈️",
         "level": 1
@@ -4267,34 +3682,14 @@ window.THEMES = {
         "level": 1
       },
       {
-        "name": "Jet",
-        "emoji": "✈️",
-        "level": 2
-      },
-      {
         "name": "Glider",
         "emoji": "🪂",
-        "level": 2
-      },
-      {
-        "name": "Hot Air Balloon",
-        "emoji": "🎈",
-        "level": 2
-      },
-      {
-        "name": "Blimp",
-        "emoji": "🎈",
         "level": 2
       },
       {
         "name": "Rocket",
         "emoji": "🚀",
         "label": "Rocket",
-        "level": 2
-      },
-      {
-        "name": "Space Shuttle",
-        "emoji": "🚀",
         "level": 2
       },
       {
@@ -4308,17 +3703,7 @@ window.THEMES = {
         "level": 2
       },
       {
-        "name": "Drone",
-        "emoji": "🛸",
-        "level": 2
-      },
-      {
         "name": "Sled",
-        "emoji": "🛷",
-        "level": 2
-      },
-      {
-        "name": "Snowmobile",
         "emoji": "🛷",
         "level": 2
       },
@@ -4328,23 +3713,8 @@ window.THEMES = {
         "level": 2
       },
       {
-        "name": "Bulldozer",
-        "emoji": "🚜",
-        "level": 2
-      },
-      {
-        "name": "Excavator",
-        "emoji": "🚜",
-        "level": 2
-      },
-      {
         "name": "Crane",
         "emoji": "🏗️",
-        "level": 2
-      },
-      {
-        "name": "Dump Truck",
-        "emoji": "🚛",
         "level": 2
       },
       {
@@ -4363,33 +3733,8 @@ window.THEMES = {
         "level": 2
       },
       {
-        "name": "Tow Truck",
-        "emoji": "🚚",
-        "level": 2
-      },
-      {
         "name": "Garbage Truck",
         "emoji": "🚛",
-        "level": 2
-      },
-      {
-        "name": "Mail Truck",
-        "emoji": "🚚",
-        "level": 2
-      },
-      {
-        "name": "Ice Cream Truck",
-        "emoji": "🍦",
-        "level": 2
-      },
-      {
-        "name": "Food Truck",
-        "emoji": "🚚",
-        "level": 2
-      },
-      {
-        "name": "Delivery Van",
-        "emoji": "🚐",
         "level": 2
       },
       {
@@ -4403,67 +3748,7 @@ window.THEMES = {
         "level": 3
       },
       {
-        "name": "Race Car",
-        "emoji": "🏎️",
-        "level": 3
-      },
-      {
-        "name": "Go-Kart",
-        "emoji": "🏎️",
-        "level": 3
-      },
-      {
-        "name": "Limousine",
-        "emoji": "🚙",
-        "level": 3
-      },
-      {
-        "name": "Convertible",
-        "emoji": "🚗",
-        "level": 3
-      },
-      {
-        "name": "Minivan",
-        "emoji": "🚐",
-        "level": 3
-      },
-      {
-        "name": "Wagon",
-        "emoji": "🚙",
-        "level": 3
-      },
-      {
-        "name": "Sedan",
-        "emoji": "🚗",
-        "level": 3
-      },
-      {
-        "name": "Hatchback",
-        "emoji": "🚗",
-        "level": 3
-      },
-      {
-        "name": "Rickshaw",
-        "emoji": "🛺",
-        "level": 3
-      },
-      {
-        "name": "Carriage",
-        "emoji": "🛺",
-        "level": 3
-      },
-      {
-        "name": "Stagecoach",
-        "emoji": "🛺",
-        "level": 3
-      },
-      {
         "name": "Cart",
-        "emoji": "🛒",
-        "level": 3
-      },
-      {
-        "name": "Wheelbarrow",
         "emoji": "🛒",
         "level": 3
       },
@@ -4478,27 +3763,12 @@ window.THEMES = {
         "level": 3
       },
       {
-        "name": "Escalator",
-        "emoji": "🛗",
-        "level": 3
-      },
-      {
         "name": "Elevator",
         "emoji": "🛗",
         "level": 3
       },
       {
         "name": "Cable Car",
-        "emoji": "🚡",
-        "level": 3
-      },
-      {
-        "name": "Gondola",
-        "emoji": "🚡",
-        "level": 3
-      },
-      {
-        "name": "Chairlift",
         "emoji": "🚡",
         "level": 3
       },
@@ -4523,11 +3793,6 @@ window.THEMES = {
         "level": 3
       },
       {
-        "name": "Freight Train",
-        "emoji": "🚂",
-        "level": 3
-      },
-      {
         "name": "Locomotive",
         "emoji": "🚂",
         "level": 3
@@ -4548,18 +3813,8 @@ window.THEMES = {
         "level": 3
       },
       {
-        "name": "Tanker",
-        "emoji": "🚢",
-        "level": 3
-      },
-      {
         "name": "Oil Tanker",
         "emoji": "🛢️",
-        "level": 3
-      },
-      {
-        "name": "Cargo Ship",
-        "emoji": "🚢",
         "level": 3
       },
       {
@@ -4573,16 +3828,6 @@ window.THEMES = {
         "level": 3
       },
       {
-        "name": "Fishing Boat",
-        "emoji": "🎣",
-        "level": 3
-      },
-      {
-        "name": "Lifeboat",
-        "emoji": "🛟",
-        "level": 3
-      },
-      {
         "name": "Speedboat",
         "emoji": "🚤",
         "level": 3
@@ -4590,46 +3835,6 @@ window.THEMES = {
       {
         "name": "Motorboat",
         "emoji": "🚤",
-        "level": 3
-      },
-      {
-        "name": "Rowboat",
-        "emoji": "🛶",
-        "level": 3
-      },
-      {
-        "name": "Paddleboat",
-        "emoji": "🛶",
-        "level": 3
-      },
-      {
-        "name": "Houseboat",
-        "emoji": "🛥️",
-        "level": 3
-      },
-      {
-        "name": "Barge",
-        "emoji": "🚢",
-        "level": 3
-      },
-      {
-        "name": "Hovercraft",
-        "emoji": "🚤",
-        "level": 3
-      },
-      {
-        "name": "Trolleybus",
-        "emoji": "🚋",
-        "level": 3
-      },
-      {
-        "name": "Snow Plow",
-        "emoji": "🚜",
-        "level": 3
-      },
-      {
-        "name": "Racing Bike",
-        "emoji": "🚲",
         "level": 3
       },
       {
@@ -4793,11 +3998,6 @@ window.THEMES = {
         "level": 3
       },
       {
-        "name": "Paramedic",
-        "emoji": "🚑",
-        "level": 3
-      },
-      {
         "name": "Detective",
         "emoji": "🕵️",
         "level": 3
@@ -4820,11 +4020,6 @@ window.THEMES = {
       {
         "name": "Acrobat",
         "emoji": "🤸",
-        "level": 3
-      },
-      {
-        "name": "Magician",
-        "emoji": "🎩",
         "level": 3
       },
       {
@@ -4868,11 +4063,6 @@ window.THEMES = {
         "level": 3
       },
       {
-        "name": "Sailor",
-        "emoji": "⚓",
-        "level": 3
-      },
-      {
         "name": "Soldier",
         "emoji": "💂",
         "level": 3
@@ -4890,11 +4080,6 @@ window.THEMES = {
       {
         "name": "Sad",
         "emoji": "😢",
-        "level": 1
-      },
-      {
-        "name": "Angry",
-        "emoji": "😠",
         "level": 1
       },
       {
@@ -4933,11 +4118,6 @@ window.THEMES = {
         "level": 1
       },
       {
-        "name": "Thirsty",
-        "emoji": "🥵",
-        "level": 1
-      },
-      {
         "name": "Sick",
         "emoji": "🤒",
         "level": 1
@@ -4968,23 +4148,8 @@ window.THEMES = {
         "level": 1
       },
       {
-        "name": "Nervous",
-        "emoji": "😬",
-        "level": 1
-      },
-      {
-        "name": "Worried",
-        "emoji": "😟",
-        "level": 1
-      },
-      {
         "name": "Calm",
         "emoji": "😐",
-        "level": 1
-      },
-      {
-        "name": "Relaxed",
-        "emoji": "😌",
         "level": 1
       },
       {
@@ -4995,11 +4160,6 @@ window.THEMES = {
       {
         "name": "Curious",
         "emoji": "🤔",
-        "level": 1
-      },
-      {
-        "name": "Jealous",
-        "emoji": "😒",
         "level": 1
       },
       {
@@ -5030,11 +4190,6 @@ window.THEMES = {
       {
         "name": "Disgusted",
         "emoji": "🤢",
-        "level": 2
-      },
-      {
-        "name": "Grumpy",
-        "emoji": "😠",
         "level": 2
       },
       {
@@ -5073,38 +4228,8 @@ window.THEMES = {
         "level": 2
       },
       {
-        "name": "Grateful",
-        "emoji": "🤗",
-        "level": 2
-      },
-      {
-        "name": "Hopeful",
-        "emoji": "🙂",
-        "level": 2
-      },
-      {
-        "name": "Optimistic",
-        "emoji": "😊",
-        "level": 2
-      },
-      {
-        "name": "Pessimistic",
-        "emoji": "😞",
-        "level": 2
-      },
-      {
         "name": "Anxious",
         "emoji": "😰",
-        "level": 2
-      },
-      {
-        "name": "Fearful",
-        "emoji": "😨",
-        "level": 2
-      },
-      {
-        "name": "Terrified",
-        "emoji": "😱",
         "level": 2
       },
       {
@@ -5115,26 +4240,6 @@ window.THEMES = {
       {
         "name": "Amazed",
         "emoji": "😮",
-        "level": 2
-      },
-      {
-        "name": "Impressed",
-        "emoji": "🤩",
-        "level": 2
-      },
-      {
-        "name": "Fascinated",
-        "emoji": "🤩",
-        "level": 2
-      },
-      {
-        "name": "Interested",
-        "emoji": "🤔",
-        "level": 2
-      },
-      {
-        "name": "Determined",
-        "emoji": "😤",
         "level": 2
       },
       {
@@ -5163,11 +4268,6 @@ window.THEMES = {
         "level": 2
       },
       {
-        "name": "Rejected",
-        "emoji": "😞",
-        "level": 3
-      },
-      {
         "name": "Hurt",
         "emoji": "😣",
         "level": 3
@@ -5178,18 +4278,8 @@ window.THEMES = {
         "level": 3
       },
       {
-        "name": "Miserable",
-        "emoji": "😭",
-        "level": 3
-      },
-      {
         "name": "Depressed",
         "emoji": "😔",
-        "level": 3
-      },
-      {
-        "name": "Gloomy",
-        "emoji": "☁️",
         "level": 3
       },
       {
@@ -5208,26 +4298,6 @@ window.THEMES = {
         "level": 3
       },
       {
-        "name": "Impatient",
-        "emoji": "😤",
-        "level": 3
-      },
-      {
-        "name": "Peaceful",
-        "emoji": "😌",
-        "level": 3
-      },
-      {
-        "name": "Serene",
-        "emoji": "😊",
-        "level": 3
-      },
-      {
-        "name": "Comfortable",
-        "emoji": "😌",
-        "level": 3
-      },
-      {
         "name": "Awkward",
         "emoji": "😅",
         "level": 3
@@ -5243,11 +4313,6 @@ window.THEMES = {
         "level": 3
       },
       {
-        "name": "Satisfied",
-        "emoji": "😊",
-        "level": 3
-      },
-      {
         "name": "Laughing",
         "emoji": "😂",
         "level": 3
@@ -5255,11 +4320,6 @@ window.THEMES = {
       {
         "name": "Crying",
         "emoji": "😭",
-        "level": 3
-      },
-      {
-        "name": "Smiling",
-        "emoji": "😊",
         "level": 3
       },
       {
@@ -5323,16 +4383,6 @@ window.THEMES = {
         "level": 3
       },
       {
-        "name": "Sulking",
-        "emoji": "😒",
-        "level": 3
-      },
-      {
-        "name": "Mood",
-        "emoji": "🎭",
-        "level": 3
-      },
-      {
         "name": "Feeling",
         "emoji": "💭",
         "level": 3
@@ -5378,16 +4428,6 @@ window.THEMES = {
         "level": 3
       },
       {
-        "name": "Pride",
-        "emoji": "🦚",
-        "level": 3
-      },
-      {
-        "name": "Envy",
-        "emoji": "😒",
-        "level": 3
-      },
-      {
         "name": "Shame",
         "emoji": "😳",
         "level": 3
@@ -5410,26 +4450,6 @@ window.THEMES = {
       {
         "name": "Boredom",
         "emoji": "🥱",
-        "level": 3
-      },
-      {
-        "name": "Surprise",
-        "emoji": "😲",
-        "level": 3
-      },
-      {
-        "name": "Trust",
-        "emoji": "🤝",
-        "level": 3
-      },
-      {
-        "name": "Doubt",
-        "emoji": "🤔",
-        "level": 3
-      },
-      {
-        "name": "Empathy",
-        "emoji": "🤗",
         "level": 3
       },
       {
@@ -5528,11 +4548,6 @@ window.THEMES = {
         "level": 2
       },
       {
-        "name": "Snowflake",
-        "emoji": "❄️",
-        "level": 2
-      },
-      {
         "name": "Cube",
         "emoji": "🎲",
         "level": 3
@@ -5553,11 +4568,6 @@ window.THEMES = {
         "level": 3
       },
       {
-        "name": "Torus",
-        "emoji": "🍩",
-        "level": 3
-      },
-      {
         "name": "Tube",
         "emoji": "🧪",
         "level": 3
@@ -5565,11 +4575,6 @@ window.THEMES = {
       {
         "name": "Disc",
         "emoji": "💿",
-        "level": 3
-      },
-      {
-        "name": "Plus Sign",
-        "emoji": "➕",
         "level": 3
       },
       {
@@ -5595,11 +4600,6 @@ window.THEMES = {
       {
         "name": "Curve",
         "emoji": "〰️",
-        "level": 3
-      },
-      {
-        "name": "Center",
-        "emoji": "🎯",
         "level": 3
       },
       {
@@ -5635,11 +4635,6 @@ window.THEMES = {
       {
         "name": "Run",
         "emoji": "🏃",
-        "level": 1
-      },
-      {
-        "name": "Jump",
-        "emoji": "🤸",
         "level": 1
       },
       {
@@ -5690,11 +4685,6 @@ window.THEMES = {
       {
         "name": "Smile",
         "emoji": "😊",
-        "level": 1
-      },
-      {
-        "name": "Draw",
-        "emoji": "✏️",
         "level": 1
       },
       {
@@ -5798,18 +4788,8 @@ window.THEMES = {
         "level": 3
       },
       {
-        "name": "Travel",
-        "emoji": "✈️",
-        "level": 3
-      },
-      {
         "name": "Open",
         "emoji": "📂",
-        "level": 3
-      },
-      {
-        "name": "Close",
-        "emoji": "📁",
         "level": 3
       },
       {
@@ -5825,11 +4805,6 @@ window.THEMES = {
       {
         "name": "Help",
         "emoji": "🆘",
-        "level": 3
-      },
-      {
-        "name": "Share",
-        "emoji": "🤝",
         "level": 3
       },
       {
@@ -5903,11 +4878,6 @@ window.THEMES = {
         "level": 3
       },
       {
-        "name": "Copy",
-        "emoji": "📋",
-        "level": 3
-      },
-      {
         "name": "Swipe",
         "emoji": "👆",
         "level": 3
@@ -5918,18 +4888,8 @@ window.THEMES = {
         "level": 3
       },
       {
-        "name": "Visit",
-        "emoji": "🏠",
-        "level": 3
-      },
-      {
         "name": "Pay",
         "emoji": "💳",
-        "level": 3
-      },
-      {
-        "name": "Sell",
-        "emoji": "💰",
         "level": 3
       },
       {
@@ -6108,7 +5068,6 @@ window.TRANSLATIONS = {
   "Rice": "riz",
   "Noodles": "nouilles",
   "Spaghetti": "spaghetti",
-  "Ramen": "ramen",
   "Pancakes": "crêpes",
   "Waffle": "gaufre",
   "Croissant": "croissant",
@@ -6178,7 +5137,6 @@ window.TRANSLATIONS = {
   "Sweet Potato": "patate douce",
   "Jar": "pot",
   "Canned Food": "conserve",
-  "Bento": "bento",
   "Running": "courir",
   "Sleeping": "dormir",
   "Swimming": "nager",
@@ -6197,7 +5155,6 @@ window.TRANSLATIONS = {
   "Skating": "patiner",
   "Surfing": "surfer",
   "Fishing": "pêcher",
-  "Gardening": "jardiner",
   "Shouting": "crier",
   "Thinking": "réfléchir",
   "Laughing": "rire",
@@ -6209,7 +5166,6 @@ window.TRANSLATIONS = {
   "Washing": "laver",
   "Shopping": "faire les courses",
   "Traveling": "voyager",
-  "Studying": "étudier",
   "Exercising": "faire de l'exercice",
   "Boxing": "boxer",
   "Gaming": "jouer aux jeux vidéo",
@@ -6282,7 +5238,6 @@ window.TRANSLATIONS = {
   "Brushing": "se brosser les dents",
   "Eating": "manger",
   "Cuddling": "faire un câlin",
-  "Facepalm": "se taper le front",
   "Shrugging": "hausser les épaules",
   "Frowning": "froncer les sourcils",
   "Pouting": "faire la moue",
@@ -6343,7 +5298,6 @@ window.TRANSLATIONS = {
   "Bathtub": "baignoire",
   "Shower": "douche",
   "Pan": "poêle",
-  "Pot": "casserole",
   "Plate": "assiette",
   "Fork": "fourchette",
   "Knife": "couteau",
@@ -6383,7 +5337,6 @@ window.TRANSLATIONS = {
   "Boat": "bateau",
   "Sandal": "sandale",
   "High Heel": "talon haut",
-  "Boot": "botte",
   "Car": "voiture",
   "Cap": "casquette",
   "Helmet": "casque",
@@ -6406,7 +5359,6 @@ window.TRANSLATIONS = {
   "Piano": "piano",
   "Robot": "robot",
   "Teddy Bear": "ours en peluche",
-  "Rainbow": "arc-en-ciel",
   "Star": "étoile",
   "Balloon": "ballon gonflable",
   "Yoyo": "yoyo",
@@ -6491,14 +5443,10 @@ window.TRANSLATIONS = {
   "Cheek": "joue",
   "Forehead": "front",
   "Eyebrow": "sourcil",
-  "Eyelash": "cil",
-  "Jaw": "mâchoire",
   "Neck": "cou",
-  "Throat": "gorge",
   "Shoulder": "épaule",
   "Arm": "bras",
   "Elbow": "coude",
-  "Wrist": "poignet",
   "Hand": "main",
   "Finger": "doigt",
   "Thumb": "pouce",
@@ -6513,10 +5461,8 @@ window.TRANSLATIONS = {
   "Hip": "hanche",
   "Leg": "jambe",
   "Knee": "genou",
-  "Ankle": "cheville",
   "Foot": "pied",
   "Toe": "orteil",
-  "Heel": "talon",
   "Skin": "peau",
   "Bone": "os",
   "Muscle": "muscle",
@@ -6526,29 +5472,19 @@ window.TRANSLATIONS = {
   "Stomach": "estomac",
   "Liver": "foie",
   "Kidney": "rein",
-  "Intestine": "intestin",
   "Blood": "sang",
   "Vein": "veine",
   "Artery": "artère",
-  "Nerve": "nerf",
   "Spine": "colonne vertébrale",
   "Rib": "côte",
   "Skull": "crâne",
   "Beard": "barbe",
   "Mustache": "moustache",
-  "Temple": "tempe",
-  "Nostril": "narine",
-  "Pupil": "pupille",
-  "Retina": "rétine",
-  "Cornea": "cornée",
-  "Iris Eye": "iris",
   "Pancreas": "pancréas",
   "Spleen": "rate",
   "Bladder": "vessie",
-  "Cell": "cellule",
   "Tissue": "tissu",
   "Organ": "organe",
-  "Skeleton": "squelette",
   "Joint": "articulation",
   "Ligament": "ligament",
   "Tendon": "tendon",
@@ -6557,26 +5493,20 @@ window.TRANSLATIONS = {
   "Breath": "souffle",
   "Sweat": "sueur",
   "Teardrop": "larme",
-  "Saliva": "salive",
   "Molar": "molaire",
   "Wisdom Tooth": "dent de sagesse",
   "Gums": "gencives",
-  "Palate": "palais",
   "Belly Button": "nombril",
-  "Armpit": "aisselle",
   "Groin": "aine",
   "Thigh": "cuisse",
   "Calf": "mollet",
   "Shin": "tibia",
   "Sole": "plante du pied",
   "Fingertip": "bout du doigt",
-  "Eyelid": "paupière",
   "Nape": "nuque",
   "Wrinkle": "ride",
   "Scar": "cicatrice",
   "Bruise": "bleu",
-  "Freckle": "tache de rousseur",
-  "Dimple": "fossette",
   "Appendix": "appendice",
   "Diaphragm": "diaphragme",
   "Coat": "manteau",
@@ -6590,199 +5520,116 @@ window.TRANSLATIONS = {
   "Storm": "tempête",
   "Thunder": "tonnerre",
   "Lightning": "éclair",
-  "Rainbow Nature": "arc-en-ciel",
-  "Sky": "ciel",
   "Tree": "arbre",
   "Leaf": "feuille",
   "Flower": "fleur",
   "Grass": "herbe",
   "Plant": "plante",
-  "Seed": "graine",
-  "Root": "racine",
   "Branch": "branche",
   "Trunk": "tronc",
   "Bark": "écorce",
   "Forest": "forêt",
-  "Jungle": "jungle",
   "Mountain": "montagne",
   "Hill": "colline",
   "Valley": "vallée",
   "River": "rivière",
-  "Lake": "lac",
   "Sea": "mer",
   "Ocean": "océan",
   "Beach": "plage",
   "Island": "île",
   "Desert": "désert",
-  "Cave": "grotte",
   "Volcano": "volcan",
-  "Waterfall": "cascade",
   "Rock": "rocher",
   "Stone": "pierre",
   "Sand": "sable",
-  "Soil": "terre",
   "Mud": "boue",
   "Ice Nature": "glace",
-  "Snowflake": "flocon",
-  "Dew": "rosée",
   "Fog": "brouillard",
-  "Mist": "brume",
   "Frost": "gel",
   "Hail": "grêle",
-  "Puddle": "flaque",
   "Wave": "vague",
-  "Tide": "marée",
-  "Current": "courant",
   "Cliff": "falaise",
-  "Coast": "côte",
-  "Bay": "baie",
-  "Peninsula": "péninsule",
   "Glacier": "glacier",
   "Iceberg": "iceberg",
-  "Swamp": "marais",
-  "Meadow": "pré",
-  "Field": "champ",
-  "Farm": "ferme",
-  "Garden": "jardin",
-  "Pond": "étang",
-  "Stream": "ruisseau",
   "Spring": "source",
   "Rose Nature": "rose",
   "Tulip": "tulipe",
-  "Daisy": "marguerite",
   "Sunflower": "tournesol",
   "Lily": "lys",
   "Orchid Nature": "orchidée",
   "Poppy": "coquelicot",
   "Dandelion": "pissenlit",
   "Clover": "trèfle",
-  "Fern": "fougère",
-  "Moss": "mousse",
-  "Ivy": "lierre",
-  "Vine": "vigne",
-  "Bush": "buisson",
-  "Shrub": "arbuste",
-  "Oak": "chêne",
   "Pine": "pin",
   "Maple": "érable",
-  "Birch": "bouleau",
-  "Willow": "saule",
   "Palm": "palmier",
   "Cactus": "cactus",
   "Bamboo": "bambou",
-  "Acorn": "gland",
-  "Pinecone": "pomme de pin",
   "Twig": "brindille",
-  "Canyon": "canyon",
-  "Plateau": "plateau",
-  "Gorge": "gorge",
-  "Delta": "delta",
-  "Lagoon": "lagon",
   "Reef": "récif",
   "Geyser": "geyser",
-  "Aurora": "aurore",
-  "Eclipse": "éclipse",
   "Meteor": "météore",
-  "Comet": "comète",
   "Planet": "planète",
   "Galaxy": "galaxie",
   "Horizon": "horizon",
   "Sunset": "coucher de soleil",
   "Sunrise": "lever de soleil",
-  "Shadow": "ombre",
   "Breeze": "brise",
   "Tornado": "tornade",
-  "Hurricane": "ouragan",
-  "Blizzard": "blizzard",
-  "Flood": "inondation",
   "School": "école",
   "Teacher": "professeur",
   "Student": "élève",
-  "Class": "classe",
-  "Classroom": "salle de classe",
   "Desk": "bureau",
   "Chair School": "chaise",
   "Board": "tableau",
-  "Blackboard": "tableau noir",
   "Whiteboard": "tableau blanc",
   "Chalk": "craie",
-  "Marker": "marqueur",
   "Eraser": "gomme",
   "Book School": "livre",
-  "Textbook": "manuel",
-  "Page": "page",
   "Paper": "papier",
-  "Binder": "classeur",
-  "Pencil Case": "trousse",
   "Compass School": "compas",
-  "Protractor": "rapporteur",
   "Calculator": "calculatrice",
   "Glue": "colle",
   "Tape": "ruban adhésif",
   "Sticky Note": "post-it",
-  "Highlighter": "surligneur",
-  "Crayon School": "crayon de couleur",
   "Paint": "peinture",
   "Brush": "pinceau",
   "Palette": "palette",
-  "Easel": "chevalet",
   "Canvas": "toile",
   "Lunchbox": "boîte à lunch",
-  "Canteen": "cantine",
   "Homework": "devoirs",
-  "Test": "contrôle",
-  "Exam": "examen",
-  "Quiz": "quiz",
   "Grade": "note",
-  "Report Card": "bulletin",
   "Diploma": "diplôme",
   "Certificate": "certificat",
-  "Lesson": "leçon",
-  "Subject": "matière",
   "Math": "mathématiques",
   "Science": "science",
   "History": "histoire",
   "Geography": "géographie",
   "English": "anglais",
   "French": "français",
-  "Art": "art",
   "Music": "musique",
-  "Sport": "sport",
   "Library": "bibliothèque",
-  "Librarian": "bibliothécaire",
   "Principal": "directeur",
   "Janitor": "concierge",
   "Nurse School": "infirmière",
   "Classmate": "camarade",
-  "Friend": "ami",
   "Bell": "cloche",
   "Schedule": "emploi du temps",
   "Playtime": "récréation",
-  "Recess": "pause",
   "Uniform School": "uniforme",
   "Locker": "casier",
   "Hall": "couloir",
   "Stairs": "escalier",
-  "Gym": "gymnase",
   "Playground": "cour de récréation",
   "Field School": "terrain",
-  "Auditorium": "auditorium",
-  "Stage": "scène",
-  "Podium": "pupitre",
-  "Microphone School": "micro",
   "Projector": "projecteur",
   "Screen": "écran",
   "Globe": "globe",
-  "Atlas": "atlas",
-  "Dictionary": "dictionnaire",
-  "Encyclopedia": "encyclopédie",
   "Alphabet": "alphabet",
   "Letter": "lettre",
   "Word": "mot",
-  "Sentence": "phrase",
   "Question": "question",
   "Answer": "réponse",
-  "Ruler Stick": "baguette",
   "Bus": "bus",
   "Truck": "camion",
   "Van": "camionnette",
@@ -6796,85 +5643,41 @@ window.TRANSLATIONS = {
   "Tram": "tramway",
   "Trolley": "trolley",
   "Ship": "navire",
-  "Sailboat": "voilier",
   "Yacht": "yacht",
   "Canoe": "canoë",
   "Ferry": "ferry",
-  "Tugboat": "remorqueur",
   "Airplane": "avion",
   "Helicopter": "hélicoptère",
-  "Jet": "jet",
   "Glider": "planeur",
-  "Hot Air Balloon": "montgolfière",
-  "Blimp": "dirigeable",
-  "Space Shuttle": "navette spatiale",
   "Spaceship": "vaisseau spatial",
   "Parachute": "parachute",
-  "Drone": "drone",
   "Sled": "luge",
-  "Snowmobile": "motoneige",
   "Tractor": "tracteur",
-  "Bulldozer": "bouteur",
-  "Excavator": "excavatrice",
   "Crane": "grue",
-  "Dump Truck": "camion-benne",
   "Fire Truck": "camion de pompiers",
   "Ambulance": "ambulance",
   "Police Car": "voiture de police",
-  "Tow Truck": "dépanneuse",
   "Garbage Truck": "camion poubelle",
-  "Mail Truck": "camion postal",
-  "Ice Cream Truck": "camion de glace",
-  "Food Truck": "camion-restaurant",
-  "Delivery Van": "camion de livraison",
   "Pickup Truck": "pick-up",
   "Sports Car": "voiture de sport",
-  "Race Car": "voiture de course",
-  "Go-Kart": "kart",
-  "Limousine": "limousine",
-  "Convertible": "décapotable",
-  "Minivan": "monospace",
-  "Wagon": "break",
-  "Sedan": "berline",
-  "Hatchback": "compacte",
-  "Rickshaw": "pousse-pousse",
-  "Carriage": "carrosse",
-  "Stagecoach": "diligence",
   "Cart": "charrette",
-  "Wheelbarrow": "brouette",
   "Wheelchair": "fauteuil roulant",
   "Stroller": "poussette",
-  "Escalator": "escalator",
   "Elevator": "ascenseur",
   "Cable Car": "téléphérique",
-  "Gondola": "télécabine",
-  "Chairlift": "télésiège",
   "Funicular": "funiculaire",
   "Monorail": "monorail",
   "Bullet Train": "TGV",
   "Steam Train": "train à vapeur",
-  "Freight Train": "train de marchandises",
   "Locomotive": "locomotive",
   "Caboose": "wagon de queue",
   "Railcar": "wagon",
   "Boxcar": "wagon couvert",
-  "Tanker": "camion-citerne",
   "Oil Tanker": "pétrolier",
-  "Cargo Ship": "cargo",
   "Container Ship": "porte-conteneurs",
   "Cruise Ship": "paquebot",
-  "Fishing Boat": "bateau de pêche",
-  "Lifeboat": "canot de sauvetage",
   "Speedboat": "vedette",
   "Motorboat": "motoscaphe",
-  "Rowboat": "barque",
-  "Paddleboat": "bateau à pédales",
-  "Houseboat": "péniche",
-  "Barge": "barge",
-  "Hovercraft": "aéroglisseur",
-  "Trolleybus": "trolleybus",
-  "Snow Plow": "chasse-neige",
-  "Racing Bike": "vélo de course",
   "Seaplane": "hydravion",
   "Doctor": "médecin",
   "Nurse": "infirmière",
@@ -6905,13 +5708,11 @@ window.TRANSLATIONS = {
   "Postman": "facteur",
   "Pharmacist": "pharmacien",
   "Surgeon": "chirurgien",
-  "Paramedic": "ambulancier",
   "Detective": "détective",
   "Diver": "plongeur",
   "Lifeguard": "maître-nageur",
   "Juggler": "jongleur",
   "Acrobat": "acrobate",
-  "Magician": "magicien",
   "Miner": "mineur",
   "Lumberjack": "bûcheron",
   "Blacksmith": "forgeron",
@@ -6920,11 +5721,9 @@ window.TRANSLATIONS = {
   "Queen": "reine",
   "Knight": "chevalier",
   "Priest": "prêtre",
-  "Sailor": "marin",
   "Soldier": "soldat",
   "Happy": "heureux",
   "Sad": "triste",
-  "Angry": "en colère",
   "Scared": "effrayé",
   "Surprised": "surpris",
   "Excited": "enthousiaste",
@@ -6932,27 +5731,21 @@ window.TRANSLATIONS = {
   "Bored": "ennuyé",
   "Sleepy": "somnolent",
   "Hungry": "affamé",
-  "Thirsty": "assoiffé",
   "Sick": "malade",
   "Cold": "froid",
   "Hot": "chaud",
   "Lonely": "seul",
   "Proud": "fier",
   "Shy": "timide",
-  "Nervous": "nerveux",
-  "Worried": "inquiet",
   "Calm": "calme",
-  "Relaxed": "détendu",
   "Confused": "confus",
   "Curious": "curieux",
-  "Jealous": "jaloux",
   "Guilty": "coupable",
   "Embarrassed": "gêné",
   "Disappointed": "déçu",
   "Frustrated": "frustré",
   "Annoyed": "agacé",
   "Disgusted": "dégoûté",
-  "Grumpy": "grognon",
   "Cheerful": "joyeux",
   "Glad": "content",
   "Content": "satisfait",
@@ -6960,42 +5753,23 @@ window.TRANSLATIONS = {
   "Amused": "amusé",
   "Silly": "idiot",
   "Playful": "espiègle",
-  "Grateful": "reconnaissant",
-  "Hopeful": "confiant",
-  "Optimistic": "optimiste",
-  "Pessimistic": "pessimiste",
   "Anxious": "anxieux",
-  "Fearful": "craintif",
-  "Terrified": "terrifié",
   "Shocked": "choqué",
   "Amazed": "émerveillé",
-  "Impressed": "impressionné",
-  "Fascinated": "fasciné",
-  "Interested": "intéressé",
-  "Determined": "déterminé",
   "Confident": "assuré",
   "Brave": "courageux",
   "Bold": "audacieux",
   "Ashamed": "honteux",
   "Humiliated": "humilié",
-  "Rejected": "rejeté",
   "Hurt": "blessé",
   "Heartbroken": "au cœur brisé",
-  "Miserable": "misérable",
   "Depressed": "déprimé",
-  "Gloomy": "morose",
   "Melancholy": "mélancolique",
   "Nostalgic": "nostalgique",
   "Restless": "agité",
-  "Impatient": "impatient",
-  "Peaceful": "paisible",
-  "Serene": "serein",
-  "Comfortable": "à l'aise",
   "Awkward": "maladroit",
   "Overwhelmed": "submergé",
   "Relieved": "soulagé",
-  "Satisfied": "satisfait",
-  "Smiling": "sourire",
   "Screaming": "crier",
   "Whining": "geindre",
   "Pout": "bouder",
@@ -7005,8 +5779,6 @@ window.TRANSLATIONS = {
   "Wink": "clin d'œil",
   "Smirking": "sourire en coin",
   "Grinning": "faire un grand sourire",
-  "Sulking": "bouder",
-  "Mood": "humeur",
   "Feeling": "sentiment",
   "Passion": "passion",
   "Love": "amour",
@@ -7016,17 +5788,11 @@ window.TRANSLATIONS = {
   "Fear": "peur",
   "Anger": "colère",
   "Hope": "espoir",
-  "Pride": "fierté",
-  "Envy": "envie",
   "Shame": "honte",
   "Guilt": "culpabilité",
   "Worry": "inquiétude",
   "Excitement": "excitation",
   "Boredom": "ennui",
-  "Surprise": "surprise",
-  "Trust": "confiance",
-  "Doubt": "doute",
-  "Empathy": "empathie",
   "Kindness": "gentillesse",
   "Circle": "cercle",
   "Square": "carré",
@@ -7047,23 +5813,19 @@ window.TRANSLATIONS = {
   "Cylinder": "cylindre",
   "Cone": "cône",
   "Sphere": "sphère",
-  "Torus": "tore",
   "Tube": "tube",
   "Disc": "disque",
-  "Plus Sign": "signe plus",
   "Minus Sign": "signe moins",
   "Equals Sign": "signe égal",
   "Infinity": "infini",
   "Zigzag": "zigzag",
   "Curve": "courbe",
-  "Center": "centre",
   "Angle": "angle",
   "Wedge": "coin",
   "Octahedron": "octaèdre",
   "Shield": "bouclier",
   "Walk": "marcher",
   "Run": "courir",
-  "Jump": "sauter",
   "Swim": "nager",
   "Eat": "manger",
   "Drink": "boire",
@@ -7074,7 +5836,6 @@ window.TRANSLATIONS = {
   "Cry": "pleurer",
   "Laugh": "rire",
   "Smile": "sourire",
-  "Draw": "dessiner",
   "Bake": "faire cuire",
   "Clap": "applaudir",
   "Listen": "écouter",
@@ -7095,13 +5856,10 @@ window.TRANSLATIONS = {
   "Build": "construire",
   "Fix": "réparer",
   "Cut": "couper",
-  "Travel": "voyager",
   "Open": "ouvrir",
-  "Close": "fermer",
   "Hide": "cacher",
   "Find": "trouver",
   "Help": "aider",
-  "Share": "partager",
   "Give": "donner",
   "Thank": "remercier",
   "Fight": "se battre",
@@ -7116,12 +5874,9 @@ window.TRANSLATIONS = {
   "Bathe": "baigner",
   "Color": "colorier",
   "Erase": "effacer",
-  "Copy": "copier",
   "Swipe": "glisser",
   "Scroll": "défiler",
-  "Visit": "visiter",
   "Pay": "payer",
-  "Sell": "vendre",
   "Search": "chercher",
   "Type": "taper",
   "Click": "cliquer",
