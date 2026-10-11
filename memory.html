@@ -609,7 +609,7 @@
     const levelOf = levelMapForTheme(key);
     const byLevel = { 1: [], 2: [], 3: [] };
     THEMES[key].items.forEach((it) => {
-      const lv = levelOf[it.name] || 3;
+      const lv = (typeof it.level === "number") ? it.level : (levelOf[it.name] || 3);
       byLevel[lv].push(it);
     });
     const pool = [];
