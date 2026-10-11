@@ -4,18 +4,19 @@
 - Single self-contained `memory.html` (inline HTML + CSS + JS): a memory card game that speaks each card's English word via the Web Speech API. Goal: build English vocabulary for French-speaking kids (FR translations + a "Traduction FR" button).
 - No build step, package manager, dependencies, tests, or CI. Edit `memory.html` directly and reload it in Firefox (Ctrl+Shift+R to bypass cache).
 - No Node/JS runtime here (`node`/`deno`/`bun` absent), so you cannot execute the JS. Validate edits with a `python3` regex script instead (see below).
+- Repo also contains `README.md` (user-facing, in French) and `LICENSE` (CC0 1.0). Keep them in sync with the current themes/counts when you change `memory.html`.
 
 ## Data model (all inside the single `<script>`)
-- `THEMES` keys: `animals`, `food`, `actions`, `objects`. Each item is `{ name, emoji }`; each theme has a `label`.
-- `TRANSLATIONS`: EN→FR map covering every item name.
-- `LEVEL_ORDER`: per theme, item names ordered most→least common. Code derives difficulty levels 1/2/3 automatically as 25%/25%/50% of the list length.
+- `THEMES` keys: `animals`, `food`, `actions`, `objects`, `colors`, `numbers`, `body`, `clothes`, `nature`, `school`, `transport`, `jobs`, `emotions`, `shapes`, `verbs`. Each item is `{ name, emoji, label? }`; each theme has a `label`.
+- `TRANSLATIONS`: EN→FR map covering exactly every item name (no unused or duplicate keys).
+- `LEVEL_ORDER`: per theme, item names ordered most→least common. Code derives difficulty levels 1/2/3 automatically as 25%/25%/50% of the list length. A theme may be omitted: `levelMapForTheme()` falls back to `THEMES[key].items` order (all new themes rely on this fallback).
 - Other constants: `CARD_COUNTS`, `PREFERRED`, `MAX_VOICES` (=5), `STORAGE`.
 - Card grid size/columns are computed once by `computeBoardLayout()` inside `buildDeck()` from the current viewport, then fixed. There is deliberately NO resize listener — do not add one; a new layout only happens when a new game is built.
 
 ## Invariants — keep true when editing
-- Every theme item `name` MUST have a `TRANSLATIONS` entry (currently 447/447).
-- `LEVEL_ORDER[theme]` names MUST exactly equal that theme's item names (no missing, extra, or duplicate).
-- `name` and `emoji` must be unique within a theme; keep ≥100 items per theme (≥50 pairs).
+- Every theme item `name` MUST have a `TRANSLATIONS` entry (1315/1315 across all themes).
+- `LEVEL_ORDER[theme]` names MUST exactly equal that theme's item names (no missing or extra). A theme with no `LEVEL_ORDER` entry is fine — order falls back to its `items` array.
+- `name` must be unique within a theme; `emoji`/`label` may be reused if no faithful image exists. `numbers` holds the numeral in `emoji`. An optional `label` allows distinguishing same display text (e.g. "Cook Verb" internal vs "Cook" display).
 - Keep `const` declarations before any immediate calls. A `const` used by an immediately-invoked function but declared later throws a TDZ error that silently kills the whole script (empty selects, no board). E.g. `MAX_VOICES` must precede `loadVoices()`.
 
 ## Speech / environment quirks
@@ -30,14 +31,21 @@ python3 - <<'PY'
 import re
 h=open('memory.html').read(); s=re.search(r'<script>(.*)</script>',h,re.S).group(1)
 for a,b in [('{','}'),('(',')'),('[',']')]: assert s.count(a)==s.count(b),(a,)
-themes={k:re.findall(r'\{ name: "([^"]+)", emoji: "[^"]+" \}',b)
+themes={k:re.findall(r'\{ name: "([^"]+)", emoji: "[^"]*"',b)
         for k,b in re.findall(r'^    (\w+): \{\n      label: "[^"]*",\n      items: \[(.*?)\n      \],',h,re.S|re.M)}
 lo=re.search(r'const LEVEL_ORDER = \{(.*?)\n  \};',s,re.S).group(1)
 levels={k:re.findall(r'"([^"]+)"',b) for k,b in re.findall(r'(\w+): \[(.*?)\]',lo,re.S)}
-tr=set(re.findall(r'"([^"]+)":\s*"', re.search(r'const TRANSLATIONS = \{(.*?)\n  \};',s,re.S).group(1)))
+trbody=re.search(r'const TRANSLATIONS = \{(.*?)\n  \};',s,re.S).group(1)
+trkeys=re.findall(r'"([^"]+)":\s*"', trbody)
+tr=set(trkeys)
+n=0; allnames=set()
 for k,names in themes.items():
-    assert set(names)==set(levels[k]), (k, set(names)^set(levels[k]))
+    assert set(names)==set(levels.get(k,names)), (k, set(names)^set(levels.get(k,names)))
+    assert len(names)==len(set(names)), (k, "duplicate names")
     assert all(n in tr for n in names), (k,[n for n in names if n not in tr])
-print("OK: braces balanced; LEVEL_ORDER==THEMES; all names translated")
+    allnames|=set(names); n+=len(names)
+assert len(trkeys)==len(tr), "duplicate translation keys"
+assert tr==allnames, ("unused translations", sorted(tr-allnames))
+print(f"OK: braces balanced; LEVEL_ORDER==THEMES; all {n} names translated; no unused/duplicate keys")
 PY
 ```

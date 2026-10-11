@@ -6,17 +6,35 @@ enrichir le vocabulaire anglais d'enfants francophones.
 
 ## Fonctionnalités
 
-- 4 thèmes : **Animaux**, **Nourriture**, **Actions**, **Objets** (100 à 124 mots chacun).
+- **15 thèmes** : Animaux, Nourriture, Actions, Objets, Couleurs, Nombres, Corps,
+  Vêtements, Nature, École, Transports, Métiers, Émotions, Formes et Verbes
+  (plus de **1 290 mots** au total).
 - Chaque mot est **lu à voix haute** au retournement de la carte.
 - **Niveaux** de difficulté 1/2/3, dérivés de la fréquence d'usage des mots
   (25 % les plus courants / 25 % suivants / 50 % restants).
 - Bouton **« Traduction FR »** : relit et affiche la traduction française de la dernière carte.
+- Thème **Nombres** : la carte affiche le **chiffre en grand** (1 → 50) avec le mot anglais dessous.
 - Mode **1 à 4 joueurs** (tour par tour, scores, annonce du vainqueur).
-- Nombre de cartes (4 à 100), vitesse de la voix réglable, choix de la voix anglaise.
+- Nombre de cartes, vitesse de la voix réglable, choix de la voix anglaise.
 - Disposition et taille des cartes calculées selon la fenêtre : grandes cartes sur un
   grand écran, jouable aussi sur téléphone (recalculées à chaque nouvelle partie).
 - Confettis et son de victoire.
 - Les réglages sont **mémorisés** (localStorage).
+
+## Thèmes
+
+| Thème | Mots | Thème | Mots | Thème | Mots |
+| --- | ---: | --- | ---: | --- | ---: |
+| Animaux | 112 | Nourriture | 100 | Actions | 112 |
+| Objets | 124 | Couleurs | 14 | Nombres | 50 |
+| Corps | 102 | Vêtements | 118 | Nature | 116 |
+| École | 100 | Transports | 100 | Métiers | 47 |
+| Émotions | 111 | Formes | 36 | Verbes | 73 |
+
+Certains thèmes (Couleurs, Formes, Métiers, Verbes, Nombres) sont volontairement plus
+courts : on ne garde que les mots dont l'emoji représente clairement le sens, plutôt que
+d'utiliser une image trompeuse. Le menu des cartes n'affiche alors que les nombres de
+cartes compatibles avec le thème choisi.
 
 ## Prérequis
 
@@ -41,16 +59,18 @@ Après une modification, recharger avec **Ctrl+Shift+R** pour contourner le cach
 
 Tout se trouve dans le `<script>` de `memory.html` :
 
-- `THEMES` : mots de chaque thème, sous forme `{ name, emoji }`.
-- `TRANSLATIONS` : dictionnaire anglais → français (une entrée par mot).
-- `LEVEL_ORDER` : mots de chaque thème classés du plus courant au moins courant
-  (sert à calculer les niveaux).
+- `THEMES` : mots de chaque thème, sous forme `{ name, emoji, label? }`.
+- `TRANSLATIONS` : dictionnaire anglais → français (exactement une entrée par mot,
+  sans entrée inutilisée ni doublon).
+- `LEVEL_ORDER` : mots d'un thème classés du plus courant au moins courant (sert à
+  calculer les niveaux). Facultatif : un thème absent retombe sur l'ordre de ses `items`.
 
 Invariants à respecter en modifiant les mots :
 
 - tout `name` doit avoir une entrée dans `TRANSLATIONS` ;
-- `LEVEL_ORDER[thème]` doit contenir exactement les mêmes noms que le thème ;
-- `name` et `emoji` uniques au sein d'un thème.
+- `LEVEL_ORDER[thème]`, s'il existe, doit contenir exactement les mêmes noms que le thème ;
+- `name` unique au sein d'un thème ; `emoji` peut se répéter si aucune image fidèle n'existe ;
+- pour le thème `numbers`, le champ `emoji` contient le chiffre à afficher.
 
 ## Licence
 
