@@ -321,6 +321,28 @@
       speak(correct.label||correct.name);
     };
     btnRepeat.onclick=()=>{ if(!locked){ const correct=pool[currentIndex]; if(correct) speak(correct.label||correct.name); } };
+
+    function answerFixed(chosen, correct){
+      if(locked) return; locked=true; btnRepeat.disabled=true;
+      const buttons=Array.from(choicesDiv.querySelectorAll('.choice'));
+      for(const b of buttons) b.classList.add('disabled');
+      let chosenBtn=null, correctBtn=null;
+      for(const b of buttons){
+        if(b.dataset.name===chosen.name) chosenBtn=b;
+        if(b.dataset.name===correct.name) correctBtn=b;
+      }
+      if(chosen.name===correct.name){
+        if(chosenBtn) chosenBtn.classList.add('correct');
+        score.ok++; sOk.textContent=score.ok;
+        setTimeout(()=>{ currentIndex++; showQuestion(); }, 800);
+      }else{
+        if(chosenBtn) chosenBtn.classList.add('wrong');
+        if(correctBtn) correctBtn.classList.add('correct');
+        score.err++; sErr.textContent=score.err;
+        setTimeout(()=>{ currentIndex++; showQuestion(); }, 1400);
+      }
+    }
+
     function endQuiz(){
       fOk.textContent=score.ok; fTotal.textContent=pool.length; fErr.textContent=score.err;
       const pct = pool.length===0?0:Math.round(score.ok/pool.length*100);
