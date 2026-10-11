@@ -521,86 +521,12 @@
     return THEMES[key] ? key : "animals";
   }
 
-  const LEVEL_ORDER = {
-    animals: [
-      // Niveau 1 (25% les plus courants)
-      "Cat", "Dog", "Bird", "Fish", "Horse", "Cow", "Pig", "Duck", "Rabbit", "Mouse", "Lion", "Tiger", "Bear", "Frog",
-      "Monkey", "Elephant", "Snake", "Chicken", "Sheep", "Wolf", "Fox", "Whale", "Penguin", "Owl", "Butterfly", "Bee",
-      "Ant", "Spider",
-      // Niveau 2 (25% suivants)
-      "Turtle", "Dolphin", "Deer", "Goat", "Rat", "Bat", "Panda", "Koala", "Giraffe", "Zebra", "Camel", "Shark", "Crab",
-      "Octopus", "Snail", "Ladybug", "Rooster", "Turkey", "Parrot", "Eagle", "Seal", "Squid", "Lobster", "Shrimp",
-      "Squirrel", "Hedgehog", "Hippo", "Rhino",
-      // Niveau 3 (50% restants)
-      "Hamster", "Gorilla", "Llama", "Kangaroo", "Sloth", "Otter", "Badger", "Skunk", "Raccoon", "Lizard", "Crocodile",
-      "Peacock", "Swan", "Buffalo", "Ox", "Boar", "Ram", "Poodle", "Guide Dog", "Service Dog", "Puppy", "Kitten",
-      "Black Cat", "Leopard", "Beaver", "Chick", "Baby Chick", "Dove", "Goose", "Flamingo", "Mammoth", "Dodo", "Feather",
-      "T-Rex", "Dinosaur", "Dragon", "Dragon Face", "Tropical Fish", "Pufferfish", "Blue Whale", "Jellyfish", "Oyster",
-      "Sea Shell", "Coral", "Caterpillar", "Cricket", "Cockroach", "Spider Web", "Scorpion", "Mosquito", "Fly", "Worm",
-      "Beetle", "Orangutan", "Polar Bear", "Bison"
-    ],
-    food: [
-      // Niveau 1
-      "Apple", "Banana", "Bread", "Milk", "Egg", "Cheese", "Pizza", "Cake", "Cookie", "Chocolate", "Candy", "Ice Cream",
-      "Orange", "Strawberry", "Grapes", "Carrot", "Tomato", "Potato", "Rice", "Juice", "Butter", "Honey", "Chicken Leg",
-      "Meat", "Salad",
-      // Niveau 2
-      "Burger", "Hot Dog", "Sandwich", "Fries", "Donut", "Pancakes", "Waffle", "Croissant", "Baguette", "Popcorn", "Soda",
-      "Coffee", "Tea", "Melon", "Watermelon", "Lemon", "Pear", "Peach", "Cherry", "Coconut", "Mango", "Kiwi", "Pineapple",
-      "Corn", "Onion",
-      // Niveau 3
-      "Sushi", "Taco", "Garlic", "Cucumber", "Broccoli", "Avocado", "Eggplant", "Pepper", "Mushroom", "Peanut", "Chestnut",
-      "Noodles", "Spaghetti", "Ramen", "Pretzel", "Bagel", "Lollipop", "Burrito", "Chopsticks", "Pie", "Cupcake",
-      "Blueberry", "Dumpling", "Fortune Cookie", "Takeout", "Fried Shrimp", "Rice Ball", "Rice Cracker", "Fish Cake",
-      "Bacon", "Shaved Ice", "Ice Cream Bowl", "Custard", "Baby Bottle", "Green Apple", "Lettuce", "Bell Pepper",
-      "Fruit Punch", "Olive", "Ice", "Bowl", "Salt", "Teapot", "Curry", "Birthday Cake", "Steak", "Sweet Potato", "Jar",
-      "Canned Food", "Bento"
-    ],
-    actions: [
-      // Niveau 1
-      "Running", "Walking", "Sleeping", "Eating", "Reading", "Writing", "Singing", "Dancing", "Swimming", "Jumping",
-      "Cooking", "Listening", "Watching", "Speaking", "Crying", "Laughing", "Thinking", "Counting", "Coloring", "Painting",
-      "Clapping", "Waving", "Praying", "Shopping", "Washing", "Brushing", "Hugging", "Cuddling",
-      // Niveau 2
-      "Cycling", "Fishing", "Camping", "Hiking", "Skating", "Skiing", "Surfing", "Diving", "Boxing", "Gaming", "Cutting",
-      "Building", "Whispering", "Shouting", "Sneezing", "Yawning", "Winking", "Pointing", "Climbing", "Gardening",
-      "Studying", "Traveling", "Exercising", "Weightlifting", "Shaking Hands", "Saluting", "Giggling", "Peeking",
-      // Niveau 3
-      "Flying", "Knitting", "Rowing", "Wrestling", "Meditating", "Bowing", "Skipping", "Snowboarding", "Skateboarding",
-      "Taking Photos", "Juggling", "Frisbee", "Gymnastics", "Stretching", "Golfing", "Horse Riding", "Handball",
-      "Volleyball", "Rugby", "Tennis", "Basketball", "Football", "Baseball", "Softball", "Ping Pong", "Badminton",
-      "Kicking", "Martial Arts", "Roller Skating", "Sledding", "Golf", "Kite Flying", "Darts", "Bowling", "Rolling Dice",
-      "Card Playing", "Chess", "Puzzle", "Magic", "Ballet", "Acting", "Movie Making", "Massage", "Haircut", "Sauna",
-      "Bathing", "Lying Down", "Water Polo", "Mountain Biking", "Bouncing", "Raising Hand", "Facepalm", "Shrugging",
-      "Frowning", "Pouting", "Dancing Duo"
-    ],
-    objects: [
-      // Niveau 1
-      "Ball", "Book", "Cup", "Clock", "Key", "Phone", "Chair", "Bed", "Door", "Window", "Hat", "Shoe", "Sock", "Car",
-      "House", "Balloon", "Star", "Gift", "Box", "Pencil", "Pen", "Scissors", "Glasses", "Watch", "Spoon", "Fork",
-      "Knife", "Plate", "Toothbrush", "Camera", "Bicycle",
-      // Niveau 2
-      "Umbrella", "Gloves", "Scarf", "Handbag", "Backpack", "Wallet", "Ring", "Crown", "Gem", "Money", "Card", "Laptop",
-      "Keyboard", "Mouse", "Headphones", "Microphone", "Television", "Radio", "Speaker", "Battery", "Plug", "Flashlight",
-      "Candle", "Mirror", "Bathtub", "Shower", "Pan", "Pot", "Bottle", "Guitar", "Drum",
-      // Niveau 3
-      "Lamp", "Rocket", "Notebook", "Printer", "Sofa", "Toilet", "Paperclip", "Pin", "Ruler", "Magnet", "Lock", "Rope",
-      "Hammer", "Screwdriver", "Wrench", "Gear", "Anchor", "Map", "Compass", "Telescope", "Microscope", "Syringe", "Pill",
-      "Bandage", "Fire Extinguisher", "Broom", "Basket", "Toilet Paper", "Sponge", "Lotion", "Bucket", "Mousetrap",
-      "Shopping Bags", "Boat", "Sandal", "High Heel", "Boot", "Cap", "Helmet", "Sun Hat", "Necklace", "Lipstick",
-      "Nail Polish", "Safety Pin", "Needle", "Thread", "Red Book", "Green Book", "Blue Book", "Orange Book", "Crayon",
-      "Snowman", "Kite", "Sunglasses", "Piano", "Robot", "Teddy Bear", "Rainbow", "Yoyo", "Violin", "Folder", "Trumpet"
-    ],
-  };
 
   function levelMapForTheme(key) {
-    const order = LEVEL_ORDER[key] || THEMES[key].items.map((it) => it.name);
-    const n = order.length;
-    const l1 = Math.round(n * 0.25);
-    const l2 = Math.round(n * 0.5);
     const map = {};
-    order.forEach((name, i) => {
-      map[name] = i < l1 ? 1 : i < l2 ? 2 : 3;
+    const items = (THEMES[key] && THEMES[key].items) || [];
+    items.forEach((it) => {
+      map[it.name] = (typeof it.level === "number") ? it.level : 3;
     });
     return map;
   }
