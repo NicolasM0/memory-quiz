@@ -211,10 +211,10 @@
     <span id="p3Hud" hidden>Player 3: <b id="p3">0</b></span>
     <span id="p4Hud" hidden>Player 4: <b id="p4">0</b></span>
   </div>
-  <div class="turn" id="turn"></div>
-  <div class="win" id="win"></div>
-  <div class="translation" id="translationText"></div>
-  <div class="board" id="board"></div>
+  <div class="turn" id="turn" aria-live="polite"></div>
+  <div class="win" id="win" aria-live="polite" aria-atomic="true"></div>
+  <div class="translation" id="translationText" aria-live="polite"></div>
+  <div class="board" id="board" aria-live="polite" aria-label="Plateau de jeu"></div>
   <div class="controls">
     <label class="field">Voice
       <select id="voiceSelect"></select>
@@ -223,8 +223,8 @@
       <input type="range" id="rate" min="0.5" max="1.3" step="0.05" value="0.85" />
       <span class="rate-val" id="rateVal">0.85x</span>
     </label>
-    <button class="reset secondary" id="translateBtn">🔈 Traduction FR</button>
-    <button class="reset" id="reset">New Game</button>
+    <button class="reset secondary" id="translateBtn" aria-label="Prononcer et afficher la traduction française">🔈 Traduction FR</button>
+    <button class="reset" id="reset" aria-label="Commencer une nouvelle partie">New Game</button>
   </div>
 
 <script>
