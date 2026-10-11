@@ -2614,11 +2614,6 @@ window.THEMES = {
         "level": 1
       },
       {
-        "name": "Neck",
-        "emoji": "🧣",
-        "level": 1
-      },
-      {
         "name": "Shoulder",
         "emoji": "🤷",
         "level": 1
@@ -2664,16 +2659,6 @@ window.THEMES = {
         "level": 2
       },
       {
-        "name": "Knuckle Bone",
-        "emoji": "🦴",
-        "level": 2
-      },
-      {
-        "name": "Chest",
-        "emoji": "🫁",
-        "level": 2
-      },
-      {
         "name": "Back",
         "emoji": "🧍",
         "level": 2
@@ -2709,16 +2694,6 @@ window.THEMES = {
         "level": 2
       },
       {
-        "name": "Toe",
-        "emoji": "🦶",
-        "level": 2
-      },
-      {
-        "name": "Skin",
-        "emoji": "🧴",
-        "level": 2
-      },
-      {
         "name": "Bone",
         "emoji": "🦴",
         "level": 2
@@ -2744,16 +2719,6 @@ window.THEMES = {
         "level": 2
       },
       {
-        "name": "Stomach",
-        "emoji": "🫃",
-        "level": 2
-      },
-      {
-        "name": "Liver",
-        "emoji": "🫀",
-        "level": 2
-      },
-      {
         "name": "Kidney",
         "emoji": "🫘",
         "level": 2
@@ -2766,21 +2731,6 @@ window.THEMES = {
       {
         "name": "Vein",
         "emoji": "🩸",
-        "level": 3
-      },
-      {
-        "name": "Artery",
-        "emoji": "🫀",
-        "level": 3
-      },
-      {
-        "name": "Spine",
-        "emoji": "🦴",
-        "level": 3
-      },
-      {
-        "name": "Rib",
-        "emoji": "🦴",
         "level": 3
       },
       {
@@ -2799,48 +2749,8 @@ window.THEMES = {
         "level": 3
       },
       {
-        "name": "Pancreas",
-        "emoji": "🫀",
-        "level": 3
-      },
-      {
-        "name": "Spleen",
-        "emoji": "🫀",
-        "level": 3
-      },
-      {
-        "name": "Bladder",
-        "emoji": "🫀",
-        "level": 3
-      },
-      {
         "name": "Tissue",
         "emoji": "🧫",
-        "level": 3
-      },
-      {
-        "name": "Organ",
-        "emoji": "🫀",
-        "level": 3
-      },
-      {
-        "name": "Joint",
-        "emoji": "🦴",
-        "level": 3
-      },
-      {
-        "name": "Ligament",
-        "emoji": "🦴",
-        "level": 3
-      },
-      {
-        "name": "Tendon",
-        "emoji": "🦴",
-        "level": 3
-      },
-      {
-        "name": "Cartilage",
-        "emoji": "🦴",
         "level": 3
       },
       {
@@ -2864,48 +2774,8 @@ window.THEMES = {
         "level": 3
       },
       {
-        "name": "Molar",
-        "emoji": "🦷",
-        "level": 3
-      },
-      {
-        "name": "Wisdom Tooth",
-        "emoji": "🦷",
-        "level": 3
-      },
-      {
-        "name": "Gums",
-        "emoji": "🦷",
-        "level": 3
-      },
-      {
-        "name": "Belly Button",
-        "emoji": "🫃",
-        "level": 3
-      },
-      {
-        "name": "Groin",
-        "emoji": "🦵",
-        "level": 3
-      },
-      {
-        "name": "Thigh",
-        "emoji": "🦵",
-        "level": 3
-      },
-      {
         "name": "Calf",
         "emoji": "🦵",
-        "level": 3
-      },
-      {
-        "name": "Shin",
-        "emoji": "🦵",
-        "level": 3
-      },
-      {
-        "name": "Sole",
-        "emoji": "🦶",
         "level": 3
       },
       {
@@ -2914,33 +2784,8 @@ window.THEMES = {
         "level": 3
       },
       {
-        "name": "Nape",
-        "emoji": "🧑",
-        "level": 3
-      },
-      {
         "name": "Wrinkle",
         "emoji": "🧓",
-        "level": 3
-      },
-      {
-        "name": "Scar",
-        "emoji": "🩹",
-        "level": 3
-      },
-      {
-        "name": "Bruise",
-        "emoji": "🩹",
-        "level": 3
-      },
-      {
-        "name": "Appendix",
-        "emoji": "🫀",
-        "level": 3
-      },
-      {
-        "name": "Diaphragm",
-        "emoji": "🫁",
         "level": 3
       }
     ]
@@ -3044,11 +2889,6 @@ window.THEMES = {
         "level": 1
       },
       {
-        "name": "Bark",
-        "emoji": "🪵",
-        "level": 1
-      },
-      {
         "name": "Forest",
         "emoji": "🌲",
         "level": 1
@@ -3124,18 +2964,8 @@ window.THEMES = {
         "level": 2
       },
       {
-        "name": "Ice Nature",
-        "emoji": "🧊",
-        "level": 2
-      },
-      {
         "name": "Fog",
         "emoji": "🌫️",
-        "level": 2
-      },
-      {
-        "name": "Frost",
-        "emoji": "🧊",
         "level": 2
       },
       {
@@ -3151,11 +2981,6 @@ window.THEMES = {
       {
         "name": "Cliff",
         "emoji": "🏔️",
-        "level": 2
-      },
-      {
-        "name": "Glacier",
-        "emoji": "🧊",
         "level": 2
       },
       {
@@ -3239,11 +3064,6 @@ window.THEMES = {
         "level": 3
       },
       {
-        "name": "Twig",
-        "emoji": "🪵",
-        "level": 3
-      },
-      {
         "name": "Reef",
         "emoji": "🪸",
         "level": 3
@@ -3314,16 +3134,6 @@ window.THEMES = {
         "level": 1
       },
       {
-        "name": "Desk",
-        "emoji": "🪑",
-        "level": 1
-      },
-      {
-        "name": "Chair School",
-        "emoji": "🪑",
-        "level": 1
-      },
-      {
         "name": "Board",
         "emoji": "📋",
         "level": 1
@@ -3339,11 +3149,6 @@ window.THEMES = {
         "level": 1
       },
       {
-        "name": "Eraser",
-        "emoji": "🧽",
-        "level": 1
-      },
-      {
         "name": "Book School",
         "emoji": "📖",
         "level": 1
@@ -3354,11 +3159,6 @@ window.THEMES = {
         "level": 1
       },
       {
-        "name": "Compass School",
-        "emoji": "🧭",
-        "level": 2
-      },
-      {
         "name": "Calculator",
         "emoji": "🧮",
         "level": 2
@@ -3366,11 +3166,6 @@ window.THEMES = {
       {
         "name": "Glue",
         "emoji": "🧴",
-        "level": 2
-      },
-      {
-        "name": "Tape",
-        "emoji": "🩹",
         "level": 2
       },
       {
@@ -3466,16 +3261,6 @@ window.THEMES = {
       {
         "name": "Principal",
         "emoji": "🧑‍🏫",
-        "level": 3
-      },
-      {
-        "name": "Janitor",
-        "emoji": "🧹",
-        "level": 3
-      },
-      {
-        "name": "Nurse School",
-        "emoji": "🧑‍⚕️",
         "level": 3
       },
       {
@@ -4718,11 +4503,6 @@ window.THEMES = {
         "level": 2
       },
       {
-        "name": "Clean",
-        "emoji": "🧹",
-        "level": 2
-      },
-      {
         "name": "Buy",
         "emoji": "🛒",
         "level": 2
@@ -5443,7 +5223,6 @@ window.TRANSLATIONS = {
   "Cheek": "joue",
   "Forehead": "front",
   "Eyebrow": "sourcil",
-  "Neck": "cou",
   "Shoulder": "épaule",
   "Arm": "bras",
   "Elbow": "coude",
@@ -5453,8 +5232,6 @@ window.TRANSLATIONS = {
   "Nail": "ongle",
   "Palm Hand": "paume",
   "Knuckle": "articulation",
-  "Knuckle Bone": "nodule",
-  "Chest": "poitrine",
   "Back": "dos",
   "Belly": "ventre",
   "Waist": "taille",
@@ -5462,53 +5239,25 @@ window.TRANSLATIONS = {
   "Leg": "jambe",
   "Knee": "genou",
   "Foot": "pied",
-  "Toe": "orteil",
-  "Skin": "peau",
   "Bone": "os",
   "Muscle": "muscle",
   "Heart": "cœur",
   "Brain": "cerveau",
   "Lung": "poumon",
-  "Stomach": "estomac",
-  "Liver": "foie",
   "Kidney": "rein",
   "Blood": "sang",
   "Vein": "veine",
-  "Artery": "artère",
-  "Spine": "colonne vertébrale",
-  "Rib": "côte",
   "Skull": "crâne",
   "Beard": "barbe",
   "Mustache": "moustache",
-  "Pancreas": "pancréas",
-  "Spleen": "rate",
-  "Bladder": "vessie",
   "Tissue": "tissu",
-  "Organ": "organe",
-  "Joint": "articulation",
-  "Ligament": "ligament",
-  "Tendon": "tendon",
-  "Cartilage": "cartilage",
   "Voice": "voix",
   "Breath": "souffle",
   "Sweat": "sueur",
   "Teardrop": "larme",
-  "Molar": "molaire",
-  "Wisdom Tooth": "dent de sagesse",
-  "Gums": "gencives",
-  "Belly Button": "nombril",
-  "Groin": "aine",
-  "Thigh": "cuisse",
   "Calf": "mollet",
-  "Shin": "tibia",
-  "Sole": "plante du pied",
   "Fingertip": "bout du doigt",
-  "Nape": "nuque",
   "Wrinkle": "ride",
-  "Scar": "cicatrice",
-  "Bruise": "bleu",
-  "Appendix": "appendice",
-  "Diaphragm": "diaphragme",
   "Coat": "manteau",
   "Sun": "soleil",
   "Moon": "lune",
@@ -5527,7 +5276,6 @@ window.TRANSLATIONS = {
   "Plant": "plante",
   "Branch": "branche",
   "Trunk": "tronc",
-  "Bark": "écorce",
   "Forest": "forêt",
   "Mountain": "montagne",
   "Hill": "colline",
@@ -5543,13 +5291,10 @@ window.TRANSLATIONS = {
   "Stone": "pierre",
   "Sand": "sable",
   "Mud": "boue",
-  "Ice Nature": "glace",
   "Fog": "brouillard",
-  "Frost": "gel",
   "Hail": "grêle",
   "Wave": "vague",
   "Cliff": "falaise",
-  "Glacier": "glacier",
   "Iceberg": "iceberg",
   "Spring": "source",
   "Rose Nature": "rose",
@@ -5565,7 +5310,6 @@ window.TRANSLATIONS = {
   "Palm": "palmier",
   "Cactus": "cactus",
   "Bamboo": "bambou",
-  "Twig": "brindille",
   "Reef": "récif",
   "Geyser": "geyser",
   "Meteor": "météore",
@@ -5579,18 +5323,13 @@ window.TRANSLATIONS = {
   "School": "école",
   "Teacher": "professeur",
   "Student": "élève",
-  "Desk": "bureau",
-  "Chair School": "chaise",
   "Board": "tableau",
   "Whiteboard": "tableau blanc",
   "Chalk": "craie",
-  "Eraser": "gomme",
   "Book School": "livre",
   "Paper": "papier",
-  "Compass School": "compas",
   "Calculator": "calculatrice",
   "Glue": "colle",
-  "Tape": "ruban adhésif",
   "Sticky Note": "post-it",
   "Paint": "peinture",
   "Brush": "pinceau",
@@ -5610,8 +5349,6 @@ window.TRANSLATIONS = {
   "Music": "musique",
   "Library": "bibliothèque",
   "Principal": "directeur",
-  "Janitor": "concierge",
-  "Nurse School": "infirmière",
   "Classmate": "camarade",
   "Bell": "cloche",
   "Schedule": "emploi du temps",
@@ -5842,7 +5579,6 @@ window.TRANSLATIONS = {
   "Think": "penser",
   "Look": "regarder",
   "Wash": "laver",
-  "Clean": "nettoyer",
   "Buy": "acheter",
   "Climb": "grimper",
   "Play": "jouer",
