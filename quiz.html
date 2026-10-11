@@ -286,25 +286,26 @@
       sOk.textContent=score.ok; sErr.textContent=score.err;
       questionText.textContent = '';
       choicesDiv.innerHTML='';
-      const distractors=[]; const seen=new Set([correct.name]); const corrLv = (typeof correct.level==="number")?correct.level:3;
+      const seen=new Set([correct.name]); const corrLv = (typeof correct.level==="number")?correct.level:3;
+      const candidates=[];
       for(const k of selectedKeys){
         const items=window.THEMES[k] && window.THEMES[k].items || [];
         for(const it of items){
           const lv=(typeof it.level==="number")?it.level:3;
           if(corrLv!==3 && lv!==corrLv) continue;
-          if(!seen.has(it.name)){ seen.add(it.name); distractors.push({...it}); if(distractors.length>=9) break; }
+          if(!seen.has(it.name)){ candidates.push({...it}); }
         }
-        if(distractors.length>=9) break;
       }
-      if(distractors.length<9){
+      if(candidates.length<9){
         for(const k of selectedKeys){
           const items=window.THEMES[k] && window.THEMES[k].items || [];
           for(const it of items){
-            if(!seen.has(it.name)){ seen.add(it.name); distractors.push({...it}); if(distractors.length>=9) break; }
+            if(!seen.has(it.name)){ candidates.push({...it}); if(candidates.length>=50) break; }
           }
-          if(distractors.length>=9) break;
+          if(candidates.length>=50) break;
         }
       }
+      const distractors = shuffle(candidates).slice(0,9);
       let choices=[correct, ...shuffle(distractors).slice(0,9)];
       choices=shuffle(choices);
       const showText = showTextChk.checked;
