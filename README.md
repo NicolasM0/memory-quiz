@@ -1,35 +1,54 @@
 # Memory & Quiz — apprendre l'anglais en jouant
 
-Un jeu de memory dans **un seul fichier `memory.html`** (HTML + CSS + JS, aucune dépendance).
-Chaque carte révélée prononce son mot anglais à voix haute (Web Speech API), pour
-enrichir le vocabulaire anglais d'enfants francophones.
+Deux jeux dans **un seul fichier `memory.html`** (HTML + CSS + JS + données, aucune
+dépendance) :
+
+- un **Memory** : retrouve les paires et écoute le mot anglais ;
+- un **Quiz** : écoute un mot, choisis la bonne icône parmi 10.
+
+Chaque mot est prononcé à voix haute (Web Speech API), pour enrichir le vocabulaire
+anglais d'enfants francophones. Un menu d'accueil (`#home`) permet de passer d'un jeu à
+l'autre ; tout se fait par ancres internes (`#memory`, `#quiz`), sans rechargement.
 
 ## Fonctionnalités
 
+### Commun
+
 - **15 thèmes** : Animaux, Nourriture, Actions, Objets, Couleurs, Nombres, Corps,
   Vêtements, Nature, École, Transports, Métiers, Émotions, Formes et Verbes
-  (plus de **1 290 mots** au total).
-- Chaque mot est **lu à voix haute** au retournement de la carte.
+  (**925 mots** au total).
+- Chaque mot est **lu à voix haute**.
 - **Niveaux** de difficulté 1/2/3, dérivés de la fréquence d'usage des mots
   (25 % les plus courants / 25 % suivants / 50 % restants).
-- Bouton **« Traduction FR »** : relit et affiche la traduction française de la dernière carte.
 - Thème **Nombres** : la carte affiche le **chiffre en grand** (1 → 50) avec le mot anglais dessous.
+- Choix de la **voix anglaise** (les 5 meilleures voix détectées).
+- Réglages **mémorisés** (localStorage).
+
+### Memory
+
+- Bouton **« Traduction FR »** : relit et affiche la traduction française de la dernière carte.
 - Mode **1 à 4 joueurs** (tour par tour, scores, annonce du vainqueur).
-- Nombre de cartes, vitesse de la voix réglable, choix de la voix anglaise.
+- Nombre de cartes et vitesse de la voix réglables.
 - Disposition et taille des cartes calculées selon la fenêtre : grandes cartes sur un
   grand écran, jouable aussi sur téléphone (recalculées à chaque nouvelle partie).
 - Confettis et son de victoire.
-- Les réglages sont **mémorisés** (localStorage).
+
+### Quiz
+
+- **Sélection des catégories** (tout sélectionner / tout désélectionner) et du **niveau**.
+- **Nombre de questions** configurable (5 → tout le pool), texte des cartes affichable ou non.
+- Écoute du mot, choix parmi 10 icônes, bouton **« Répéter »**.
+- Score (bonnes réponses / erreurs / pourcentage) et son de fin.
 
 ## Thèmes
 
 | Thème | Mots | Thème | Mots | Thème | Mots |
 | --- | ---: | --- | ---: | --- | ---: |
-| Animaux | 112 | Nourriture | 100 | Actions | 112 |
-| Objets | 124 | Couleurs | 14 | Nombres | 50 |
-| Corps | 102 | Vêtements | 118 | Nature | 116 |
-| École | 100 | Transports | 100 | Métiers | 47 |
-| Émotions | 111 | Formes | 36 | Verbes | 73 |
+| Animaux | 112 | Nourriture | 98 | Actions | 109 |
+| Objets | 119 | Couleurs | 14 | Nombres | 50 |
+| Corps | 49 | Vêtements | 1 | Nature | 62 |
+| École | 47 | Transports | 53 | Métiers | 44 |
+| Émotions | 77 | Formes | 32 | Verbes | 58 |
 
 Certains thèmes (Couleurs, Formes, Métiers, Verbes, Nombres) sont volontairement plus
 courts : on ne garde que les mots dont l'emoji représente clairement le sens, plutôt que
@@ -53,22 +72,22 @@ Ouvrir `memory.html` dans Firefox, ou depuis un terminal :
 firefox memory.html
 ```
 
-Après une modification, recharger avec **Ctrl+Shift+R** pour contourner le cache.
+Choisir **Memory** ou **Quiz** sur l'accueil. Après une modification, recharger avec
+**Ctrl+Shift+R** pour contourner le cache.
 
 ## Personnalisation
 
-Tout se trouve dans le `<script>` de `memory.html` :
+Tout se trouve dans `memory.html` :
 
-- `THEMES` : mots de chaque thème, sous forme `{ name, emoji, label? }`.
-- `TRANSLATIONS` : dictionnaire anglais → français (exactement une entrée par mot,
-  sans entrée inutilisée ni doublon).
-- `LEVEL_ORDER` : mots d'un thème classés du plus courant au moins courant (sert à
-  calculer les niveaux). Facultatif : un thème absent retombe sur l'ordre de ses `items`.
+- le premier `<script>` définit les données (`window.THEMES` = dictionnaire thème →
+  `{ label, items:[…] }`, et `window.TRANSLATIONS` = dictionnaire anglais → français) ;
+- les deux `<script>` suivants sont les jeux (Memory puis Quiz), chacun isolé dans une
+  IIFE ; le dernier `<script>` est le petit routeur d'écrans (`#home` / `#memory` / `#quiz`).
 
 Invariants à respecter en modifiant les mots :
 
 - tout `name` doit avoir une entrée dans `TRANSLATIONS` ;
-- `LEVEL_ORDER[thème]`, s'il existe, doit contenir exactement les mêmes noms que le thème ;
+- chaque item doit porter un `level` (1, 2 ou 3), cohérent avec son ordre dans `items` ;
 - `name` unique au sein d'un thème ; `emoji` peut se répéter si aucune image fidèle n'existe ;
 - pour le thème `numbers`, le champ `emoji` contient le chiffre à afficher.
 
