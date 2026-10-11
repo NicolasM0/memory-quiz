@@ -250,7 +250,7 @@
       const n=order.length; const l1=Math.round(n*0.25), l2=Math.round(n*0.5); const map={};
       order.forEach((name,i)=>{ map[name]=i<l1?1:i<l2?2:3; }); return map;
     }
-    function inLevel(item,key,lv){ if(lv===3)return true; const m=levelMapForTheme(key); return (m[item.name]||3)===lv; }
+    function inLevel(item,key,lv){ if(lv===3)return true; if(item && typeof item.level==="number") return item.level===lv; const m=levelMapForTheme(key); return (m[item.name]||3)===lv; }
     function buildPool(){
       const map=new Map();
       const lv=parseInt(levelSelect.value||'3',10);

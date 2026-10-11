@@ -5,451 +5,563 @@ window.THEMES = {
     "items": [
       {
         "name": "Cat",
-        "emoji": "🐱"
+        "emoji": "🐱",
+        "level": 1
       },
       {
         "name": "Dog",
-        "emoji": "🐶"
+        "emoji": "🐶",
+        "level": 1
       },
       {
         "name": "Fox",
-        "emoji": "🦊"
+        "emoji": "🦊",
+        "level": 1
       },
       {
         "name": "Bear",
-        "emoji": "🐻"
+        "emoji": "🐻",
+        "level": 1
       },
       {
         "name": "Frog",
-        "emoji": "🐸"
+        "emoji": "🐸",
+        "level": 1
       },
       {
         "name": "Panda",
-        "emoji": "🐼"
+        "emoji": "🐼",
+        "level": 2
       },
       {
         "name": "Lion",
-        "emoji": "🦁"
+        "emoji": "🦁",
+        "level": 1
       },
       {
         "name": "Owl",
-        "emoji": "🦉"
+        "emoji": "🦉",
+        "level": 1
       },
       {
         "name": "Monkey",
-        "emoji": "🐵"
+        "emoji": "🐵",
+        "level": 1
       },
       {
         "name": "Koala",
-        "emoji": "🐨"
+        "emoji": "🐨",
+        "level": 2
       },
       {
         "name": "Pig",
-        "emoji": "🐷"
+        "emoji": "🐷",
+        "level": 1
       },
       {
         "name": "Cow",
-        "emoji": "🐮"
+        "emoji": "🐮",
+        "level": 1
       },
       {
         "name": "Tiger",
-        "emoji": "🐯"
+        "emoji": "🐯",
+        "level": 1
       },
       {
         "name": "Rabbit",
-        "emoji": "🐰"
+        "emoji": "🐰",
+        "level": 1
       },
       {
         "name": "Horse",
-        "emoji": "🐴"
+        "emoji": "🐴",
+        "level": 1
       },
       {
         "name": "Penguin",
-        "emoji": "🐧"
+        "emoji": "🐧",
+        "level": 1
       },
       {
         "name": "Elephant",
-        "emoji": "🐘"
+        "emoji": "🐘",
+        "level": 1
       },
       {
         "name": "Whale",
-        "emoji": "🐳"
+        "emoji": "🐳",
+        "level": 1
       },
       {
         "name": "Turtle",
-        "emoji": "🐢"
+        "emoji": "🐢",
+        "level": 2
       },
       {
         "name": "Dolphin",
-        "emoji": "🐬"
+        "emoji": "🐬",
+        "level": 2
       },
       {
         "name": "Deer",
-        "emoji": "🦌"
+        "emoji": "🦌",
+        "level": 2
       },
       {
         "name": "Sheep",
-        "emoji": "🐑"
+        "emoji": "🐑",
+        "level": 1
       },
       {
         "name": "Chicken",
-        "emoji": "🐔"
+        "emoji": "🐔",
+        "level": 1
       },
       {
         "name": "Butterfly",
-        "emoji": "🦋"
+        "emoji": "🦋",
+        "level": 1
       },
       {
         "name": "Mouse",
-        "emoji": "🐭"
+        "emoji": "🐭",
+        "level": 1
       },
       {
         "name": "Hamster",
-        "emoji": "🐹"
+        "emoji": "🐹",
+        "level": 3
       },
       {
         "name": "Wolf",
-        "emoji": "🐺"
+        "emoji": "🐺",
+        "level": 1
       },
       {
         "name": "Gorilla",
-        "emoji": "🦍"
+        "emoji": "🦍",
+        "level": 3
       },
       {
         "name": "Hippo",
-        "emoji": "🦛"
+        "emoji": "🦛",
+        "level": 2
       },
       {
         "name": "Giraffe",
-        "emoji": "🦒"
+        "emoji": "🦒",
+        "level": 2
       },
       {
         "name": "Zebra",
-        "emoji": "🦓"
+        "emoji": "🦓",
+        "level": 2
       },
       {
         "name": "Rhino",
-        "emoji": "🦏"
+        "emoji": "🦏",
+        "level": 2
       },
       {
         "name": "Camel",
-        "emoji": "🐫"
+        "emoji": "🐫",
+        "level": 2
       },
       {
         "name": "Llama",
-        "emoji": "🦙"
+        "emoji": "🦙",
+        "level": 3
       },
       {
         "name": "Kangaroo",
-        "emoji": "🦘"
+        "emoji": "🦘",
+        "level": 3
       },
       {
         "name": "Sloth",
-        "emoji": "🦥"
+        "emoji": "🦥",
+        "level": 3
       },
       {
         "name": "Otter",
-        "emoji": "🦦"
+        "emoji": "🦦",
+        "level": 3
       },
       {
         "name": "Badger",
-        "emoji": "🦡"
+        "emoji": "🦡",
+        "level": 3
       },
       {
         "name": "Skunk",
-        "emoji": "🦨"
+        "emoji": "🦨",
+        "level": 3
       },
       {
         "name": "Raccoon",
-        "emoji": "🦝"
+        "emoji": "🦝",
+        "level": 3
       },
       {
         "name": "Squirrel",
-        "emoji": "🐿️"
+        "emoji": "🐿️",
+        "level": 2
       },
       {
         "name": "Hedgehog",
-        "emoji": "🦔"
+        "emoji": "🦔",
+        "level": 2
       },
       {
         "name": "Bat",
-        "emoji": "🦇"
+        "emoji": "🦇",
+        "level": 2
       },
       {
         "name": "Snake",
-        "emoji": "🐍"
+        "emoji": "🐍",
+        "level": 1
       },
       {
         "name": "Lizard",
-        "emoji": "🦎"
+        "emoji": "🦎",
+        "level": 3
       },
       {
         "name": "Crocodile",
-        "emoji": "🐊"
+        "emoji": "🐊",
+        "level": 3
       },
       {
         "name": "Octopus",
-        "emoji": "🐙"
+        "emoji": "🐙",
+        "level": 2
       },
       {
         "name": "Crab",
-        "emoji": "🦀"
+        "emoji": "🦀",
+        "level": 2
       },
       {
         "name": "Shrimp",
-        "emoji": "🦐"
+        "emoji": "🦐",
+        "level": 2
       },
       {
         "name": "Fish",
-        "emoji": "🐟"
+        "emoji": "🐟",
+        "level": 1
       },
       {
         "name": "Bee",
-        "emoji": "🐝"
+        "emoji": "🐝",
+        "level": 1
       },
       {
         "name": "Ladybug",
-        "emoji": "🐞"
+        "emoji": "🐞",
+        "level": 2
       },
       {
         "name": "Snail",
-        "emoji": "🐌"
+        "emoji": "🐌",
+        "level": 2
       },
       {
         "name": "Ant",
-        "emoji": "🐜"
+        "emoji": "🐜",
+        "level": 1
       },
       {
         "name": "Parrot",
-        "emoji": "🦜"
+        "emoji": "🦜",
+        "level": 2
       },
       {
         "name": "Peacock",
-        "emoji": "🦚"
+        "emoji": "🦚",
+        "level": 3
       },
       {
         "name": "Swan",
-        "emoji": "🦢"
+        "emoji": "🦢",
+        "level": 3
       },
       {
         "name": "Rooster",
-        "emoji": "🐓"
+        "emoji": "🐓",
+        "level": 2
       },
       {
         "name": "Turkey",
-        "emoji": "🦃"
+        "emoji": "🦃",
+        "level": 2
       },
       {
         "name": "Goat",
-        "emoji": "🐐"
+        "emoji": "🐐",
+        "level": 2
       },
       {
         "name": "Buffalo",
-        "emoji": "🐃"
+        "emoji": "🐃",
+        "level": 3
       },
       {
         "name": "Ox",
-        "emoji": "🐂"
+        "emoji": "🐂",
+        "level": 3
       },
       {
         "name": "Boar",
-        "emoji": "🐗"
+        "emoji": "🐗",
+        "level": 3
       },
       {
         "name": "Ram",
-        "emoji": "🐏"
+        "emoji": "🐏",
+        "level": 3
       },
       {
         "name": "Poodle",
-        "emoji": "🐩"
+        "emoji": "🐩",
+        "level": 3
       },
       {
         "name": "Guide Dog",
-        "emoji": "🦮"
+        "emoji": "🦮",
+        "level": 3
       },
       {
         "name": "Service Dog",
-        "emoji": "🐕‍🦺"
+        "emoji": "🐕‍🦺",
+        "level": 3
       },
       {
         "name": "Puppy",
-        "emoji": "🐕"
+        "emoji": "🐕",
+        "level": 3
       },
       {
         "name": "Kitten",
-        "emoji": "🐈"
+        "emoji": "🐈",
+        "level": 3
       },
       {
         "name": "Black Cat",
-        "emoji": "🐈‍⬛"
+        "emoji": "🐈‍⬛",
+        "level": 3
       },
       {
         "name": "Leopard",
-        "emoji": "🐆"
+        "emoji": "🐆",
+        "level": 3
       },
       {
         "name": "Beaver",
-        "emoji": "🦫"
+        "emoji": "🦫",
+        "level": 3
       },
       {
         "name": "Bird",
-        "emoji": "🐦"
+        "emoji": "🐦",
+        "level": 1
       },
       {
         "name": "Chick",
-        "emoji": "🐣"
+        "emoji": "🐣",
+        "level": 3
       },
       {
         "name": "Baby Chick",
-        "emoji": "🐤"
+        "emoji": "🐤",
+        "level": 3
       },
       {
         "name": "Dove",
-        "emoji": "🕊️"
+        "emoji": "🕊️",
+        "level": 3
       },
       {
         "name": "Eagle",
-        "emoji": "🦅"
+        "emoji": "🦅",
+        "level": 2
       },
       {
         "name": "Duck",
-        "emoji": "🦆"
+        "emoji": "🦆",
+        "level": 1
       },
       {
         "name": "Goose",
-        "emoji": "🪿"
+        "emoji": "🪿",
+        "level": 3
       },
       {
         "name": "Flamingo",
-        "emoji": "🦩"
+        "emoji": "🦩",
+        "level": 3
       },
       {
         "name": "Mammoth",
-        "emoji": "🦣"
+        "emoji": "🦣",
+        "level": 3
       },
       {
         "name": "Dodo",
-        "emoji": "🦤"
+        "emoji": "🦤",
+        "level": 3
       },
       {
         "name": "Feather",
-        "emoji": "🪶"
+        "emoji": "🪶",
+        "level": 3
       },
       {
         "name": "T-Rex",
-        "emoji": "🦖"
+        "emoji": "🦖",
+        "level": 3
       },
       {
         "name": "Dinosaur",
-        "emoji": "🦕"
+        "emoji": "🦕",
+        "level": 3
       },
       {
         "name": "Dragon",
-        "emoji": "🐉"
+        "emoji": "🐉",
+        "level": 3
       },
       {
         "name": "Dragon Face",
-        "emoji": "🐲"
+        "emoji": "🐲",
+        "level": 3
       },
       {
         "name": "Tropical Fish",
-        "emoji": "🐠"
+        "emoji": "🐠",
+        "level": 3
       },
       {
         "name": "Pufferfish",
-        "emoji": "🐡"
+        "emoji": "🐡",
+        "level": 3
       },
       {
         "name": "Shark",
-        "emoji": "🦈"
+        "emoji": "🦈",
+        "level": 2
       },
       {
         "name": "Blue Whale",
-        "emoji": "🐋"
+        "emoji": "🐋",
+        "level": 3
       },
       {
         "name": "Seal",
-        "emoji": "🦭"
+        "emoji": "🦭",
+        "level": 2
       },
       {
         "name": "Jellyfish",
-        "emoji": "🪼"
+        "emoji": "🪼",
+        "level": 3
       },
       {
         "name": "Squid",
-        "emoji": "🦑"
+        "emoji": "🦑",
+        "level": 2
       },
       {
         "name": "Lobster",
-        "emoji": "🦞"
+        "emoji": "🦞",
+        "level": 2
       },
       {
         "name": "Oyster",
-        "emoji": "🦪"
+        "emoji": "🦪",
+        "level": 3
       },
       {
         "name": "Sea Shell",
-        "emoji": "🐚"
+        "emoji": "🐚",
+        "level": 3
       },
       {
         "name": "Coral",
-        "emoji": "🪸"
+        "emoji": "🪸",
+        "level": 3
       },
       {
         "name": "Caterpillar",
-        "emoji": "🐛"
+        "emoji": "🐛",
+        "level": 3
       },
       {
         "name": "Cricket",
-        "emoji": "🦗"
+        "emoji": "🦗",
+        "level": 3
       },
       {
         "name": "Cockroach",
-        "emoji": "🪳"
+        "emoji": "🪳",
+        "level": 3
       },
       {
         "name": "Spider",
-        "emoji": "🕷️"
+        "emoji": "🕷️",
+        "level": 1
       },
       {
         "name": "Spider Web",
-        "emoji": "🕸️"
+        "emoji": "🕸️",
+        "level": 3
       },
       {
         "name": "Scorpion",
-        "emoji": "🦂"
+        "emoji": "🦂",
+        "level": 3
       },
       {
         "name": "Mosquito",
-        "emoji": "🦟"
+        "emoji": "🦟",
+        "level": 3
       },
       {
         "name": "Fly",
-        "emoji": "🪰"
+        "emoji": "🪰",
+        "level": 3
       },
       {
         "name": "Worm",
-        "emoji": "🪱"
+        "emoji": "🪱",
+        "level": 3
       },
       {
         "name": "Beetle",
-        "emoji": "🪲"
+        "emoji": "🪲",
+        "level": 3
       },
       {
         "name": "Orangutan",
-        "emoji": "🦧"
+        "emoji": "🦧",
+        "level": 3
       },
       {
         "name": "Polar Bear",
-        "emoji": "🐻‍❄️"
+        "emoji": "🐻‍❄️",
+        "level": 3
       },
       {
         "name": "Rat",
-        "emoji": "🐀"
+        "emoji": "🐀",
+        "level": 2
       },
       {
         "name": "Bison",
-        "emoji": "🦬"
+        "emoji": "🦬",
+        "level": 3
       }
     ]
   },
@@ -458,403 +570,503 @@ window.THEMES = {
     "items": [
       {
         "name": "Pizza",
-        "emoji": "🍕"
+        "emoji": "🍕",
+        "level": 1
       },
       {
         "name": "Burger",
-        "emoji": "🍔"
+        "emoji": "🍔",
+        "level": 2
       },
       {
         "name": "Apple",
-        "emoji": "🍎"
+        "emoji": "🍎",
+        "level": 1
       },
       {
         "name": "Banana",
-        "emoji": "🍌"
+        "emoji": "🍌",
+        "level": 1
       },
       {
         "name": "Cake",
-        "emoji": "🍰"
+        "emoji": "🍰",
+        "level": 1
       },
       {
         "name": "Ice Cream",
-        "emoji": "🍦"
+        "emoji": "🍦",
+        "level": 1
       },
       {
         "name": "Sushi",
-        "emoji": "🍣"
+        "emoji": "🍣",
+        "level": 3
       },
       {
         "name": "Taco",
-        "emoji": "🌮"
+        "emoji": "🌮",
+        "level": 3
       },
       {
         "name": "Bread",
-        "emoji": "🍞"
+        "emoji": "🍞",
+        "level": 1
       },
       {
         "name": "Cheese",
-        "emoji": "🧀"
+        "emoji": "🧀",
+        "level": 1
       },
       {
         "name": "Cookie",
-        "emoji": "🍪"
+        "emoji": "🍪",
+        "level": 1
       },
       {
         "name": "Grapes",
-        "emoji": "🍇"
+        "emoji": "🍇",
+        "level": 1
       },
       {
         "name": "Carrot",
-        "emoji": "🥕"
+        "emoji": "🥕",
+        "level": 1
       },
       {
         "name": "Corn",
-        "emoji": "🌽"
+        "emoji": "🌽",
+        "level": 2
       },
       {
         "name": "Tomato",
-        "emoji": "🍅"
+        "emoji": "🍅",
+        "level": 1
       },
       {
         "name": "Potato",
-        "emoji": "🥔"
+        "emoji": "🥔",
+        "level": 1
       },
       {
         "name": "Onion",
-        "emoji": "🧅"
+        "emoji": "🧅",
+        "level": 2
       },
       {
         "name": "Garlic",
-        "emoji": "🧄"
+        "emoji": "🧄",
+        "level": 3
       },
       {
         "name": "Cucumber",
-        "emoji": "🥒"
+        "emoji": "🥒",
+        "level": 3
       },
       {
         "name": "Broccoli",
-        "emoji": "🥦"
+        "emoji": "🥦",
+        "level": 3
       },
       {
         "name": "Avocado",
-        "emoji": "🥑"
+        "emoji": "🥑",
+        "level": 3
       },
       {
         "name": "Eggplant",
-        "emoji": "🍆"
+        "emoji": "🍆",
+        "level": 3
       },
       {
         "name": "Pepper",
-        "emoji": "🌶️"
+        "emoji": "🌶️",
+        "level": 3
       },
       {
         "name": "Mushroom",
-        "emoji": "🍄"
+        "emoji": "🍄",
+        "level": 3
       },
       {
         "name": "Peanut",
-        "emoji": "🥜"
+        "emoji": "🥜",
+        "level": 3
       },
       {
         "name": "Chestnut",
-        "emoji": "🌰"
+        "emoji": "🌰",
+        "level": 3
       },
       {
         "name": "Rice",
-        "emoji": "🍚"
+        "emoji": "🍚",
+        "level": 1
       },
       {
         "name": "Noodles",
-        "emoji": "🍜"
+        "emoji": "🍜",
+        "level": 3
       },
       {
         "name": "Spaghetti",
-        "emoji": "🍝"
+        "emoji": "🍝",
+        "level": 3
       },
       {
         "name": "Ramen",
-        "emoji": "🍲"
+        "emoji": "🍲",
+        "level": 3
       },
       {
         "name": "Pancakes",
-        "emoji": "🥞"
+        "emoji": "🥞",
+        "level": 2
       },
       {
         "name": "Waffle",
-        "emoji": "🧇"
+        "emoji": "🧇",
+        "level": 2
       },
       {
         "name": "Croissant",
-        "emoji": "🥐"
+        "emoji": "🥐",
+        "level": 2
       },
       {
         "name": "Baguette",
-        "emoji": "🥖"
+        "emoji": "🥖",
+        "level": 2
       },
       {
         "name": "Pretzel",
-        "emoji": "🥨"
+        "emoji": "🥨",
+        "level": 3
       },
       {
         "name": "Bagel",
-        "emoji": "🥯"
+        "emoji": "🥯",
+        "level": 3
       },
       {
         "name": "Donut",
-        "emoji": "🍩"
+        "emoji": "🍩",
+        "level": 2
       },
       {
         "name": "Chocolate",
-        "emoji": "🍫"
+        "emoji": "🍫",
+        "level": 1
       },
       {
         "name": "Candy",
-        "emoji": "🍬"
+        "emoji": "🍬",
+        "level": 1
       },
       {
         "name": "Lollipop",
-        "emoji": "🍭"
+        "emoji": "🍭",
+        "level": 3
       },
       {
         "name": "Honey",
-        "emoji": "🍯"
+        "emoji": "🍯",
+        "level": 1
       },
       {
         "name": "Popcorn",
-        "emoji": "🍿"
+        "emoji": "🍿",
+        "level": 2
       },
       {
         "name": "Fries",
-        "emoji": "🍟"
+        "emoji": "🍟",
+        "level": 2
       },
       {
         "name": "Hot Dog",
-        "emoji": "🌭"
+        "emoji": "🌭",
+        "level": 2
       },
       {
         "name": "Sandwich",
-        "emoji": "🥪"
+        "emoji": "🥪",
+        "level": 2
       },
       {
         "name": "Burrito",
-        "emoji": "🌯"
+        "emoji": "🌯",
+        "level": 3
       },
       {
         "name": "Salad",
-        "emoji": "🥗"
+        "emoji": "🥗",
+        "level": 1
       },
       {
         "name": "Chopsticks",
-        "emoji": "🥢"
+        "emoji": "🥢",
+        "level": 3
       },
       {
         "name": "Pie",
-        "emoji": "🥧"
+        "emoji": "🥧",
+        "level": 3
       },
       {
         "name": "Cupcake",
-        "emoji": "🧁"
+        "emoji": "🧁",
+        "level": 3
       },
       {
         "name": "Strawberry",
-        "emoji": "🍓"
+        "emoji": "🍓",
+        "level": 1
       },
       {
         "name": "Cherry",
-        "emoji": "🍒"
+        "emoji": "🍒",
+        "level": 2
       },
       {
         "name": "Peach",
-        "emoji": "🍑"
+        "emoji": "🍑",
+        "level": 2
       },
       {
         "name": "Pineapple",
-        "emoji": "🍍"
+        "emoji": "🍍",
+        "level": 2
       },
       {
         "name": "Watermelon",
-        "emoji": "🍉"
+        "emoji": "🍉",
+        "level": 2
       },
       {
         "name": "Lemon",
-        "emoji": "🍋"
+        "emoji": "🍋",
+        "level": 2
       },
       {
         "name": "Orange",
-        "emoji": "🍊"
+        "emoji": "🍊",
+        "level": 1
       },
       {
         "name": "Kiwi",
-        "emoji": "🥝"
+        "emoji": "🥝",
+        "level": 2
       },
       {
         "name": "Coconut",
-        "emoji": "🥥"
+        "emoji": "🥥",
+        "level": 2
       },
       {
         "name": "Mango",
-        "emoji": "🥭"
+        "emoji": "🥭",
+        "level": 2
       },
       {
         "name": "Pear",
-        "emoji": "🍐"
+        "emoji": "🍐",
+        "level": 2
       },
       {
         "name": "Blueberry",
-        "emoji": "🫐"
+        "emoji": "🫐",
+        "level": 3
       },
       {
         "name": "Dumpling",
-        "emoji": "🥟"
+        "emoji": "🥟",
+        "level": 3
       },
       {
         "name": "Fortune Cookie",
-        "emoji": "🥠"
+        "emoji": "🥠",
+        "level": 3
       },
       {
         "name": "Takeout",
-        "emoji": "🥡"
+        "emoji": "🥡",
+        "level": 3
       },
       {
         "name": "Fried Shrimp",
-        "emoji": "🍤"
+        "emoji": "🍤",
+        "level": 3
       },
       {
         "name": "Rice Ball",
-        "emoji": "🍙"
+        "emoji": "🍙",
+        "level": 3
       },
       {
         "name": "Rice Cracker",
-        "emoji": "🍘"
+        "emoji": "🍘",
+        "level": 3
       },
       {
         "name": "Fish Cake",
-        "emoji": "🍥"
+        "emoji": "🍥",
+        "level": 3
       },
       {
         "name": "Bacon",
-        "emoji": "🥓"
+        "emoji": "🥓",
+        "level": 3
       },
       {
         "name": "Chicken Leg",
-        "emoji": "🍗"
+        "emoji": "🍗",
+        "level": 1
       },
       {
         "name": "Shaved Ice",
-        "emoji": "🍧"
+        "emoji": "🍧",
+        "level": 3
       },
       {
         "name": "Ice Cream Bowl",
-        "emoji": "🍨"
+        "emoji": "🍨",
+        "level": 3
       },
       {
         "name": "Custard",
-        "emoji": "🍮"
+        "emoji": "🍮",
+        "level": 3
       },
       {
         "name": "Baby Bottle",
-        "emoji": "🍼"
+        "emoji": "🍼",
+        "level": 3
       },
       {
         "name": "Milk",
-        "emoji": "🥛"
+        "emoji": "🥛",
+        "level": 1
       },
       {
         "name": "Coffee",
-        "emoji": "☕"
+        "emoji": "☕",
+        "level": 2
       },
       {
         "name": "Tea",
-        "emoji": "🍵"
+        "emoji": "🍵",
+        "level": 2
       },
       {
         "name": "Green Apple",
-        "emoji": "🍏"
+        "emoji": "🍏",
+        "level": 3
       },
       {
         "name": "Soda",
-        "emoji": "🥤"
+        "emoji": "🥤",
+        "level": 2
       },
       {
         "name": "Juice",
-        "emoji": "🧃"
+        "emoji": "🧃",
+        "level": 1
       },
       {
         "name": "Butter",
-        "emoji": "🧈"
+        "emoji": "🧈",
+        "level": 1
       },
       {
         "name": "Lettuce",
-        "emoji": "🥬"
+        "emoji": "🥬",
+        "level": 3
       },
       {
         "name": "Bell Pepper",
-        "emoji": "🫑"
+        "emoji": "🫑",
+        "level": 3
       },
       {
         "name": "Meat",
-        "emoji": "🍖"
+        "emoji": "🍖",
+        "level": 1
       },
       {
         "name": "Fruit Punch",
-        "emoji": "🍹"
+        "emoji": "🍹",
+        "level": 3
       },
       {
         "name": "Olive",
-        "emoji": "🫒"
+        "emoji": "🫒",
+        "level": 3
       },
       {
         "name": "Ice",
-        "emoji": "🧊"
+        "emoji": "🧊",
+        "level": 3
       },
       {
         "name": "Melon",
-        "emoji": "🍈"
+        "emoji": "🍈",
+        "level": 2
       },
       {
         "name": "Egg",
-        "emoji": "🥚"
+        "emoji": "🥚",
+        "level": 1
       },
       {
         "name": "Bowl",
-        "emoji": "🥣"
+        "emoji": "🥣",
+        "level": 3
       },
       {
         "name": "Salt",
-        "emoji": "🧂"
+        "emoji": "🧂",
+        "level": 3
       },
       {
         "name": "Teapot",
-        "emoji": "🫖"
+        "emoji": "🫖",
+        "level": 3
       },
       {
         "name": "Curry",
-        "emoji": "🍛"
+        "emoji": "🍛",
+        "level": 3
       },
       {
         "name": "Birthday Cake",
-        "emoji": "🎂"
+        "emoji": "🎂",
+        "level": 3
       },
       {
         "name": "Steak",
-        "emoji": "🥩"
+        "emoji": "🥩",
+        "level": 3
       },
       {
         "name": "Sweet Potato",
-        "emoji": "🍠"
+        "emoji": "🍠",
+        "level": 3
       },
       {
         "name": "Jar",
-        "emoji": "🫙"
+        "emoji": "🫙",
+        "level": 3
       },
       {
         "name": "Canned Food",
-        "emoji": "🥫"
+        "emoji": "🥫",
+        "level": 3
       },
       {
         "name": "Bento",
-        "emoji": "🍱"
+        "emoji": "🍱",
+        "level": 3
       }
     ]
   },
@@ -863,451 +1075,563 @@ window.THEMES = {
     "items": [
       {
         "name": "Running",
-        "emoji": "🏃"
+        "emoji": "🏃",
+        "level": 1
       },
       {
         "name": "Sleeping",
-        "emoji": "😴"
+        "emoji": "😴",
+        "level": 1
       },
       {
         "name": "Swimming",
-        "emoji": "🏊"
+        "emoji": "🏊",
+        "level": 1
       },
       {
         "name": "Dancing",
-        "emoji": "💃"
+        "emoji": "💃",
+        "level": 1
       },
       {
         "name": "Reading",
-        "emoji": "📖"
+        "emoji": "📖",
+        "level": 1
       },
       {
         "name": "Cooking",
-        "emoji": "🍳"
+        "emoji": "🍳",
+        "level": 1
       },
       {
         "name": "Singing",
-        "emoji": "🎤"
+        "emoji": "🎤",
+        "level": 1
       },
       {
         "name": "Cycling",
-        "emoji": "🚴"
+        "emoji": "🚴",
+        "level": 2
       },
       {
         "name": "Writing",
-        "emoji": "✍️"
+        "emoji": "✍️",
+        "level": 1
       },
       {
         "name": "Flying",
-        "emoji": "✈️"
+        "emoji": "✈️",
+        "level": 3
       },
       {
         "name": "Painting",
-        "emoji": "🎨"
+        "emoji": "🎨",
+        "level": 1
       },
       {
         "name": "Climbing",
-        "emoji": "🧗"
+        "emoji": "🧗",
+        "level": 2
       },
       {
         "name": "Walking",
-        "emoji": "🚶"
+        "emoji": "🚶",
+        "level": 1
       },
       {
         "name": "Jumping",
-        "emoji": "🦘"
+        "emoji": "🦘",
+        "level": 1
       },
       {
         "name": "Skiing",
-        "emoji": "⛷️"
+        "emoji": "⛷️",
+        "level": 2
       },
       {
         "name": "Skating",
-        "emoji": "⛸️"
+        "emoji": "⛸️",
+        "level": 2
       },
       {
         "name": "Surfing",
-        "emoji": "🏄"
+        "emoji": "🏄",
+        "level": 2
       },
       {
         "name": "Fishing",
-        "emoji": "🎣"
+        "emoji": "🎣",
+        "level": 2
       },
       {
         "name": "Gardening",
-        "emoji": "🌱"
+        "emoji": "🌱",
+        "level": 2
       },
       {
         "name": "Shouting",
-        "emoji": "📣"
+        "emoji": "📣",
+        "level": 2
       },
       {
         "name": "Thinking",
-        "emoji": "🤔"
+        "emoji": "🤔",
+        "level": 1
       },
       {
         "name": "Laughing",
-        "emoji": "😂"
+        "emoji": "😂",
+        "level": 1
       },
       {
         "name": "Crying",
-        "emoji": "😭"
+        "emoji": "😭",
+        "level": 1
       },
       {
         "name": "Sneezing",
-        "emoji": "🤧"
+        "emoji": "🤧",
+        "level": 2
       },
       {
         "name": "Yawning",
-        "emoji": "🥱"
+        "emoji": "🥱",
+        "level": 2
       },
       {
         "name": "Winking",
-        "emoji": "😉"
+        "emoji": "😉",
+        "level": 2
       },
       {
         "name": "Whispering",
-        "emoji": "🤫"
+        "emoji": "🤫",
+        "level": 2
       },
       {
         "name": "Washing",
-        "emoji": "🧼"
+        "emoji": "🧼",
+        "level": 1
       },
       {
         "name": "Shopping",
-        "emoji": "🛒"
+        "emoji": "🛒",
+        "level": 1
       },
       {
         "name": "Traveling",
-        "emoji": "🧳"
+        "emoji": "🧳",
+        "level": 2
       },
       {
         "name": "Studying",
-        "emoji": "📚"
+        "emoji": "📚",
+        "level": 2
       },
       {
         "name": "Exercising",
-        "emoji": "💪"
+        "emoji": "💪",
+        "level": 2
       },
       {
         "name": "Boxing",
-        "emoji": "🥊"
+        "emoji": "🥊",
+        "level": 2
       },
       {
         "name": "Gaming",
-        "emoji": "🎮"
+        "emoji": "🎮",
+        "level": 2
       },
       {
         "name": "Listening",
-        "emoji": "🎧"
+        "emoji": "🎧",
+        "level": 1
       },
       {
         "name": "Watching",
-        "emoji": "📺"
+        "emoji": "📺",
+        "level": 1
       },
       {
         "name": "Building",
-        "emoji": "🔨"
+        "emoji": "🔨",
+        "level": 2
       },
       {
         "name": "Cutting",
-        "emoji": "✂️"
+        "emoji": "✂️",
+        "level": 2
       },
       {
         "name": "Knitting",
-        "emoji": "🧶"
+        "emoji": "🧶",
+        "level": 3
       },
       {
         "name": "Diving",
-        "emoji": "🤿"
+        "emoji": "🤿",
+        "level": 2
       },
       {
         "name": "Rowing",
-        "emoji": "🚣"
+        "emoji": "🚣",
+        "level": 3
       },
       {
         "name": "Wrestling",
-        "emoji": "🤼"
+        "emoji": "🤼",
+        "level": 3
       },
       {
         "name": "Meditating",
-        "emoji": "🧘"
+        "emoji": "🧘",
+        "level": 3
       },
       {
         "name": "Praying",
-        "emoji": "🙏"
+        "emoji": "🙏",
+        "level": 1
       },
       {
         "name": "Clapping",
-        "emoji": "👏"
+        "emoji": "👏",
+        "level": 1
       },
       {
         "name": "Waving",
-        "emoji": "👋"
+        "emoji": "👋",
+        "level": 1
       },
       {
         "name": "Pointing",
-        "emoji": "👉"
+        "emoji": "👉",
+        "level": 2
       },
       {
         "name": "Shaking Hands",
-        "emoji": "🤝"
+        "emoji": "🤝",
+        "level": 2
       },
       {
         "name": "Bowing",
-        "emoji": "🙇"
+        "emoji": "🙇",
+        "level": 3
       },
       {
         "name": "Skipping",
-        "emoji": "🪢"
+        "emoji": "🪢",
+        "level": 3
       },
       {
         "name": "Snowboarding",
-        "emoji": "🏂"
+        "emoji": "🏂",
+        "level": 3
       },
       {
         "name": "Skateboarding",
-        "emoji": "🛹"
+        "emoji": "🛹",
+        "level": 3
       },
       {
         "name": "Taking Photos",
-        "emoji": "📸"
+        "emoji": "📸",
+        "level": 3
       },
       {
         "name": "Camping",
-        "emoji": "🏕️"
+        "emoji": "🏕️",
+        "level": 2
       },
       {
         "name": "Hiking",
-        "emoji": "🥾"
+        "emoji": "🥾",
+        "level": 2
       },
       {
         "name": "Juggling",
-        "emoji": "🤹"
+        "emoji": "🤹",
+        "level": 3
       },
       {
         "name": "Frisbee",
-        "emoji": "🥏"
+        "emoji": "🥏",
+        "level": 3
       },
       {
         "name": "Gymnastics",
-        "emoji": "🤸"
+        "emoji": "🤸",
+        "level": 3
       },
       {
         "name": "Stretching",
-        "emoji": "🧎"
+        "emoji": "🧎",
+        "level": 3
       },
       {
         "name": "Weightlifting",
-        "emoji": "🏋️"
+        "emoji": "🏋️",
+        "level": 2
       },
       {
         "name": "Golfing",
-        "emoji": "🏌️"
+        "emoji": "🏌️",
+        "level": 3
       },
       {
         "name": "Horse Riding",
-        "emoji": "🏇"
+        "emoji": "🏇",
+        "level": 3
       },
       {
         "name": "Handball",
-        "emoji": "🤾"
+        "emoji": "🤾",
+        "level": 3
       },
       {
         "name": "Volleyball",
-        "emoji": "🏐"
+        "emoji": "🏐",
+        "level": 3
       },
       {
         "name": "Rugby",
-        "emoji": "🏉"
+        "emoji": "🏉",
+        "level": 3
       },
       {
         "name": "Tennis",
-        "emoji": "🎾"
+        "emoji": "🎾",
+        "level": 3
       },
       {
         "name": "Basketball",
-        "emoji": "🏀"
+        "emoji": "🏀",
+        "level": 3
       },
       {
         "name": "Football",
-        "emoji": "🏈"
+        "emoji": "🏈",
+        "level": 3
       },
       {
         "name": "Baseball",
-        "emoji": "⚾"
+        "emoji": "⚾",
+        "level": 3
       },
       {
         "name": "Softball",
-        "emoji": "🥎"
+        "emoji": "🥎",
+        "level": 3
       },
       {
         "name": "Ping Pong",
-        "emoji": "🏓"
+        "emoji": "🏓",
+        "level": 3
       },
       {
         "name": "Badminton",
-        "emoji": "🏸"
+        "emoji": "🏸",
+        "level": 3
       },
       {
         "name": "Kicking",
-        "emoji": "🦵"
+        "emoji": "🦵",
+        "level": 3
       },
       {
         "name": "Martial Arts",
-        "emoji": "🥋"
+        "emoji": "🥋",
+        "level": 3
       },
       {
         "name": "Roller Skating",
-        "emoji": "🛼"
+        "emoji": "🛼",
+        "level": 3
       },
       {
         "name": "Sledding",
-        "emoji": "🛷"
+        "emoji": "🛷",
+        "level": 3
       },
       {
         "name": "Golf",
-        "emoji": "⛳"
+        "emoji": "⛳",
+        "level": 3
       },
       {
         "name": "Kite Flying",
-        "emoji": "🪁"
+        "emoji": "🪁",
+        "level": 3
       },
       {
         "name": "Darts",
-        "emoji": "🎯"
+        "emoji": "🎯",
+        "level": 3
       },
       {
         "name": "Bowling",
-        "emoji": "🎳"
+        "emoji": "🎳",
+        "level": 3
       },
       {
         "name": "Rolling Dice",
-        "emoji": "🎲"
+        "emoji": "🎲",
+        "level": 3
       },
       {
         "name": "Card Playing",
-        "emoji": "🃏"
+        "emoji": "🃏",
+        "level": 3
       },
       {
         "name": "Chess",
-        "emoji": "♟️"
+        "emoji": "♟️",
+        "level": 3
       },
       {
         "name": "Puzzle",
-        "emoji": "🧩"
+        "emoji": "🧩",
+        "level": 3
       },
       {
         "name": "Magic",
-        "emoji": "🪄"
+        "emoji": "🪄",
+        "level": 3
       },
       {
         "name": "Ballet",
-        "emoji": "🩰"
+        "emoji": "🩰",
+        "level": 3
       },
       {
         "name": "Acting",
-        "emoji": "🎭"
+        "emoji": "🎭",
+        "level": 3
       },
       {
         "name": "Movie Making",
-        "emoji": "🎥"
+        "emoji": "🎥",
+        "level": 3
       },
       {
         "name": "Coloring",
-        "emoji": "🖍️"
+        "emoji": "🖍️",
+        "level": 1
       },
       {
         "name": "Speaking",
-        "emoji": "🗣️"
+        "emoji": "🗣️",
+        "level": 1
       },
       {
         "name": "Massage",
-        "emoji": "💆"
+        "emoji": "💆",
+        "level": 3
       },
       {
         "name": "Haircut",
-        "emoji": "💇"
+        "emoji": "💇",
+        "level": 3
       },
       {
         "name": "Sauna",
-        "emoji": "🧖"
+        "emoji": "🧖",
+        "level": 3
       },
       {
         "name": "Bathing",
-        "emoji": "🛀"
+        "emoji": "🛀",
+        "level": 3
       },
       {
         "name": "Lying Down",
-        "emoji": "🛌"
+        "emoji": "🛌",
+        "level": 3
       },
       {
         "name": "Water Polo",
-        "emoji": "🤽"
+        "emoji": "🤽",
+        "level": 3
       },
       {
         "name": "Mountain Biking",
-        "emoji": "🚵"
+        "emoji": "🚵",
+        "level": 3
       },
       {
         "name": "Counting",
-        "emoji": "🧮"
+        "emoji": "🧮",
+        "level": 1
       },
       {
         "name": "Bouncing",
-        "emoji": "⛹️"
+        "emoji": "⛹️",
+        "level": 3
       },
       {
         "name": "Raising Hand",
-        "emoji": "🙋"
+        "emoji": "🙋",
+        "level": 3
       },
       {
         "name": "Brushing",
-        "emoji": "🪥"
+        "emoji": "🪥",
+        "level": 1
       },
       {
         "name": "Eating",
-        "emoji": "🍽️"
+        "emoji": "🍽️",
+        "level": 1
       },
       {
         "name": "Cuddling",
-        "emoji": "🫂"
+        "emoji": "🫂",
+        "level": 1
       },
       {
         "name": "Facepalm",
-        "emoji": "🤦"
+        "emoji": "🤦",
+        "level": 3
       },
       {
         "name": "Shrugging",
-        "emoji": "🤷"
+        "emoji": "🤷",
+        "level": 3
       },
       {
         "name": "Frowning",
-        "emoji": "🙍"
+        "emoji": "🙍",
+        "level": 3
       },
       {
         "name": "Pouting",
-        "emoji": "🙎"
+        "emoji": "🙎",
+        "level": 3
       },
       {
         "name": "Dancing Duo",
-        "emoji": "👯"
+        "emoji": "👯",
+        "level": 3
       },
       {
         "name": "Saluting",
-        "emoji": "🫡"
+        "emoji": "🫡",
+        "level": 2
       },
       {
         "name": "Hugging",
-        "emoji": "🤗"
+        "emoji": "🤗",
+        "level": 1
       },
       {
         "name": "Giggling",
-        "emoji": "🤭"
+        "emoji": "🤭",
+        "level": 2
       },
       {
         "name": "Peeking",
-        "emoji": "🫣"
+        "emoji": "🫣",
+        "level": 2
       }
     ]
   },
@@ -1316,499 +1640,623 @@ window.THEMES = {
     "items": [
       {
         "name": "Phone",
-        "emoji": "📱"
+        "emoji": "📱",
+        "level": 1
       },
       {
         "name": "Clock",
-        "emoji": "⏰"
+        "emoji": "⏰",
+        "level": 1
       },
       {
         "name": "Key",
-        "emoji": "🔑"
+        "emoji": "🔑",
+        "level": 1
       },
       {
         "name": "Umbrella",
-        "emoji": "☂️"
+        "emoji": "☂️",
+        "level": 2
       },
       {
         "name": "Camera",
-        "emoji": "📷"
+        "emoji": "📷",
+        "level": 1
       },
       {
         "name": "Guitar",
-        "emoji": "🎸"
+        "emoji": "🎸",
+        "level": 2
       },
       {
         "name": "Lamp",
-        "emoji": "💡"
+        "emoji": "💡",
+        "level": 3
       },
       {
         "name": "Chair",
-        "emoji": "🪑"
+        "emoji": "🪑",
+        "level": 1
       },
       {
         "name": "Ball",
-        "emoji": "⚽"
+        "emoji": "⚽",
+        "level": 1
       },
       {
         "name": "Gift",
-        "emoji": "🎁"
+        "emoji": "🎁",
+        "level": 1
       },
       {
         "name": "Rocket",
-        "emoji": "🚀"
+        "emoji": "🚀",
+        "level": 3
       },
       {
         "name": "Book",
-        "emoji": "📚"
+        "emoji": "📚",
+        "level": 1
       },
       {
         "name": "Pencil",
-        "emoji": "✏️"
+        "emoji": "✏️",
+        "level": 1
       },
       {
         "name": "Pen",
-        "emoji": "🖊️"
+        "emoji": "🖊️",
+        "level": 1
       },
       {
         "name": "Notebook",
-        "emoji": "📓"
+        "emoji": "📓",
+        "level": 3
       },
       {
         "name": "Scissors",
-        "emoji": "✂️"
+        "emoji": "✂️",
+        "level": 1
       },
       {
         "name": "Glasses",
-        "emoji": "👓"
+        "emoji": "👓",
+        "level": 1
       },
       {
         "name": "Watch",
-        "emoji": "⌚"
+        "emoji": "⌚",
+        "level": 1
       },
       {
         "name": "Hat",
-        "emoji": "🎩"
+        "emoji": "🎩",
+        "level": 1
       },
       {
         "name": "Shoe",
-        "emoji": "👟"
+        "emoji": "👟",
+        "level": 1
       },
       {
         "name": "Sock",
-        "emoji": "🧦"
+        "emoji": "🧦",
+        "level": 1
       },
       {
         "name": "Gloves",
-        "emoji": "🧤"
+        "emoji": "🧤",
+        "level": 2
       },
       {
         "name": "Scarf",
-        "emoji": "🧣"
+        "emoji": "🧣",
+        "level": 2
       },
       {
         "name": "Handbag",
-        "emoji": "👜"
+        "emoji": "👜",
+        "level": 2
       },
       {
         "name": "Backpack",
-        "emoji": "🎒"
+        "emoji": "🎒",
+        "level": 2
       },
       {
         "name": "Wallet",
-        "emoji": "👛"
+        "emoji": "👛",
+        "level": 2
       },
       {
         "name": "Ring",
-        "emoji": "💍"
+        "emoji": "💍",
+        "level": 2
       },
       {
         "name": "Crown",
-        "emoji": "👑"
+        "emoji": "👑",
+        "level": 2
       },
       {
         "name": "Gem",
-        "emoji": "💎"
+        "emoji": "💎",
+        "level": 2
       },
       {
         "name": "Money",
-        "emoji": "💰"
+        "emoji": "💰",
+        "level": 2
       },
       {
         "name": "Card",
-        "emoji": "💳"
+        "emoji": "💳",
+        "level": 2
       },
       {
         "name": "Laptop",
-        "emoji": "💻"
+        "emoji": "💻",
+        "level": 2
       },
       {
         "name": "Keyboard",
-        "emoji": "⌨️"
+        "emoji": "⌨️",
+        "level": 2
       },
       {
         "name": "Mouse",
-        "emoji": "🖱️"
+        "emoji": "🖱️",
+        "level": 2
       },
       {
         "name": "Printer",
-        "emoji": "🖨️"
+        "emoji": "🖨️",
+        "level": 3
       },
       {
         "name": "Headphones",
-        "emoji": "🎧"
+        "emoji": "🎧",
+        "level": 2
       },
       {
         "name": "Microphone",
-        "emoji": "🎙️"
+        "emoji": "🎙️",
+        "level": 2
       },
       {
         "name": "Television",
-        "emoji": "📺"
+        "emoji": "📺",
+        "level": 2
       },
       {
         "name": "Radio",
-        "emoji": "📻"
+        "emoji": "📻",
+        "level": 2
       },
       {
         "name": "Speaker",
-        "emoji": "🔊"
+        "emoji": "🔊",
+        "level": 2
       },
       {
         "name": "Battery",
-        "emoji": "🔋"
+        "emoji": "🔋",
+        "level": 2
       },
       {
         "name": "Plug",
-        "emoji": "🔌"
+        "emoji": "🔌",
+        "level": 2
       },
       {
         "name": "Flashlight",
-        "emoji": "🔦"
+        "emoji": "🔦",
+        "level": 2
       },
       {
         "name": "Candle",
-        "emoji": "🕯️"
+        "emoji": "🕯️",
+        "level": 2
       },
       {
         "name": "Mirror",
-        "emoji": "🪞"
+        "emoji": "🪞",
+        "level": 2
       },
       {
         "name": "Window",
-        "emoji": "🪟"
+        "emoji": "🪟",
+        "level": 1
       },
       {
         "name": "Door",
-        "emoji": "🚪"
+        "emoji": "🚪",
+        "level": 1
       },
       {
         "name": "Bed",
-        "emoji": "🛏️"
+        "emoji": "🛏️",
+        "level": 1
       },
       {
         "name": "Sofa",
-        "emoji": "🛋️"
+        "emoji": "🛋️",
+        "level": 3
       },
       {
         "name": "Toilet",
-        "emoji": "🚽"
+        "emoji": "🚽",
+        "level": 3
       },
       {
         "name": "Bathtub",
-        "emoji": "🛁"
+        "emoji": "🛁",
+        "level": 2
       },
       {
         "name": "Shower",
-        "emoji": "🚿"
+        "emoji": "🚿",
+        "level": 2
       },
       {
         "name": "Pan",
-        "emoji": "🍳"
+        "emoji": "🍳",
+        "level": 2
       },
       {
         "name": "Pot",
-        "emoji": "🍲"
+        "emoji": "🍲",
+        "level": 2
       },
       {
         "name": "Plate",
-        "emoji": "🍽️"
+        "emoji": "🍽️",
+        "level": 1
       },
       {
         "name": "Fork",
-        "emoji": "🍴"
+        "emoji": "🍴",
+        "level": 1
       },
       {
         "name": "Knife",
-        "emoji": "🔪"
+        "emoji": "🔪",
+        "level": 1
       },
       {
         "name": "Spoon",
-        "emoji": "🥄"
+        "emoji": "🥄",
+        "level": 1
       },
       {
         "name": "Cup",
-        "emoji": "☕"
+        "emoji": "☕",
+        "level": 1
       },
       {
         "name": "Bottle",
-        "emoji": "🍾"
+        "emoji": "🍾",
+        "level": 2
       },
       {
         "name": "Box",
-        "emoji": "📦"
+        "emoji": "📦",
+        "level": 1
       },
       {
         "name": "Paperclip",
-        "emoji": "📎"
+        "emoji": "📎",
+        "level": 3
       },
       {
         "name": "Pin",
-        "emoji": "📌"
+        "emoji": "📌",
+        "level": 3
       },
       {
         "name": "Ruler",
-        "emoji": "📏"
+        "emoji": "📏",
+        "level": 3
       },
       {
         "name": "Magnet",
-        "emoji": "🧲"
+        "emoji": "🧲",
+        "level": 3
       },
       {
         "name": "Lock",
-        "emoji": "🔒"
+        "emoji": "🔒",
+        "level": 3
       },
       {
         "name": "Rope",
-        "emoji": "🪢"
+        "emoji": "🪢",
+        "level": 3
       },
       {
         "name": "Hammer",
-        "emoji": "🔨"
+        "emoji": "🔨",
+        "level": 3
       },
       {
         "name": "Screwdriver",
-        "emoji": "🪛"
+        "emoji": "🪛",
+        "level": 3
       },
       {
         "name": "Wrench",
-        "emoji": "🔧"
+        "emoji": "🔧",
+        "level": 3
       },
       {
         "name": "Gear",
-        "emoji": "⚙️"
+        "emoji": "⚙️",
+        "level": 3
       },
       {
         "name": "Anchor",
-        "emoji": "⚓"
+        "emoji": "⚓",
+        "level": 3
       },
       {
         "name": "Map",
-        "emoji": "🗺️"
+        "emoji": "🗺️",
+        "level": 3
       },
       {
         "name": "Compass",
-        "emoji": "🧭"
+        "emoji": "🧭",
+        "level": 3
       },
       {
         "name": "Telescope",
-        "emoji": "🔭"
+        "emoji": "🔭",
+        "level": 3
       },
       {
         "name": "Microscope",
-        "emoji": "🔬"
+        "emoji": "🔬",
+        "level": 3
       },
       {
         "name": "Syringe",
-        "emoji": "💉"
+        "emoji": "💉",
+        "level": 3
       },
       {
         "name": "Pill",
-        "emoji": "💊"
+        "emoji": "💊",
+        "level": 3
       },
       {
         "name": "Bandage",
-        "emoji": "🩹"
+        "emoji": "🩹",
+        "level": 3
       },
       {
         "name": "Fire Extinguisher",
-        "emoji": "🧯"
+        "emoji": "🧯",
+        "level": 3
       },
       {
         "name": "Broom",
-        "emoji": "🧹"
+        "emoji": "🧹",
+        "level": 3
       },
       {
         "name": "Basket",
-        "emoji": "🧺"
+        "emoji": "🧺",
+        "level": 3
       },
       {
         "name": "Toilet Paper",
-        "emoji": "🧻"
+        "emoji": "🧻",
+        "level": 3
       },
       {
         "name": "Sponge",
-        "emoji": "🧽"
+        "emoji": "🧽",
+        "level": 3
       },
       {
         "name": "Lotion",
-        "emoji": "🧴"
+        "emoji": "🧴",
+        "level": 3
       },
       {
         "name": "Bucket",
-        "emoji": "🪣"
+        "emoji": "🪣",
+        "level": 3
       },
       {
         "name": "Mousetrap",
-        "emoji": "🪤"
+        "emoji": "🪤",
+        "level": 3
       },
       {
         "name": "Toothbrush",
-        "emoji": "🪥"
+        "emoji": "🪥",
+        "level": 1
       },
       {
         "name": "Shopping Bags",
-        "emoji": "🛍️"
+        "emoji": "🛍️",
+        "level": 3
       },
       {
         "name": "House",
-        "emoji": "🏠"
+        "emoji": "🏠",
+        "level": 1
       },
       {
         "name": "Boat",
-        "emoji": "⛵"
+        "emoji": "⛵",
+        "level": 3
       },
       {
         "name": "Sandal",
-        "emoji": "👡"
+        "emoji": "👡",
+        "level": 3
       },
       {
         "name": "High Heel",
-        "emoji": "👠"
+        "emoji": "👠",
+        "level": 3
       },
       {
         "name": "Boot",
-        "emoji": "🥾"
+        "emoji": "🥾",
+        "level": 3
       },
       {
         "name": "Car",
-        "emoji": "🚗"
+        "emoji": "🚗",
+        "level": 1
       },
       {
         "name": "Cap",
-        "emoji": "🧢"
+        "emoji": "🧢",
+        "level": 3
       },
       {
         "name": "Helmet",
-        "emoji": "⛑️"
+        "emoji": "⛑️",
+        "level": 3
       },
       {
         "name": "Sun Hat",
-        "emoji": "👒"
+        "emoji": "👒",
+        "level": 3
       },
       {
         "name": "Bicycle",
-        "emoji": "🚲"
+        "emoji": "🚲",
+        "level": 1
       },
       {
         "name": "Necklace",
-        "emoji": "📿"
+        "emoji": "📿",
+        "level": 3
       },
       {
         "name": "Lipstick",
-        "emoji": "💄"
+        "emoji": "💄",
+        "level": 3
       },
       {
         "name": "Nail Polish",
-        "emoji": "💅"
+        "emoji": "💅",
+        "level": 3
       },
       {
         "name": "Safety Pin",
-        "emoji": "🧷"
+        "emoji": "🧷",
+        "level": 3
       },
       {
         "name": "Needle",
-        "emoji": "🪡"
+        "emoji": "🪡",
+        "level": 3
       },
       {
         "name": "Thread",
-        "emoji": "🧵"
+        "emoji": "🧵",
+        "level": 3
       },
       {
         "name": "Red Book",
-        "emoji": "📕"
+        "emoji": "📕",
+        "level": 3
       },
       {
         "name": "Green Book",
-        "emoji": "📗"
+        "emoji": "📗",
+        "level": 3
       },
       {
         "name": "Blue Book",
-        "emoji": "📘"
+        "emoji": "📘",
+        "level": 3
       },
       {
         "name": "Orange Book",
-        "emoji": "📙"
+        "emoji": "📙",
+        "level": 3
       },
       {
         "name": "Crayon",
-        "emoji": "🖍️"
+        "emoji": "🖍️",
+        "level": 3
       },
       {
         "name": "Snowman",
-        "emoji": "⛄"
+        "emoji": "⛄",
+        "level": 3
       },
       {
         "name": "Kite",
-        "emoji": "🪁"
+        "emoji": "🪁",
+        "level": 3
       },
       {
         "name": "Sunglasses",
-        "emoji": "🕶️"
+        "emoji": "🕶️",
+        "level": 3
       },
       {
         "name": "Piano",
-        "emoji": "🎹"
+        "emoji": "🎹",
+        "level": 3
       },
       {
         "name": "Robot",
-        "emoji": "🤖"
+        "emoji": "🤖",
+        "level": 3
       },
       {
         "name": "Teddy Bear",
-        "emoji": "🧸"
+        "emoji": "🧸",
+        "level": 3
       },
       {
         "name": "Rainbow",
-        "emoji": "🌈"
+        "emoji": "🌈",
+        "level": 3
       },
       {
         "name": "Star",
-        "emoji": "⭐"
+        "emoji": "⭐",
+        "level": 1
       },
       {
         "name": "Balloon",
-        "emoji": "🎈"
+        "emoji": "🎈",
+        "level": 1
       },
       {
         "name": "Yoyo",
-        "emoji": "🪀"
+        "emoji": "🪀",
+        "level": 3
       },
       {
         "name": "Drum",
-        "emoji": "🥁"
+        "emoji": "🥁",
+        "level": 2
       },
       {
         "name": "Violin",
-        "emoji": "🎻"
+        "emoji": "🎻",
+        "level": 3
       },
       {
         "name": "Folder",
-        "emoji": "📁"
+        "emoji": "📁",
+        "level": 3
       },
       {
         "name": "Trumpet",
-        "emoji": "🎺"
+        "emoji": "🎺",
+        "level": 3
       }
     ]
   },
