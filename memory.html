@@ -2372,8 +2372,9 @@
 
   function populateThemes() {
     const saved = localStorage.getItem(STORAGE.theme);
+    const EMOJI_THEMES = {animals:'🐱', food:'🍎', actions:'🏃', objects:'📦', colors:'🎨', numbers:'🔢', body:'🧍', clothes:'👕', nature:'🌳', school:'🏫', transport:'🚗', jobs:'👷', emotions:'😊', shapes:'🔶', verbs:'✍️'};
     themeSelect.innerHTML = Object.entries(THEMES)
-      .map(([key, t]) => `<option value="${key}">${t.label}</option>`)
+      .map(([key, t]) => `<option value="${key}">${EMOJI_THEMES[key] || ''} ${t.label}</option>`)
       .join("");
     if (saved && THEMES[saved]) themeSelect.value = saved;
   }
