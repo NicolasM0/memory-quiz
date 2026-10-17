@@ -79,9 +79,11 @@ Choisir **Memory** ou **Quiz** sur l'accueil. Après une modification, recharger
 
 L'application est aussi une **PWA** : elle s'installe et fonctionne hors-ligne.
 
-- `manifest.json` : métadonnées d'installation (nom, icône, mode `standalone`) ;
+- `manifest.json` : métadonnées d'installation (nom, icônes, mode `standalone`) ;
 - `sw.js` : service worker (mise en cache des fichiers) ;
-- `icon.png` : icône de l'application.
+- `icon.png`, `icon-192.png`, `icon-512.png` : icônes de l'application, **créées pour
+  ce projet** (elles sont regénérables avec `python3 tools/make-icons.py`, qui ne
+  dépend d'aucune ressource externe).
 
 Le service worker ne s'active que sur une origine sécurisée (`https://` ou
 `http://localhost`) — **pas** en ouvrant le fichier en `file://`. Pour tester
@@ -111,8 +113,19 @@ Invariants à respecter en modifiant les mots :
 - `name` unique au sein d'un thème ; `emoji` peut se répéter si aucune image fidèle n'existe ;
 - pour le thème `numbers`, le champ `emoji` contient le chiffre à afficher.
 
-## Licence
+## Licence et crédits
 
 Publié sous **CC0 1.0 Universal** (domaine public) — voir [`LICENSE`](LICENSE).
 
 Auteur : **Nicolas Martin**.
+
+Tout le contenu de ce dépôt est original et couvert par cette licence :
+
+- **code** (`memory.html`, `sw.js`, `index.html`, `tools/make-icons.py`) ;
+- **données** : les 925 mots anglais et leurs traductions françaises ;
+- **icônes** (`icon*.png`) : dessins géométriques générés par `tools/make-icons.py`,
+  sans utiliser aucune image tierce.
+
+Aucune ressource externe n'est intégrée : les **emojis** sont rendus par la police
+couleur du système (`fonts-noto-color-emoji`) et les **voix** proviennent de la
+synthèse vocale du navigateur (Web Speech API).
