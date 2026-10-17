@@ -425,9 +425,10 @@ font-size: clamp(1rem, 3vw, 1.4rem);
 display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;
 }
 </style>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#4f9deb">
 </head>
 <body>
-<div id="viewHome" class="view">
 
   <div style="text-align:center; display:flex; flex-direction:column; gap:8px;">
     <h1>Memory & Quiz</h1>
@@ -7039,4 +7040,15 @@ const EMOJI_THEMES = {animals:'🐱', food:'🍎', actions:'🏃', objects:'📦
 })();
 </script>
 </body>
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('./sw.js').then(reg => {
+        console.log('ServiceWorker registration successful, scope: ', reg.scope);
+      }).catch(err => {
+        console.log('ServiceWorker registration failed: ', err);
+      });
+    });
+  }
+</script>
 </html>
