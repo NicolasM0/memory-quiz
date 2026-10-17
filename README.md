@@ -75,6 +75,26 @@ firefox memory.html
 Choisir **Memory** ou **Quiz** sur l'accueil. Après une modification, recharger avec
 **Ctrl+Shift+R** pour contourner le cache.
 
+## Installation (PWA / hors-ligne)
+
+L'application est aussi une **PWA** : elle s'installe et fonctionne hors-ligne.
+
+- `manifest.json` : métadonnées d'installation (nom, icône, mode `standalone`) ;
+- `sw.js` : service worker (mise en cache des fichiers) ;
+- `icon.png` : icône de l'application.
+
+Le service worker ne s'active que sur une origine sécurisée (`https://` ou
+`http://localhost`) — **pas** en ouvrant le fichier en `file://`. Pour tester
+l'installation, servir le dossier localement, par exemple :
+
+```bash
+python3 -m http.server 8000
+```
+
+puis ouvrir <http://localhost:8000/memory.html>. Le service worker est **versionné**
+(`CACHE_VERSION` dans `sw.js`) : après une modification de `memory.html`, incrémenter
+cette version pour que les navigateurs abandonnent l'ancien cache.
+
 ## Personnalisation
 
 Tout se trouve dans `memory.html` :

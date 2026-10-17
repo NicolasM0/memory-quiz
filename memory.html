@@ -430,6 +430,7 @@ display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;
 </head>
 <body>
 
+  <div id="viewHome" class="view">
   <div style="text-align:center; display:flex; flex-direction:column; gap:8px;">
     <h1>Memory & Quiz</h1>
     <p class="subtitle">Apprendre l’anglais en jouant</p>
@@ -7037,10 +7038,7 @@ const EMOJI_THEMES = {animals:'🐱', food:'🍎', actions:'🏃', objects:'📦
   function fromHash() { show((location.hash || "#home").slice(1)); }
   window.addEventListener("hashchange", fromHash);
   fromHash();
-})();
-</script>
-</body>
-<script>
+
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
       navigator.serviceWorker.register('./sw.js').then(reg => {
@@ -7050,5 +7048,7 @@ const EMOJI_THEMES = {animals:'🐱', food:'🍎', actions:'🏃', objects:'📦
       });
     });
   }
+})();
 </script>
+</body>
 </html>

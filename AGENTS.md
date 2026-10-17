@@ -5,6 +5,7 @@
 - The whole app is one file: three `.view` containers (`#viewHome`, `#viewMemory`, `#viewQuiz`) plus four `<script>` blocks in this order: (1) data (`window.THEMES` / `window.TRANSLATIONS`), (2) Memory IIFE, (3) Quiz IIFE, (4) a tiny hash router (`#home`/`#memory`/`#quiz`). No build step, dependencies, tests, or CI.
 - No Node/JS runtime here (`node`/`deno`/`bun` absent), so you cannot execute the JS. Validate edits with a `python3` script instead (see below).
 - Edit `memory.html` directly and reload in Firefox (Ctrl+Shift+R to bypass cache). Repo also contains `README.md` (user-facing, in French) and `LICENSE` (CC0 1.0). Keep them in sync with the current themes/counts when you change `memory.html`.
+- PWA layer: `manifest.json` (install metadata), `sw.js` (service worker), `icon.png`. The SW is registered by the last `<script>` in `memory.html` and uses network-first for navigations; bump `CACHE_VERSION` in `sw.js` whenever `memory.html` changes, otherwise browsers keep serving the stale copy. The SW only works over `http://localhost` or `https://`, never `file://`.
 
 ## Data model (first `<script>`)
 - `window.THEMES` keys: `animals`, `food`, `actions`, `objects`, `colors`, `numbers`, `body`, `clothes`, `nature`, `school`, `transport`, `jobs`, `emotions`, `shapes`, `verbs`. Each theme is `{ label, items: [...] }`; each item is `{ name, emoji, level, label? }`.

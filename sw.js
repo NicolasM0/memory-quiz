@@ -1,41 +1,77 @@
-const CACHE_NAME = 'memory-quiz-cache-v1';
+// Bump this version whenever memory.html / assets change, so clients drop the old cache.
+const CACHE_VERSION = 'v3';
+const CACHE_NAME = `memory-quiz-cache-${CACHE_VERSION}`;
 const ASSETS = [
   './',
   './memory.html',
-  './manifest.json'
+  './manifest.json',
+  './icon.png'
 ];
 
-// Install Service Worker
+// Install: pre-cache assets and activate the new SW immediately.
 self.addEventListener('install', (event) => {
+  self.skipWaiting();
   event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => {
-      console.log('Opened cache');
-      return cache.addAll(ASSETS);
-    })
+    caches.open(CACHE_NAME).then((cache) =>
+      // Cache each asset independently: one failure must not abort the install.
+      Promise.all(ASSETS.map((url) => cache.add(url).catch(() => null)))
+    )
   );
 });
 
-// Activate Service Worker
+// Activate: delete old caches and take control of open pages.
 self.addEventListener('activate', (event) => {
   event.waitUntil(
-    caches.keys().then((cacheNames) => {
-      return Promise.all(
-        cacheNames.map((cache) => {
-          if (cache !== CACHE_NAME) {
-            console.log('Deleting old cache', cache);
-            return caches.delete(cache);
-          }
-        })
-      );
-    })
+    caches.keys()
+      .then((cacheNames) => Promise.all(
+        cacheNames
+          .filter((name) => name !== CACHE_NAME)
+          .map((name) => caches.delete(name))
+      ))
+      .then(() => self.clients.claim())
   );
 });
 
-// Fetching strategy: Cache First, Network Fallback
+function isDocumentRequest(request) {
+  return request.mode === 'navigate' ||
+    (request.destination === 'document') ||
+    (request.headers.get('accept') || '').includes('text/html');
+}
+
+// Fetch strategy:
+// - Navigations/documents: network first, cache fallback (never serve stale HTML).
+// - Other assets: cache first, then network, and cache the response at runtime.
 self.addEventListener('fetch', (event) => {
+  const request = event.request;
+  if (request.method !== 'GET') return;
+
+  if (isDocumentRequest(request)) {
+    event.respondWith(
+      fetch(request)
+        .then((response) => {
+          const copy = response.clone();
+          caches.open(CACHE_NAME).then((cache) => cache.put(request, copy)).catch(() => {});
+          return response;
+        })
+        .catch(() =>
+          caches.match(request).then((cached) =>
+            cached || caches.match('./memory.html')
+          )
+        )
+    );
+    return;
+  }
+
   event.respondWith(
-    caches.match(event.request).then((response) => {
-      return response || fetch(event.request);
+    caches.match(request).then((cached) => {
+      if (cached) return cached;
+      return fetch(request).then((response) => {
+        if (response && response.status === 200 && response.type === 'basic') {
+          const copy = response.clone();
+          caches.open(CACHE_NAME).then((cache) => cache.put(request, copy)).catch(() => {});
+        }
+        return response;
+      });
     })
   );
 });
