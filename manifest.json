@@ -2,6 +2,7 @@
   "name": "Memory & Quiz – Apprendre l’anglais",
   "short_name": "Memory Quiz",
   "start_url": "memory.html",
+  "scope": "./",
   "display": "standalone",
   "background_color": "#0f1325",
   "theme_color": "#4f9deb",

@@ -1,8 +1,9 @@
 // Bump this version whenever memory.html / assets change, so clients drop the old cache.
-const CACHE_VERSION = 'v3';
+const CACHE_VERSION = 'v4';
 const CACHE_NAME = `memory-quiz-cache-${CACHE_VERSION}`;
 const ASSETS = [
   './',
+  './index.html',
   './memory.html',
   './manifest.json',
   './icon.png'
