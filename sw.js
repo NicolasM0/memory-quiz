@@ -1,12 +1,14 @@
 // Bump this version whenever memory.html / assets change, so clients drop the old cache.
-const CACHE_VERSION = 'v4';
+const CACHE_VERSION = 'v5';
 const CACHE_NAME = `memory-quiz-cache-${CACHE_VERSION}`;
 const ASSETS = [
   './',
   './index.html',
   './memory.html',
   './manifest.json',
-  './icon.png'
+  './icon.png',
+  './icon-192.png',
+  './icon-512.png'
 ];
 
 // Install: pre-cache assets and activate the new SW immediately.
