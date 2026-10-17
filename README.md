@@ -1,4 +1,8 @@
-# Memory & Quiz — apprendre l'anglais en jouant
+<p align="center">
+  <img src="icon-512.png" alt="Icône de Memory &amp; Quiz" width="200">
+</p>
+
+<h1 align="center">Memory &amp; Quiz — apprendre l'anglais en jouant</h1>
 
 Deux jeux dans **un seul fichier `memory.html`** (HTML + CSS + JS + données, aucune
 dépendance) :
